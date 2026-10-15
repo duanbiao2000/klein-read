@@ -1,0 +1,250 @@
+{
+  "id": "004-europe-election-paralysis",
+  "source": "The Economist",
+  "date": "2026-10-15",
+  "topic": "World",
+  "source_lang": "en",
+  "difficulty": 5,
+  "read_minutes": 13,
+  "word_count": 780,
+  "title_src": "A marathon of elections is about to paralyse Europe",
+  "title_zh": "选举马拉松即将让欧洲陷入瘫痪",
+  "lead_zh": "从西班牙提前大选开始，欧洲将进入一场持续一年多的“选举马拉松”：半数以上的欧盟公民要选出新领导人。文章认为，竞选季会让欧盟在防务、竞争力、贸易与乌克兰等关键议题上陷入“拖延接力赛”，甚至可能选出敌视欧盟的领导人。学习重点：the starting gun has been fired、put the pinch on、turn the tables 等地道表达，以及多层从句的“剥洋葱”读法。",
+  "theme_words": [
+    { "word": "paralysis", "phonetic": "/pəˈræləsɪs/", "pos": "n.", "meaning_zh": "瘫痪；停摆状态" },
+    { "word": "dormant", "phonetic": "/ˈdɔːmənt/", "pos": "adj.", "meaning_zh": "休眠的，暂停运作的" },
+    { "word": "embattled", "phonetic": "/ɪmˈbætld/", "pos": "adj.", "meaning_zh": "四面楚歌的，处境困难的" },
+    { "word": "inopportune", "phonetic": "/ɪnˈɒpətjuːn/", "pos": "adj.", "meaning_zh": "不合时宜的" },
+    { "word": "contentious", "phonetic": "/kənˈtenʃəs/", "pos": "adj.", "meaning_zh": "有争议的，引起争论的" },
+    { "word": "chasm", "phonetic": "/ˈkæzəm/", "pos": "n.", "meaning_zh": "鸿沟；巨大分歧" },
+    { "word": "exacerbate", "phonetic": "/ɪɡˈzæsəbeɪt/", "pos": "v.", "meaning_zh": "使恶化，使加剧" },
+    { "word": "sclerosis", "phonetic": "/skləˈrəʊsɪs/", "pos": "n.", "meaning_zh": "僵化（喻指机构失去活力）" }
+  ],
+  "paragraphs": [
+    {
+      "text": "Every organisation has an idle period when getting things done becomes all but impossible: universities feel eerily quiet over summer, most offices are [[dormant]] over Christmas. Europe may be entering such a period, but one that will last the best part of a year. On October 5th Pedro S\u00e1nchez, the [[embattled]] Spanish prime minister, called early elections that will be held in late November. The starting gun has thus been fired unexpectedly early on a marathon of voting, from France to Finland by way of Greece, Poland and Italy, that will see over half of all citizens of the European Union elect new national leaders between now and the end of 2027. Until the ballots are counted, almost every awkward decision at EU level will come with an irresistible alternative: wait until after the election. A continent confronted by war, weak growth and geopolitical upheaval is headed into enduring political [[paralysis]] at a painfully [[inopportune]] moment.",
+      "zh": "每个组织都有“闲季”——想办成点事几乎不可能：大学的夏天静得诡异，多数办公室在圣诞期间停摆。欧洲可能正步入这样一个时期，只不过要持续将近一年。10 月 5 日，四面楚歌的西班牙首相佩德罗·桑切斯宣布提前大选，投票将于 11 月下旬举行。一场选举马拉松由此意外提前鸣枪——从法国到芬兰，途经希腊、波兰和意大利，到 2027 年底之前，半数以上的欧盟公民都将选出本国新领导人。在计票结束前，欧盟层面几乎所有棘手决策都会附带一个让人无法抗拒的备选项：等选完再说。一个正面对战争、疲弱增长与地缘政治剧变的大陆，却在一个痛苦的不合时宜时刻，陷入持久的政治瘫痪。",
+      "words": [
+        { "word": "idle", "pos": "adj.", "meaning_zh": "闲置的；停滞的", "note_zh": "an idle period 闲季；idle 也可形容机器“闲置”、人“无所事事”" },
+        { "word": "dormant", "pos": "adj.", "meaning_zh": "休眠的，暂停运作的", "note_zh": "常见搭配：lie dormant 蛰伏；dormant volcano 休眠火山" },
+        { "word": "embattled", "pos": "adj.", "meaning_zh": "四面楚歌的，处境困难的", "note_zh": "新闻高频：the embattled prime minister 四面楚歌的首相" },
+        { "word": "paralysis", "pos": "n.", "meaning_zh": "瘫痪；停摆状态", "note_zh": "political paralysis 政治瘫痪；动词 paralyse" },
+        { "word": "inopportune", "pos": "adj.", "meaning_zh": "不合时宜的", "note_zh": "in- + opportune（恰好的）；a painfully inopportune moment 痛苦的不合时宜时刻" }
+      ],
+      "sentences": [
+        {
+          "text": "The starting gun has thus been fired unexpectedly early on a marathon of voting, from France to Finland by way of Greece, Poland and Italy, that will see over half of all citizens of the European Union elect new national leaders between now and the end of 2027.",
+          "structure": [
+            { "type": "main", "text": "The starting gun has thus been fired unexpectedly early on a marathon of voting —— 主句：选举马拉松提前鸣枪（比喻）" },
+            { "type": "phrase", "text": "from France to Finland by way of Greece, Poland and Italy —— 插入的地点范围，说明选战跨度" },
+            { "type": "clause", "text": "that will see over half ... elect ... —— 定语从句修饰 marathon；see + 宾语 + 动词原形 = 见证……做……" }
+          ],
+          "tip_zh": "写作迁移：the starting gun has been fired on ...（……正式开跑）+ see + 宾语 + do（见证……）是新闻英语高分组合。"
+        },
+        {
+          "text": "A continent confronted by war, weak growth and geopolitical upheaval is headed into enduring political paralysis at a painfully inopportune moment.",
+          "structure": [
+            { "type": "main", "text": "A continent is headed into enduring political paralysis —— 主干：一个大陆正走向持久的政治瘫痪" },
+            { "type": "phrase", "text": "confronted by war, weak growth and geopolitical upheaval —— 过去分词短语后置定语，三项排比" }
+          ],
+          "tip_zh": "分词后置定语 + 名词排比是《经济学人》标志性句式，写作模仿可显著提升质感。"
+        }
+      ]
+    },
+    {
+      "text": "The gap between what Europe knows it ought to do and its willingness to do it is, [[to put it kindly|to put it kindly]], never narrow. Reports arguing that it urgently needs to reform its economy, bolster its defence capabilities and reform the union itself ahead of its potential enlargement have resulted in more felled forests than an IKEA superstore. Alas, all their lofty recommendations will now have to wait. One election-bound politician after another will plead with fellow leaders that they cannot possibly make [[contentious]] compromises, for example on the much-needed deepening of the EU\u2019s single market, in the run-up to voting. The end result will be a sort of relay race of political ma\u00f1ana-ism as one campaign ends and the next begins. Even after the ballots are counted, more uncertainty will follow: in many places right-wing populists with little love for the EU will either win elections or become [[power broker|power brokers]].",
+      "zh": "欧洲“明知该做什么”与“愿不愿意做”之间的差距，客气地说，从来就不小。那些敦促欧洲赶紧改革经济、强化防务、并在潜在扩员前改革欧盟本身的报告，用掉的纸比一家宜家大卖场还多。可惜，所有这些高远的建议现在都得排队等候。一位又一位即将参选的政客会向同僚恳求：在投票前夕，他们绝不可能做出有争议的妥协——比如深化欧盟单一市场这种亟需之举。最终结果将是一场“明日复明日”的政治接力赛：一场竞选刚结束，下一场就开始了。即使计票结束，更多不确定性仍会接踵而至：在许多国家，对欧盟没什么好感的右翼民粹主义者要么赢得选举，要么成为权力掮客。",
+      "words": [
+        { "word": "to put it kindly", "pos": "phr.", "meaning_zh": "说得客气些（实指差距很大）", "note_zh": "反讽修辞：客气说法背后是“相当之大”" },
+        { "word": "lofty", "pos": "adj.", "meaning_zh": "高远的；高高在上的", "note_zh": "lofty recommendations 高远的建议（略带讽刺：难以落地）" },
+        { "word": "contentious", "pos": "adj.", "meaning_zh": "有争议的，引起争论的", "note_zh": "contentious compromise/debate/issue 有争议的妥协/辩论/议题" },
+        { "word": "power broker", "pos": "n.", "meaning_zh": "权力掮客，政治掮客", "note_zh": "broker 本义“经纪人”；coalition 联合政府语境常用" },
+        { "word": "ma\u00f1ana-ism", "pos": "n.", "meaning_zh": "明日复明日的拖延主义", "note_zh": "文化梗：mañana 西班牙语“明天”，讽刺南欧拖延作风" }
+      ],
+      "sentences": [
+        {
+          "text": "The end result will be a sort of relay race of political ma\u00f1ana-ism as one campaign ends and the next begins.",
+          "structure": [
+            { "type": "main", "text": "The end result will be a sort of relay race of political ma\u00f1ana-ism —— 主句：结果是一场拖延主义接力赛" },
+            { "type": "clause", "text": "as one campaign ends and the next begins —— as 引导时间/方式状语：“随着一场竞选结束、下一场开始”" }
+          ],
+          "tip_zh": "a relay race of ...（……的接力赛）是生动比喻，可仿写：a relay race of promises/bailouts。"
+        }
+      ]
+    },
+    {
+      "text": "Thus the gap between Europe\u2019s need to act and its ability to do so is becoming a veritable [[chasm]]. In part that is because the in-tray looks ever more daunting. Many of the old continent\u2019s old problems remain unresolved even as new ones pile up. The EU is heading for winter with its lowest gas reserves since 2022, when Russia\u2019s full-scale invasion of Ukraine triggered an energy crisis that never quite receded\u2014and has been [[exacerbated]] by the war in Iran. High fuel prices have put the pinch on consumers. Europe\u2019s solution to its economic woes has long been to import cut-rate wares from China while governments borrowed to fund generous welfare states without unduly taxing citizens.",
+      "zh": "于是，欧洲“需要行动”与“能够行动”之间的差距正变成一道真正的鸿沟。部分原因在于待办清单愈发令人望而生畏。旧大陆的许多旧问题悬而未决，新问题又堆积如山。欧盟正带着 2022 年以来最低的天然气储备入冬——那一年俄罗斯全面入侵乌克兰引发了能源危机，危机从未真正消退，又被伊朗战争加剧。高企的燃料价格让消费者手头拮据。欧洲应对经济困境的方案，长期以来一直是从中国进口廉价商品，同时让政府举债维持慷慨的福利国家，而不必对公民过度征税。",
+      "words": [
+        { "word": "chasm", "pos": "n.", "meaning_zh": "鸿沟；巨大分歧", "note_zh": "a veritable chasm 真正的鸿沟；veritable = 名副其实的、十足的" },
+        { "word": "daunting", "pos": "adj.", "meaning_zh": "令人望而生畏的", "note_zh": "a daunting task/in-tray 令人望而生畏的任务/待办堆" },
+        { "word": "exacerbate", "pos": "v.", "meaning_zh": "使恶化，使加剧", "note_zh": "= worsen/aggravate；名词 exacerbation；写作高频" },
+        { "word": "recede", "pos": "v.", "meaning_zh": "消退；后退", "note_zh": "crisis never quite receded 危机从未真正消退；反义 recede ← surge" },
+        { "word": "put the pinch on", "pos": "phr.", "meaning_zh": "使（某人）手头拮据", "note_zh": "口语表达：High prices put the pinch on consumers" }
+      ],
+      "sentences": [
+        {
+          "text": "The EU is heading for winter with its lowest gas reserves since 2022, when Russia\u2019s full-scale invasion of Ukraine triggered an energy crisis that never quite receded\u2014and has been exacerbated by the war in Iran.",
+          "structure": [
+            { "type": "main", "text": "The EU is heading for winter with its lowest gas reserves since 2022 —— 主句：欧盟正以 2022 年以来最低储备入冬" },
+            { "type": "clause", "text": "when Russia\u2019s full-scale invasion ... triggered an energy crisis —— when 引导非限制性定语从句，补充 2022 年背景" },
+            { "type": "clause", "text": "that never quite receded\u2014and has been exacerbated ... —— 第二层定语从句修饰 crisis，含两个并列谓语（has receded / has been exacerbated）" }
+          ],
+          "tip_zh": "多层从句“剥洋葱”读法：主句 → when 从句 → that 从句，每层只抓主谓。写作注意同句嵌套勿超过两层。"
+        }
+      ]
+    },
+    {
+      "text": "That strategy is falling apart. Cheap Chinese imports are now seen as predatory in ways that threaten Europe\u2019s industrial base. On October 15th EU leaders will meet to discuss whether to erect trade defences against China. The cheap credit some countries used to fund their deficits is a thing of the past, too. France is facing a bond-market squeeze as creditors demand higher yields to accept the risk of lending to a country that has not balanced a budget in over five decades. Having [[eschewed surpluses|eschewed]] surpluses since the disco age, France is wildly unlikely to discover fiscal prudence before the first round of the presidential election in April. Even without elections the place seems barely governable, with students rioting for little discernible reason. Europe\u2019s [[navel-gazing]] causes it to fall behind a bit more every day. While China and America are vying for supremacy in artificial intelligence, Europe has no model anywhere near the cutting edge. The EU\u2019s next long-term budget is meant to boost its competitiveness, but a deal could be delayed amid overlapping campaign seasons.",
+      "zh": "这一策略正在崩塌。中国廉价进口如今被视为掠夺性行为，威胁着欧洲的工业基础。10 月 15 日，欧盟领导人将开会讨论是否对中国构筑贸易防线。一些国家用来为赤字融资的廉价信贷也一去不复返。法国正面临债券市场挤压：债权人要求更高收益率，才肯承担借钱给一个五十多年没平衡过预算的国家的风险。自迪斯科年代以来就与财政盈余无缘的法国，在 4 月总统选举首轮之前几乎不可能突然学会量入为出。就算没有选举，这个国家也近乎难以治理——学生们正为一些几乎没人看得懂的理由闹事。欧洲的自我陶醉让它每天都在落后一点点。当中美两国在人工智能领域争夺霸主地位时，欧洲没有任何接近前沿的模式。欧盟的下一份长期预算本应提升竞争力，但在竞选季层层叠加之际，协议可能被推迟。",
+      "words": [
+        { "word": "predatory", "pos": "adj.", "meaning_zh": "掠夺性的；捕食性的", "note_zh": "predatory pricing 掠夺性定价；文中指“以倾销方式打击工业”" },
+        { "word": "deficit", "pos": "n.", "meaning_zh": "赤字；逆差", "note_zh": "fund their deficits 为赤字融资；budget/trade deficit 预算/贸易赤字" },
+        { "word": "eschew", "pos": "v.", "meaning_zh": "（有意）避开，戒绝", "note_zh": "书面语 = deliberately avoid；eschew surpluses 与盈余无缘（反讽）" },
+        { "word": "fiscal prudence", "pos": "n.phr.", "meaning_zh": "财政审慎，量入为出", "note_zh": "fiscal 财政的；prudence 审慎；反义 fiscal profligacy 挥霍" },
+        { "word": "navel-gazing", "pos": "n.", "meaning_zh": "自我陶醉式的内省（贬）", "note_zh": "文化梗：盯着自己肚脐眼看 = 自恋式空想，讽欧洲自我中心" }
+      ],
+      "sentences": [
+        {
+          "text": "France is facing a bond-market squeeze as creditors demand higher yields to accept the risk of lending to a country that has not balanced a budget in over five decades.",
+          "structure": [
+            { "type": "main", "text": "France is facing a bond-market squeeze —— 主句：法国正面临债券市场挤压" },
+            { "type": "clause", "text": "as creditors demand higher yields —— as 引导原因状语（= because）" },
+            { "type": "phrase", "text": "to accept the risk of lending to a country —— 不定式表目的；lend to 借钱给……" },
+            { "type": "clause", "text": "that has not balanced a budget in over five decades —— 定语从句修饰 country；balance a budget 平衡预算" }
+          ],
+          "tip_zh": "一句话四层结构（主句+原因+目的+定语）是《经济学人》常态。写作时控制在两层以内，读起来更友好。"
+        }
+      ]
+    },
+    {
+      "text": "None of this is entirely new: a union of many democracies inevitably entails a lot of voting. But geopolitical threats ought to concentrate European minds on how to make decisions, even as elections come and go. After a summer when Ukraine seemed to have [[turn the tables|turned the tables]] on Russia, it is once again being battered as winter looms. A \u20ac90bn ($101bn) slug of EU aid approved in late 2025 was meant to last two years. It now looks like more will be needed sooner. Vladimir Putin appears to have ambitions beyond Ukraine; intelligence agencies predict ever more hybrid attacks designed to sow discord within NATO. That ought to prompt Europeans to build up their collective defences, now that a [[flaky]] America is no longer a reliable security guarantor. Instead, Spain\u2019s prime minister is campaigning on his refusal to do so. Spaniards will spend the next two months arguing about housing, and then forming a probably unstable coalition. Mr Putin is unlikely to stop blowing things up while Europe deals with its problems.",
+      "zh": "这一切并非全新：一个由众多民主国家组成的联盟，必然伴随大量投票。但地缘政治威胁理应让欧洲人集中思考如何决策，无论选举来来去去。在一个乌克兰似乎已扭转对俄局势的夏天之后，冬天将至，乌克兰又一次遭到重创。2025 年末批准的 900 亿欧元（1010 亿美元）欧盟援助本应撑两年，现在看来更早就会捉襟见肘。弗拉基米尔·普京的野心似乎不止乌克兰；情报机构预测，旨在北约内部制造纷争的混合攻击会越来越多。这理应促使欧洲人建立集体防务——既然反复无常的美国已不再是可靠的安全担保人。然而，西班牙首相却以拒绝这样做作为竞选纲领。西班牙人接下来两个月会争论住房问题，然后组建一个多半不稳定的联合政府。而普京先生不太可能在欧洲处理自身问题期间，就停止“炸东西”。",
+      "words": [
+        { "word": "turn the tables", "pos": "phr.", "meaning_zh": "扭转局势，反客为主", "note_zh": "turn the tables on sb 对某人反守为攻；体育/博弈语境常用" },
+        { "word": "batter", "pos": "v.", "meaning_zh": "重创，连续猛击", "note_zh": "be battered 遭到重创；比 hit 更猛烈、持续" },
+        { "word": "sow discord", "pos": "phr.", "meaning_zh": "制造纷争，挑拨离间", "note_zh": "sow 播种；discord 不和；写作高频搭配" },
+        { "word": "flaky", "pos": "adj.", "meaning_zh": "反复无常的，不靠谱的（口语）", "note_zh": "a flaky ally 不靠谱的盟友；新闻中带贬义的口语化形容" },
+        { "word": "guarantor", "pos": "n.", "meaning_zh": "担保人，保障者", "note_zh": "security guarantor 安全担保人；guarantee 作动词/名词" }
+      ],
+      "sentences": [
+        {
+          "text": "That ought to prompt Europeans to build up their collective defences, now that a flaky America is no longer a reliable security guarantor.",
+          "structure": [
+            { "type": "main", "text": "That ought to prompt Europeans to build up their collective defences —— 主句：这理应促使欧洲人建立集体防务" },
+            { "type": "clause", "text": "now that a flaky America is no longer ... —— now that 引导原因状语：“既然/如今……”" }
+          ],
+          "tip_zh": "prompt sb to do sth（促使某人做）+ now that 从句（既然）= 因果论证黄金句式，四六级写作直接可用。"
+        }
+      ]
+    },
+    {
+      "text": "The [[paralysis|paralysis]] that overcomes the European project when its politicians are out campaigning is one risk. Another is that the winners of the elections may rip up the blueprints. Spain\u2019s election will not change Europe much, though it will probably oust the only socialist politician to lead one of its big countries. Few will notice which parties win in Finland in April. But Poland and particularly France could vote in populist-right leaders who so loathe the EU that it is hard to see how the bloc could remain effective. Marine Le Pen, the front-runner in French polls, wants to defund the union and cut back support to Ukraine.",
+      "zh": "政客们外出竞选时笼罩欧洲工程的瘫痪是一种风险。另一种风险是：选举的赢家可能撕毁蓝图。西班牙大选不会太大改变欧洲，尽管它很可能赶走欧洲大国中唯一一位社会党籍领导人。4 月芬兰哪个政党胜选，没多少人会留意。但波兰、尤其是法国，可能选出敌视欧盟到令人看不清这个联盟还如何有效运转的右翼民粹领导人。在法国民调中领跑的玛丽娜·勒庞，想要给欧盟断供资金，并削减对乌克兰的支持。",
+      "words": [
+        { "word": "oust", "pos": "v.", "meaning_zh": "赶下台，驱逐", "note_zh": "oust sb from power/post 把某人赶下台；名词 ouster" },
+        { "word": "front-runner", "pos": "n.", "meaning_zh": "（选举）领跑者", "note_zh": "体育引申：the front-runner in polls 民调领跑者" },
+        { "word": "loathe", "pos": "v.", "meaning_zh": "厌恶，深恶痛绝", "note_zh": "比 hate 更强、更书面；形容词 loathsome" },
+        { "word": "defund", "pos": "v.", "meaning_zh": "切断资金，断供", "note_zh": "de- + fund；近年政治高频：defund the union/programme" },
+        { "word": "bloc", "pos": "n.", "meaning_zh": "（政治）集团，联盟", "note_zh": "the EU bloc 欧盟集团；Eastern bloc 东方集团（冷战语境）" }
+      ],
+      "sentences": [
+        {
+          "text": "But Poland and particularly France could vote in populist-right leaders who so loathe the EU that it is hard to see how the bloc could remain effective.",
+          "structure": [
+            { "type": "main", "text": "Poland and particularly France could vote in populist-right leaders —— 主句：两国可能“投票选出”民粹右翼领导人（vote in = 选举产生）" },
+            { "type": "clause", "text": "who so loathe the EU that ... —— 定语从句内嵌 so ... that ... 结果结构：“厌恶欧盟到……的程度”" },
+            { "type": "clause", "text": "it is hard to see how the bloc could remain effective —— that 结果从句；how 引导宾语从句，双重嵌套" }
+          ],
+          "tip_zh": "so + 形容词/副词 + that 从句表结果；注意本句在定语从句内部再嵌一层 how 从句——先拆 who 从句，再拆 that 从句。"
+        }
+      ]
+    },
+    {
+      "text": "Europe hardly needs elections to lapse into [[sclerosis]]. The urgency deficit has been evident throughout the past year, a period with few elections. And the string of ballots will not bring Europe entirely to a halt. Summits of EU leaders will still be held, regulations crafted, communiqu\u00e9s issued and so on. Crises have a way of focusing politicians\u2019 minds even when they have one eye on the campaign trail. But responding to events is not the same as shaping them. At precisely the moment Europe needs to make big choices\u2014on defence, competitiveness, trade and Ukraine\u2014its leaders may be about to retreat into their political crouches and, for many months, make none at all.",
+      "zh": "欧洲不举行选举也照样容易陷入僵化。过去一年选举不多，“紧迫感赤字”却随处可见。而一连串投票也不会让欧洲彻底停摆。欧盟峰会照开，法规照拟，公报照发。危机往往能集中政客的心思——哪怕他们另一只眼还盯着竞选之路。但被动应对事态，与主动塑造事态是两回事。恰在欧洲需要就防务、竞争力、贸易与乌克兰做出重大抉择之际，领导人们可能正要缩回他们的政治蹲伏姿态，在此后许多个月里，什么决定也不做。",
+      "words": [
+        { "word": "sclerosis", "pos": "n.", "meaning_zh": "僵化（喻指机构失去活力）", "note_zh": "lapse into sclerosis 陷入僵化；医学本义“硬化”，政治语境喻指僵化" },
+        { "word": "lapse into", "pos": "phr.v.", "meaning_zh": "陷入（某种不良状态）", "note_zh": "lapse into silence/chaos/inertia 陷入沉默/混乱/惰性" },
+        { "word": "communiqu\u00e9", "pos": "n.", "meaning_zh": "公报（官方联合声明）", "note_zh": "summit communiqu\u00e9 峰会公报；法语借词，重音在末音节" },
+        { "word": "campaign trail", "pos": "n.phr.", "meaning_zh": "竞选巡回活动，竞选之路", "note_zh": "on the campaign trail 在竞选路上；be out campaigning 外出竞选" }
+      ],
+      "sentences": [
+        {
+          "text": "But responding to events is not the same as shaping them.",
+          "structure": [
+            { "type": "main", "text": "responding to events is not the same as shaping them —— 主句：被动应对 ≠ 主动塑造" },
+            { "type": "tip", "text": "动名词作主语 + the same as 比较结构；两组动名词对仗（responding / shaping）" }
+          ],
+          "tip_zh": "全文金句，短促有力。写作收尾段可用类似对仗短句升华：Doing A is not the same as doing B."
+        }
+      ]
+    }
+  ],
+  "background": [
+    {
+      "title_zh": "欧洲的“超级选举季”时间线",
+      "body_zh": "文章所说的选举马拉松：西班牙提前大选（2026 年 11 月下旬）→ 芬兰（2027 年 4 月）→ 法国总统选举（2027 年 4 月首轮）→ 波兰、意大利等国陆续投票，持续到 2027 年底。半数以上的欧盟公民将在期间选出本国新领导人。选举密集意味着欧盟层面的重大决策（单一市场深化、长期预算、对华贸易防线、对乌援助）都会被推迟到“选后再说”。"
+    },
+    {
+      "title_zh": "背景概念：单一市场深化与欧盟长期预算",
+      "body_zh": "“深化单一市场”（deepening the single market）指消除欧盟内部剩余的贸易、服务与资本市场壁垒，被多份报告视为提升欧洲竞争力的关键。欧盟“长期预算”（Multiannual Financial Framework，MFF）为七年期支出框架，下一份预算被指望提升竞争力，但需 27 国一致同意——大选季极易被拖成持久战。文中“900 亿欧元对乌援助”获批于 2025 年末，本计划支撑两年。"
+    }
+  ],
+  "expressions": [
+    { "expr": "the starting gun has been fired", "zh": "发令枪已打响；（某事）正式开始", "usage_zh": "比喻事件开跑：<b>the starting gun has been fired on a marathon of voting</b>" },
+    { "expr": "to put it kindly", "zh": "说得客气些（实指程度严重）", "usage_zh": "反讽修辞，常跟逗号插入句中：<b>is, to put it kindly, never narrow</b>" },
+    { "expr": "put the pinch on sb", "zh": "使某人手头拮据", "usage_zh": "口语表达：<b>High fuel prices have put the pinch on consumers.</b>" },
+    { "expr": "turn the tables on sb", "zh": "对某人扭转局势，反守为攻", "usage_zh": "博弈/战局语境：<b>Ukraine seemed to have turned the tables on Russia</b>" },
+    { "expr": "have a way of doing sth", "zh": "（某事）总有办法发生；自有其规律", "usage_zh": "委婉道出规律：<b>Crises have a way of focusing politicians\u2019 minds.</b>" },
+    { "expr": "Doing A is not the same as doing B", "zh": "做 A 不等于做 B", "usage_zh": "对仗收尾句式：<b>Responding to events is not the same as shaping them.</b>" }
+  ],
+  "quiz": [
+    {
+      "type": "choice",
+      "q": "According to the article, what will happen to EU decision-making before the ballots are counted?",
+      "options": [
+        "EU leaders will make the much-needed contentious compromises.",
+        "Almost every awkward EU decision will face the temptation to wait until after elections.",
+        "Right-wing populists will win elections in every EU country.",
+        "The EU\u2019s next long-term budget will be agreed quickly."
+      ],
+      "answer": 1,
+      "explanation_zh": "第一段明确：计票之前，几乎所有棘手决策都附带一个诱人的备选项——“等选完再说”。A 与原文相反（政客会以选举为由拒绝妥协）；C 绝对化（in many places）；D 与末段“a deal could be delayed”相反。"
+    },
+    {
+      "type": "choice",
+      "q": "The word \u201ceschewed\u201d (Paragraph 4) is closest in meaning to ______.",
+      "options": ["deliberately avoided", "loudly enjoyed", "heavily borrowed", "quietly raised"],
+      "answer": 0,
+      "explanation_zh": "eschew =（有意）避开、戒绝，= deliberately avoid。原文 Having eschewed surpluses since the disco age 是反讽：法国自迪斯科年代以来就与财政盈余无缘。"
+    },
+    {
+      "type": "choice",
+      "q": "What does \u201cresponding to events is not the same as shaping them\u201d (last paragraph) imply?",
+      "options": [
+        "Europe has already succeeded in shaping global events.",
+        "Handling crises reactively is different from making proactive big choices.",
+        "Crises stop politicians from focusing on decisions.",
+        "Election seasons make Europe more decisive."
+      ],
+      "answer": 1,
+      "explanation_zh": "结尾转折点题：峰会照开、公报照发只是被动应对（responding），而在防务、竞争力、贸易、乌克兰上做重大抉择才是主动塑造（shaping）——领导人们恰恰可能退缩不作为。"
+    },
+    {
+      "type": "fill",
+      "q": "That ought to prompt Europeans ______ (build) up their collective defences, now that a flaky America is no longer a reliable security guarantor.",
+      "answer": "to build",
+      "explanation_zh": "prompt sb to do sth = 促使某人做某事。同类结构：encourage/urge sb to do。后半句 now that 引导原因状语：“既然/如今……”。"
+    }
+  ],
+  "discussion_zh": [
+    "为什么“选举季”会拖累长期决策？你所在的社会是否存在类似“空转期”现象？",
+    "“Responding to events is not the same as shaping them.”请结合实例谈谈被动应对与主动塑造的区别。",
+    "文章认为欧洲在 AI 竞争中落后。一个地区应如何在政治周期与长期竞争力之间取得平衡？"
+  ],
+  "writing": {
+    "title_zh": "写作练习：Election seasons and long-term decision-making",
+    "prompt_zh": "假定你是李华，校英文报就“选举季与长期决策”征文。请写一篇 150 词左右的短评：1）描述欧洲选举马拉松现象；2）分析选举季拖累决策的原因；3）提出你的建议。至少使用 2 个本文学到的表达（如 the starting gun has been fired / put the pinch on / Doing A is not the same as doing B）。"
+  }
+}
