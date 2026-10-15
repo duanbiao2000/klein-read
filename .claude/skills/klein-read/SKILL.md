@@ -34,6 +34,7 @@ Search the workspace for a folder that has `build.py`, `data/`, and `templates/`
 ### 2. Parse the pasted article
 Extract the title, source name, date, and body paragraphs. Drop figure captions, links, and ads.
 - No date: use today. No source: use `Weekly`.
+- If the user provides an audio URL, set `audio_url`. The page shows an Audio tag and a second link under the guide. Both open in a new tab.
 - The user pastes several articles: create one data file per article. Build them in order.
 
 ### 3. Write the study notes

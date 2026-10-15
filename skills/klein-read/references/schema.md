@@ -16,6 +16,7 @@ Language policy: `source_lang` marks the language of the source text. All study 
 | `source` | no | str | Publication name. Example: `The Economist`. Default: `Weekly`. |
 | `date` | no | str | Publication date. Format: `YYYY-MM-DD`. |
 | `updated` | no | str | Last content edit date. Format: `YYYY-MM-DD`. The home page sorts by `updated` (falls back to `date`), newest first. Set it to today when you edit an existing article. |
+| `audio_url` | no | str | External audio page. If set, the article page shows an Audio tag in the top bar and a link under the guide. Both links open in a new tab. |
 | `topic` | no | str | Topic for filtering and card color. Values: Workplace, Tech, Economy, Society, Environment, Education, Culture, Health, World, Business. |
 | `difficulty` | no | int 1–5 | Difficulty stars. |
 | `read_minutes` | no | int | Estimated reading time in minutes. |

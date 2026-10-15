@@ -287,9 +287,32 @@ def load_docs():
     return docs
 
 
+def render_audio_links(url):
+    """Render optional audio links. Both links open in a new browser tab."""
+    if not url:
+        return "", ""
+    href = esc(url)
+    top_link = (
+        f'<a class="chip audio-chip" href="{href}" target="_blank" '
+        'rel="noopener noreferrer" title="Opens in a new tab" '
+        'aria-label="Open article audio in a new tab">🎧 Audio ↗</a>'
+    )
+    hero_link = (
+        '<div class="article-audio">'
+        f'<a class="audio-cta-link" href="{href}" target="_blank" '
+        'rel="noopener noreferrer" aria-label="Open article audio in a new tab">'
+        '<span aria-hidden="true">🎧</span><span>Open article audio</span>'
+        '<span class="audio-arrow" aria-hidden="true">↗</span></a>'
+        '<span class="audio-open-note">Opens in a new tab</span>'
+        '</div>'
+    )
+    return top_link, hero_link
+
+
 def build_article(doc, prev_doc, next_doc):
     source_lang = doc.get("source_lang", "en")
     paras = doc.get("paragraphs", [])
+    audio_top_link, audio_cta = render_audio_links(doc.get("audio_url"))
     ctx = {
         "TITLE_ZH": esc(doc.get("title_zh", "")),
         "TITLE_SRC": esc(doc.get("title_src", "")),
@@ -302,6 +325,8 @@ def build_article(doc, prev_doc, next_doc):
         "READ_MIN": esc(doc.get("read_minutes", 10)),
         "WORD_COUNT": esc(doc.get("word_count", "")),
         "LEAD": esc(get_text(doc, "lead_zh", "lead")),
+        "AUDIO_TOP_LINK": audio_top_link,
+        "AUDIO_CTA": audio_cta,
         "THEME_WORDS": render_theme_words(doc.get("theme_words", [])),
         "SOURCE_PARAS": render_source_paras(paras, source_lang),
         "NOTE_GROUPS": render_note_groups(paras, source_lang),
