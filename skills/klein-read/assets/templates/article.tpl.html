@@ -16,12 +16,19 @@
       <span class="logo-mark">K</span>
       <span>Klein Read <span class="logo-sub">克莱因精读</span></span>
     </a>
-    <nav class="topnav">
-      <a href="../index.html#library">Library</a>
-      <a href="#text">Close Reading</a>
-      <a href="#quiz">Practice</a>
-      <a href="#discussion">Discussion</a>
-    </nav>
+    <div class="top-meta">
+      <span class="card-source">{{SOURCE}}</span>
+      <span class="chip chip-theme" style="font-size:11px;padding:3px 11px">{{TOPIC}}</span>
+      <span class="chip chip-violet" style="font-size:11px;padding:3px 11px">{{SOURCE_LANG_LABEL}}</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px">{{DIFFICULTY_HTML}}</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px">⏱ {{READ_MIN}} min</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px">📝 {{WORD_COUNT}} words</span>
+    </div>
+    <div class="top-tools">
+      <button class="tool" id="fontMinus" title="Decrease source font size">A−</button>
+      <button class="tool" id="fontPlus" title="Increase source font size">A+</button>
+      <button class="tool primary" id="demoToggle" title="Demo mode for screen recording (D)">🎬 演示模式</button>
+    </div>
   </div>
 </header>
 
@@ -32,15 +39,6 @@
     <div class="blob blob-2"></div>
     <div class="container-narrow" style="position:relative;z-index:2">
       <p class="breadcrumb"><a href="../index.html">Home</a> / Close Reading / {{TOPIC}}</p>
-      <div class="meta-row">
-        <span class="card-source">{{SOURCE}}</span>
-        <span class="chip chip-theme">{{TOPIC}}</span>
-        <span class="chip chip-violet">{{SOURCE_LANG_LABEL}}</span>
-        <span class="chip">{{DIFFICULTY_HTML}}</span>
-        <span class="chip">⏱ {{READ_MIN}} min</span>
-        <span class="chip">📝 {{WORD_COUNT}} words</span>
-        <span class="card-date">{{DATE}}</span>
-      </div>
       <h1 lang="zh-CN">{{TITLE_ZH}}</h1>
       <p class="title-en" lang="{{SOURCE_LANG}}">{{TITLE_SRC}}</p>
       <div class="lead-card">
@@ -50,45 +48,46 @@
     </div>
   </section>
 
-  <!-- ============ Anchor nav ============ -->
-  <nav class="anchor-nav">
-    <div class="container-narrow anchor-nav-inner">
-      <a href="#words">🔥 Theme Words</a>
-      <a href="#text">📄 Close Reading</a>
-      <a href="#background">🌍 Background</a>
-      <a href="#expressions">✨ Expressions</a>
-      <a href="#quiz">✏️ Practice</a>
-      <a href="#discussion">💬 Discussion</a>
-      <a href="#writing">🖊 Writing</a>
-    </div>
-  </nav>
+  <!-- ============ Split view: source | notes ============ -->
+  <div class="container">
+    <section class="split-window" id="splitWindow">
 
-  <div class="container-narrow">
-    <!-- ============ Theme words (Klein blue) ============ -->
-    <section class="block" id="words" style="margin-top:8px">
-      <div class="block-head">
-        <div class="block-icon" style="background:var(--klein);color:#fff">🔥</div>
-        <div>
-          <h2>Theme Words <span class="sticker" style="font-size:12px;margin-left:6px">KLEIN BLUE</span></h2>
-          <p class="sub">Click a blue word in the text to open its note.</p>
+      <!-- Left pane: source text -->
+      <div class="pane-left" id="paneLeft">
+        <div class="pane-head">
+          <span class="label">SOURCE · 原文</span>
+          <span class="hint">点段落切换讲解 · 主题词可点</span>
+        </div>
+        <div class="source-text">
+          <h2 class="src-title" lang="{{SOURCE_LANG}}">{{TITLE_SRC}}</h2>
+          <p class="src-sub">{{SOURCE}} — {{DATE}}</p>
+          {{SOURCE_PARAS}}
         </div>
       </div>
-      <div class="theme-words">{{THEME_WORDS}}</div>
-    </section>
 
-    <!-- ============ Close reading ============ -->
-    <section class="block" id="text">
-      <div class="block-head">
-        <div class="block-icon" style="background:var(--lemon);color:var(--ink)">📄</div>
-        <div>
-          <h2>Close Reading</h2>
-          <p class="sub">Read the source text first. Then open Translation, Words, and Analysis.</p>
+      <!-- Right pane: study notes -->
+      <div class="pane-right" id="paneRight">
+        <div class="pane-head">
+          <span class="label">NOTES · 讲解</span>
+          <span class="hint">主题词 / 译文 / 词汇 / 句析</span>
+          <span class="sync-pill" id="syncPill">SYNC · PARA 1</span>
         </div>
+        <div class="notes-stream">
+          <div class="note-group theme-group">
+            <div class="ng-head">THEME WORDS · 主题词</div>
+            <div class="note-card nc-theme">
+              <div class="theme-words">{{THEME_WORDS}}</div>
+            </div>
+          </div>
+          {{NOTE_GROUPS}}
+        </div>
+        <div class="kbd-hint"><kbd>J</kbd><kbd>K</kbd> 或 <kbd>↑</kbd><kbd>↓</kbd> 切换段落 · <kbd>D</kbd> 演示模式</div>
       </div>
-      {{PARAGRAPHS}}
     </section>
+  </div>
 
-    <!-- ============ Background ============ -->
+  <!-- ============ Post-reading sections ============ -->
+  <div class="container-narrow post-sections">
     <section class="block" id="background">
       <div class="block-head">
         <div class="block-icon" style="background:var(--mint);color:#fff">🌍</div>
@@ -100,7 +99,6 @@
       {{BACKGROUND}}
     </section>
 
-    <!-- ============ Expressions ============ -->
     <section class="block" id="expressions">
       <div class="block-head">
         <div class="block-icon" style="background:var(--pink);color:#fff">✨</div>
@@ -112,7 +110,6 @@
       <div class="expr-grid">{{EXPRESSIONS}}</div>
     </section>
 
-    <!-- ============ Practice ============ -->
     <section class="block" id="quiz">
       <div class="block-head">
         <div class="block-icon" style="background:var(--violet);color:#fff">✏️</div>
@@ -124,7 +121,6 @@
       {{QUIZ}}
     </section>
 
-    <!-- ============ Discussion ============ -->
     <section class="block" id="discussion">
       <div class="block-head">
         <div class="block-icon" style="background:var(--lemon);color:var(--ink)">💬</div>
@@ -136,7 +132,6 @@
       <div class="discuss-list">{{DISCUSSION}}</div>
     </section>
 
-    <!-- ============ Writing ============ -->
     <section class="block" id="writing">
       <div class="block-head">
         <div class="block-icon" style="background:var(--klein);color:#fff">🖊</div>
@@ -148,7 +143,6 @@
       {{WRITING}}
     </section>
 
-    <!-- ============ Previous / Next ============ -->
     <nav class="pager">{{PAGER}}</nav>
   </div>
 </main>
@@ -159,7 +153,7 @@
       <p class="brand">Klein Read <span>克莱因精读</span></p>
       <p>Intensive-reading workshop for Chinese college students.<br>Source: English and Japanese weeklies · Theme words in Klein blue #002FA7</p>
     </div>
-    <div class="tip">💡 Tip: Read the source text first. Then open Translation and Analysis. Write one sentence with a theme word to complete your daily task.</div>
+    <div class="tip">💡 Tip: Read the source on the left. Follow the notes on the right. Press J / K to move between paragraphs.</div>
   </div>
 </footer>
 

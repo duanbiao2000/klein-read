@@ -16,12 +16,19 @@
       <span class="logo-mark">K</span>
       <span>Klein Read <span class="logo-sub">克莱因精读</span></span>
     </a>
-    <nav class="topnav">
-      <a href="../index.html#library">Library</a>
-      <a href="#text">Close Reading</a>
-      <a href="#quiz">Practice</a>
-      <a href="#discussion">Discussion</a>
-    </nav>
+    <div class="top-meta">
+      <span class="card-source">Sample · Japanese Weekly Style</span>
+      <span class="chip chip-theme" style="font-size:11px;padding:3px 11px">Culture</span>
+      <span class="chip chip-violet" style="font-size:11px;padding:3px 11px">Japanese</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px"><span class="stars">★★<span class="off">★</span><span class="off">★</span><span class="off">★</span></span> Difficulty 3/5</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px">⏱ 10 min</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px">📝 480 words</span>
+    </div>
+    <div class="top-tools">
+      <button class="tool" id="fontMinus" title="Decrease source font size">A−</button>
+      <button class="tool" id="fontPlus" title="Increase source font size">A+</button>
+      <button class="tool primary" id="demoToggle" title="Demo mode for screen recording (D)">🎬 演示模式</button>
+    </div>
   </div>
 </header>
 
@@ -32,15 +39,6 @@
     <div class="blob blob-2"></div>
     <div class="container-narrow" style="position:relative;z-index:2">
       <p class="breadcrumb"><a href="../index.html">Home</a> / Close Reading / Culture</p>
-      <div class="meta-row">
-        <span class="card-source">Sample · Japanese Weekly Style</span>
-        <span class="chip chip-theme">Culture</span>
-        <span class="chip chip-violet">Japanese</span>
-        <span class="chip"><span class="stars">★★<span class="off">★</span><span class="off">★</span><span class="off">★</span></span> Difficulty 3/5</span>
-        <span class="chip">⏱ 10 min</span>
-        <span class="chip">📝 480 words</span>
-        <span class="card-date">2026-10-15</span>
-      </div>
       <h1 lang="zh-CN">“推活”正在改变日本消费的形态</h1>
       <p class="title-en" lang="ja">「推し活」が変える消費の形</p>
       <div class="lead-card">
@@ -50,30 +48,37 @@
     </div>
   </section>
 
-  <!-- ============ Anchor nav ============ -->
-  <nav class="anchor-nav">
-    <div class="container-narrow anchor-nav-inner">
-      <a href="#words">🔥 Theme Words</a>
-      <a href="#text">📄 Close Reading</a>
-      <a href="#background">🌍 Background</a>
-      <a href="#expressions">✨ Expressions</a>
-      <a href="#quiz">✏️ Practice</a>
-      <a href="#discussion">💬 Discussion</a>
-      <a href="#writing">🖊 Writing</a>
-    </div>
-  </nav>
+  <!-- ============ Split view: source | notes ============ -->
+  <div class="container">
+    <section class="split-window" id="splitWindow">
 
-  <div class="container-narrow">
-    <!-- ============ Theme words (Klein blue) ============ -->
-    <section class="block" id="words" style="margin-top:8px">
-      <div class="block-head">
-        <div class="block-icon" style="background:var(--klein);color:#fff">🔥</div>
-        <div>
-          <h2>Theme Words <span class="sticker" style="font-size:12px;margin-left:6px">KLEIN BLUE</span></h2>
-          <p class="sub">Click a blue word in the text to open its note.</p>
+      <!-- Left pane: source text -->
+      <div class="pane-left" id="paneLeft">
+        <div class="pane-head">
+          <span class="label">SOURCE · 原文</span>
+          <span class="hint">点段落切换讲解 · 主题词可点</span>
+        </div>
+        <div class="source-text">
+          <h2 class="src-title" lang="ja">「推し活」が変える消費の形</h2>
+          <p class="src-sub">Sample · Japanese Weekly Style — 2026-10-15</p>
+          <p class="src-para" id="sp1" data-para="1" lang="ja"><span class="para-no">P1</span> 「推し」を応援するためにお金と時間を使う「<span class="tword" data-word="推し活">推し活</span>」は、いまや日本経済を動かす大きな力である。音楽ライブやグッズの購入にとどまらず、旅行、飲食、ホテルまで、その<span class="tword" data-word="経済圏">経済圏</span>は広がり続けている。</p>
+<p class="src-para" id="sp2" data-para="2" lang="ja"><span class="para-no">P2</span> 調査会社の<span class="tword" data-word="試算">試算</span>では、国内の「推し活」関連市場は数兆円規模に達する。若い世代は、生活に必要なものに使う以上に、心を動かされるものにお金を<span class="tword" data-word="費やす">費やす</span>。消費の目的が「<span class="tword" data-word="所有">所有</span>」から「体験」へと移ったからである。</p>
+<p class="src-para" id="sp3" data-para="3" lang="ja"><span class="para-no">P3</span> 一方で、<span class="tword" data-word="課金">課金</span>が家計を<span class="tword" data-word="圧迫">圧迫</span>するケースも増えている。専門家は、「推し活そのものは悪いのではない。大切なのは、自分の限界を知ることだ」と話す。企業もまた、<span class="tword" data-word="熱狂">熱狂</span>だけに頼らず、長期的な関係を作る工夫を迫られている。</p>
         </div>
       </div>
-      <div class="theme-words"><div class="theme-word-card"><span class="w">推し活</span><span class="ph">おしかつ · 名</span><span class="m">推活：支持喜爱的偶像/角色的活动与消费</span></div>
+
+      <!-- Right pane: study notes -->
+      <div class="pane-right" id="paneRight">
+        <div class="pane-head">
+          <span class="label">NOTES · 讲解</span>
+          <span class="hint">主题词 / 译文 / 词汇 / 句析</span>
+          <span class="sync-pill" id="syncPill">SYNC · PARA 1</span>
+        </div>
+        <div class="notes-stream">
+          <div class="note-group theme-group">
+            <div class="ng-head">THEME WORDS · 主题词</div>
+            <div class="note-card nc-theme">
+              <div class="theme-words"><div class="theme-word-card"><span class="w">推し活</span><span class="ph">おしかつ · 名</span><span class="m">推活：支持喜爱的偶像/角色的活动与消费</span></div>
 <div class="theme-word-card"><span class="w">経済圏</span><span class="ph">けいざいけん · 名</span><span class="m">经济圈，相关经济生态</span></div>
 <div class="theme-word-card"><span class="w">試算</span><span class="ph">しさん · 名・スル</span><span class="m">估算，试算</span></div>
 <div class="theme-word-card"><span class="w">費やす</span><span class="ph">ついやす · 動五</span><span class="m">花费（金钱、时间、精力）</span></div>
@@ -81,65 +86,19 @@
 <div class="theme-word-card"><span class="w">課金</span><span class="ph">かきん · 名・スル</span><span class="m">（游戏/网络服务）付费、氪金</span></div>
 <div class="theme-word-card"><span class="w">圧迫</span><span class="ph">あっぱく · 名・スル</span><span class="m">压迫，挤压（家计等）</span></div>
 <div class="theme-word-card"><span class="w">熱狂</span><span class="ph">ねっきょう · 名・スル</span><span class="m">狂热，狂热追捧</span></div></div>
-    </section>
-
-    <!-- ============ Close reading ============ -->
-    <section class="block" id="text">
-      <div class="block-head">
-        <div class="block-icon" style="background:var(--lemon);color:var(--ink)">📄</div>
-        <div>
-          <h2>Close Reading</h2>
-          <p class="sub">Read the source text first. Then open Translation, Words, and Analysis.</p>
+            </div>
+          </div>
+          <div class="note-group" id="ng1" data-para="1"><div class="ng-head">PARA 1 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">为了支持自己喜爱的“推”而花钱花时间的“推活”，如今已成为驱动日本经济的一股强大力量。它不限于演唱会与周边商品的购买，还延伸到旅行、餐饮、酒店——其经济圈在不断扩大。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">推し活</span><span class="pos">名</span><span class="m">推活：支持喜爱的偶像/角色的活动与消费</span></div><div class="w-note">💡 「推し」+「活(かつ)」；近年入选日本流行语候选</div><div class="w-item"><span class="w">経済圏</span><span class="pos">名</span><span class="m">经济圈，相关经济生态</span></div><div class="w-note">💡 「経済」+「圏」；类似说法：文化圏、生活圏</div><div class="w-item"><span class="w">にとどまらず</span><span class="pos">句型</span><span class="m">不止于……；不仅限于……</span></div><div class="w-note">💡 书面表达，用于把范围从一点扩展开</div><div class="w-item"><span class="w">広がる</span><span class="pos">動五</span><span class="m">扩大，蔓延</span></div><div class="w-note">💡 自动词；他动词为「広げる」</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">音楽ライブやグッズの購入にとどまらず、旅行、飲食、ホテルまで、その経済圏は広がり続けている。</p><div class="struct-line"><span class="struct-tag t-main">主干</span><span class="struct-text">その経済圏は広がり続けている —— 主干：经济圈持续扩大（「広がり+続けている」表持续）</span></div><div class="struct-line"><span class="struct-tag t-phrase">修饰语</span><span class="struct-text">音楽ライブやグッズの購入にとどまらず —— “不限于……”，先立一个小范围</span></div><div class="struct-line"><span class="struct-tag t-phrase">修饰语</span><span class="struct-text">旅行、飲食、ホテルまで —— 「まで」把范围推到更广，与「にとどまらず」呼应</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">「Aにとどまらず、Bまで」是议论文扩展范围的黄金搭配，写作可直接套用。</span></div></div></div>
+<div class="note-group" id="ng2" data-para="2"><div class="ng-head">PARA 2 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">据调查公司估算，日本国内“推活”相关市场规模已达数万亿日元。年轻一代愿意为打动自己的东西花钱，程度超过生活必需品的支出。这是因为消费的目的已从“拥有”转向了“体验”。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">試算</span><span class="pos">名・スル</span><span class="m">估算，试算</span></div><div class="w-note">💡 基于推算的计算；「試算では」常用于引出数据</div><div class="w-item"><span class="w">費やす</span><span class="pos">動五</span><span class="m">花费（金钱、时间、精力）</span></div><div class="w-note">💡 书面语；日常口语多用「使う」</div><div class="w-item"><span class="w">以上に</span><span class="pos">句型</span><span class="m">超过……；比……更</span></div><div class="w-note">💡 「Aに使う以上に Bに使う」：在 B 上花得比 A 还多</div><div class="w-item"><span class="w">所有</span><span class="pos">名・スル</span><span class="m">拥有，持有</span></div><div class="w-note">💡 与「体験」构成消费观对比</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">消費の目的が「所有」から「体験」へと移ったからである。</p><div class="struct-line"><span class="struct-tag t-main">主干</span><span class="struct-text">消費の目的が移った —— 主干：消费的目的发生了转移</span></div><div class="struct-line"><span class="struct-tag t-phrase">修饰语</span><span class="struct-text">「所有」から「体験」へと —— 「から…へと」表示变化的起点与终点</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">句尾「〜からである」用于解释原因，书面正式，相当于「〜からだ」的强调书面形</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">议论文结尾用「〜からである」收束，语气客观正式，适合观点文模仿。</span></div></div></div>
+<div class="note-group" id="ng3" data-para="3"><div class="ng-head">PARA 3 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">另一方面，因“氪金”而挤压家庭收支的案例也在增加。专家表示：“推活本身并不是坏事。重要的是了解自己的极限。”企业也不得不有所改变：不能只依赖粉丝的狂热，而要设法建立长期关系。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">課金</span><span class="pos">名・スル</span><span class="m">（游戏/网络服务）付费、氪金</span></div><div class="w-note">💡 源自游戏用语，现已泛指粉丝付费</div><div class="w-item"><span class="w">圧迫</span><span class="pos">名・スル</span><span class="m">压迫，挤压</span></div><div class="w-note">💡 「家計を圧迫する」：挤压家庭收支</div><div class="w-item"><span class="w">頼らず</span><span class="pos">動五</span><span class="m">不依赖……（「頼る」的否定中止形）</span></div><div class="w-note">💡 「Aだけに頼らず」：不只依赖 A</div><div class="w-item"><span class="w">迫られる</span><span class="pos">動下一</span><span class="m">被迫，不得不</span></div><div class="w-note">💡 「工夫を迫られる」：被迫要想办法</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">専門家は、「推し活そのものは悪いのではない。大切なのは、自分の限界を知ることだ」と話す。</p><div class="struct-line"><span class="struct-tag t-main">主干</span><span class="struct-text">専門家は…と話す —— 主干：专家说……（引用句作「と」的内容）</span></div><div class="struct-line"><span class="struct-tag t-clause">从句</span><span class="struct-text">引用内容含两个判断句：先否定（〜のではない），再立论（〜ことだ）</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">「Nそのもの」=……本身；「大切なのは〜だ」= 重要的是……</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">「引用 + と話す」是新闻报道核心句式；转述观点时用它比「〜と言う」更客观。</span></div></div></div>
         </div>
+        <div class="kbd-hint"><kbd>J</kbd><kbd>K</kbd> 或 <kbd>↑</kbd><kbd>↓</kbd> 切换段落 · <kbd>D</kbd> 演示模式</div>
       </div>
-      
-<article class="para-card" id="p1">
-  <div class="para-head">
-    <span class="para-num">PARA 1</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p1-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p1-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p1-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-ja" lang="ja">「推し」を応援するためにお金と時間を使う「<span class="tword" data-word="推し活">推し活</span>」は、いまや日本経済を動かす大きな力である。音楽ライブやグッズの購入にとどまらず、旅行、飲食、ホテルまで、その<span class="tword" data-word="経済圏">経済圏</span>は広がり続けている。</p>
-  <div class="panel panel-cn" id="p1-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">为了支持自己喜爱的“推”而花钱花时间的“推活”，如今已成为驱动日本经济的一股强大力量。它不限于演唱会与周边商品的购买，还延伸到旅行、餐饮、酒店——其经济圈在不断扩大。</p></div>
-  <div class="panel panel-words" id="p1-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">推し活</span><span class="pos">名</span><span class="mean">推活：支持喜爱的偶像/角色的活动与消费</span><span class="note">💡 「推し」+「活(かつ)」；近年入选日本流行语候选</span></li><li><span class="w">経済圏</span><span class="pos">名</span><span class="mean">经济圈，相关经济生态</span><span class="note">💡 「経済」+「圏」；类似说法：文化圏、生活圏</span></li><li><span class="w">にとどまらず</span><span class="pos">句型</span><span class="mean">不止于……；不仅限于……</span><span class="note">💡 书面表达，用于把范围从一点扩展开</span></li><li><span class="w">広がる</span><span class="pos">動五</span><span class="mean">扩大，蔓延</span><span class="note">💡 自动词；他动词为「広げる」</span></li></ul></div>
-  <div class="panel panel-sent" id="p1-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">音楽ライブやグッズの購入にとどまらず、旅行、飲食、ホテルまで、その経済圏は広がり続けている。</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">主干</span><span class="struct-text">その経済圏は広がり続けている —— 主干：经济圈持续扩大（「広がり+続けている」表持续）</span></div><div class="struct-line"><span class="struct-tag tag-phrase">修饰语</span><span class="struct-text">音楽ライブやグッズの購入にとどまらず —— “不限于……”，先立一个小范围</span></div><div class="struct-line"><span class="struct-tag tag-phrase">修饰语</span><span class="struct-text">旅行、飲食、ホテルまで —— 「まで」把范围推到更广，与「にとどまらず」呼应</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">「Aにとどまらず、Bまで」是议论文扩展范围的黄金搭配，写作可直接套用。</span></div></div></div>
-</article>
-
-<article class="para-card" id="p2">
-  <div class="para-head">
-    <span class="para-num">PARA 2</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p2-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p2-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p2-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-ja" lang="ja">調査会社の<span class="tword" data-word="試算">試算</span>では、国内の「推し活」関連市場は数兆円規模に達する。若い世代は、生活に必要なものに使う以上に、心を動かされるものにお金を<span class="tword" data-word="費やす">費やす</span>。消費の目的が「<span class="tword" data-word="所有">所有</span>」から「体験」へと移ったからである。</p>
-  <div class="panel panel-cn" id="p2-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">据调查公司估算，日本国内“推活”相关市场规模已达数万亿日元。年轻一代愿意为打动自己的东西花钱，程度超过生活必需品的支出。这是因为消费的目的已从“拥有”转向了“体验”。</p></div>
-  <div class="panel panel-words" id="p2-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">試算</span><span class="pos">名・スル</span><span class="mean">估算，试算</span><span class="note">💡 基于推算的计算；「試算では」常用于引出数据</span></li><li><span class="w">費やす</span><span class="pos">動五</span><span class="mean">花费（金钱、时间、精力）</span><span class="note">💡 书面语；日常口语多用「使う」</span></li><li><span class="w">以上に</span><span class="pos">句型</span><span class="mean">超过……；比……更</span><span class="note">💡 「Aに使う以上に Bに使う」：在 B 上花得比 A 还多</span></li><li><span class="w">所有</span><span class="pos">名・スル</span><span class="mean">拥有，持有</span><span class="note">💡 与「体験」构成消费观对比</span></li></ul></div>
-  <div class="panel panel-sent" id="p2-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">消費の目的が「所有」から「体験」へと移ったからである。</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">主干</span><span class="struct-text">消費の目的が移った —— 主干：消费的目的发生了转移</span></div><div class="struct-line"><span class="struct-tag tag-phrase">修饰语</span><span class="struct-text">「所有」から「体験」へと —— 「から…へと」表示变化的起点与终点</span></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">句尾「〜からである」用于解释原因，书面正式，相当于「〜からだ」的强调书面形</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">议论文结尾用「〜からである」收束，语气客观正式，适合观点文模仿。</span></div></div></div>
-</article>
-
-<article class="para-card" id="p3">
-  <div class="para-head">
-    <span class="para-num">PARA 3</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p3-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p3-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p3-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-ja" lang="ja">一方で、<span class="tword" data-word="課金">課金</span>が家計を<span class="tword" data-word="圧迫">圧迫</span>するケースも増えている。専門家は、「推し活そのものは悪いのではない。大切なのは、自分の限界を知ることだ」と話す。企業もまた、<span class="tword" data-word="熱狂">熱狂</span>だけに頼らず、長期的な関係を作る工夫を迫られている。</p>
-  <div class="panel panel-cn" id="p3-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">另一方面，因“氪金”而挤压家庭收支的案例也在增加。专家表示：“推活本身并不是坏事。重要的是了解自己的极限。”企业也不得不有所改变：不能只依赖粉丝的狂热，而要设法建立长期关系。</p></div>
-  <div class="panel panel-words" id="p3-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">課金</span><span class="pos">名・スル</span><span class="mean">（游戏/网络服务）付费、氪金</span><span class="note">💡 源自游戏用语，现已泛指粉丝付费</span></li><li><span class="w">圧迫</span><span class="pos">名・スル</span><span class="mean">压迫，挤压</span><span class="note">💡 「家計を圧迫する」：挤压家庭收支</span></li><li><span class="w">頼らず</span><span class="pos">動五</span><span class="mean">不依赖……（「頼る」的否定中止形）</span><span class="note">💡 「Aだけに頼らず」：不只依赖 A</span></li><li><span class="w">迫られる</span><span class="pos">動下一</span><span class="mean">被迫，不得不</span><span class="note">💡 「工夫を迫られる」：被迫要想办法</span></li></ul></div>
-  <div class="panel panel-sent" id="p3-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">専門家は、「推し活そのものは悪いのではない。大切なのは、自分の限界を知ることだ」と話す。</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">主干</span><span class="struct-text">専門家は…と話す —— 主干：专家说……（引用句作「と」的内容）</span></div><div class="struct-line"><span class="struct-tag tag-clause">从句</span><span class="struct-text">引用内容含两个判断句：先否定（〜のではない），再立论（〜ことだ）</span></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">「Nそのもの」=……本身；「大切なのは〜だ」= 重要的是……</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">「引用 + と話す」是新闻报道核心句式；转述观点时用它比「〜と言う」更客观。</span></div></div></div>
-</article>
     </section>
+  </div>
 
-    <!-- ============ Background ============ -->
+  <!-- ============ Post-reading sections ============ -->
+  <div class="container-narrow post-sections">
     <section class="block" id="background">
       <div class="block-head">
         <div class="block-icon" style="background:var(--mint);color:#fff">🌍</div>
@@ -152,7 +111,6 @@
 <div class="card bg-card"><h3>「推し活」经济的规模</h3><p lang="zh-CN">日本多家调查机构估算，“推活”相关市场规模已达数万亿日元，覆盖音乐、旅游、餐饮、酒店、广告等多个行业。不少地方城市还把“圣地巡礼”作为振兴旅游的手段。</p></div>
     </section>
 
-    <!-- ============ Expressions ============ -->
     <section class="block" id="expressions">
       <div class="block-head">
         <div class="block-icon" style="background:var(--pink);color:#fff">✨</div>
@@ -167,7 +125,6 @@
 <div class="expr-card"><p class="en" lang="ja">Aだけに頼らず</p><p class="cn" lang="zh-CN">不只依赖 A</p><p class="use">📌 「頼る」否定中止形；常与「工夫する」等搭配</p></div></div>
     </section>
 
-    <!-- ============ Practice ============ -->
     <section class="block" id="quiz">
       <div class="block-head">
         <div class="block-icon" style="background:var(--violet);color:#fff">✏️</div>
@@ -202,7 +159,6 @@
 </div>
     </section>
 
-    <!-- ============ Discussion ============ -->
     <section class="block" id="discussion">
       <div class="block-head">
         <div class="block-icon" style="background:var(--lemon);color:var(--ink)">💬</div>
@@ -216,7 +172,6 @@
 <div class="discuss-item"><span class="q-mark">Q3</span><p lang="zh-CN">企业应如何把粉丝的“狂热”转化为长期关系？请举例说明。</p></div></div>
     </section>
 
-    <!-- ============ Writing ============ -->
     <section class="block" id="writing">
       <div class="block-head">
         <div class="block-icon" style="background:var(--klein);color:#fff">🖊</div>
@@ -228,7 +183,6 @@
       <div class="card quiz-card write-card"><h3>写作练习：「『推し活』と消費」</h3><p lang="zh-CN">请写一篇 200 字左右的日语短评：1）描述「推し活」消费现象；2）分析其利弊；3）表明你的看法。至少使用 2 个本文学到的表达（如 〜にとどまらず / 〜からである / Aだけに頼らず）。</p></div>
     </section>
 
-    <!-- ============ Previous / Next ============ -->
     <nav class="pager"><a class="prev" href="001-slow-career.html"><p class="dir">← Previous</p><p class="t">用“拼命”换“平衡”：慢职业的悄然崛起</p></a><div><p class="dir">Next →</p><p class="t" style="color:var(--ink-30)">No more articles</p></div></nav>
   </div>
 </main>
@@ -239,7 +193,7 @@
       <p class="brand">Klein Read <span>克莱因精读</span></p>
       <p>Intensive-reading workshop for Chinese college students.<br>Source: English and Japanese weeklies · Theme words in Klein blue #002FA7</p>
     </div>
-    <div class="tip">💡 Tip: Read the source text first. Then open Translation and Analysis. Write one sentence with a theme word to complete your daily task.</div>
+    <div class="tip">💡 Tip: Read the source on the left. Follow the notes on the right. Press J / K to move between paragraphs.</div>
   </div>
 </footer>
 

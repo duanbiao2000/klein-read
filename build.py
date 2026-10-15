@@ -11,6 +11,10 @@ Add an article:
        (Or ask your AI agent to create it from a pasted article.)
     2. Run python3 build.py.
 
+Layout:
+    Article pages use a split view. The left pane shows the source text.
+    The right pane shows the study notes, grouped by paragraph.
+
 Output:
     articles/NNN-slug.html and index.html. Do not edit these files by hand.
 """
@@ -79,6 +83,13 @@ def difficulty_html(level):
     return f'<span class="stars">{stars}</span> Difficulty {level}/5'
 
 
+def get_text(p, *keys):
+    for k in keys:
+        if p.get(k) is not None:
+            return p[k]
+    return ""
+
+
 # ---------------- Block renderers ----------------
 
 def render_theme_words(words):
@@ -94,62 +105,74 @@ def render_theme_words(words):
     return "\n".join(cards)
 
 
-def get_text(p, *keys):
-    for k in keys:
-        if p.get(k) is not None:
-            return p[k]
-    return ""
-
-
-def render_paragraphs(paras, source_lang):
-    tags = STRUCT_TAGS.get(source_lang, STRUCT_TAGS["en"])
+def render_source_paras(paras, source_lang):
+    """Left pane: typeset source text with paragraph numbers."""
     lang_attr = source_lang if source_lang in ("en", "ja") else "en"
     out = []
     for i, p in enumerate(paras, 1):
-        pid = f"p{i}"
-        word_items = "".join(
-            f'<li><span class="w">{esc(w["word"])}</span><span class="pos">{esc(w.get("pos", ""))}</span>'
-            f'<span class="mean">{esc(get_text(w, "meaning_zh", "meaning"))}</span>'
-            + (f'<span class="note">💡 {esc(get_text(w, "note_zh", "note"))}</span>' if get_text(w, "note_zh", "note") else "")
-            + "</li>"
-            for w in p.get("words", [])
+        out.append(
+            f'<p class="src-para" id="sp{i}" data-para="{i}" lang="{lang_attr}">'
+            f'<span class="para-no">P{i}</span> {markup_keywords(get_text(p, "text", "en"))}</p>'
         )
-        sent_blocks = []
+    return "\n".join(out)
+
+
+def render_note_groups(paras, source_lang):
+    """Right pane: study-note card groups, one group per paragraph."""
+    tags = STRUCT_TAGS.get(source_lang, STRUCT_TAGS["en"])
+    out = []
+    for i, p in enumerate(paras, 1):
+        cards = []
+
+        zh = get_text(p, "zh", "cn")
+        if zh:
+            cards.append(
+                f'<div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div>'
+                f'<p class="tr-text" lang="zh-CN">{esc(zh)}</p></div>'
+            )
+
+        word_items = ""
+        for w in p.get("words", []):
+            note = get_text(w, "note_zh", "note")
+            word_items += (
+                f'<div class="w-item"><span class="w">{esc(w["word"])}</span>'
+                f'<span class="pos">{esc(w.get("pos", ""))}</span>'
+                f'<span class="m">{esc(get_text(w, "meaning_zh", "meaning"))}</span></div>'
+            )
+            if note:
+                word_items += f'<div class="w-note">💡 {esc(note)}</div>'
+        if word_items:
+            cards.append(
+                f'<div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div>{word_items}</div>'
+            )
+
+        sent_blocks = ""
         for s in p.get("sentences", []):
             tip = get_text(s, "tip_zh", "tip")
             lines = ""
             for l in s.get("structure", []):
                 tag = l.get("tag") or tags.get(l.get("type", "phrase"), "")
                 lines += (
-                    f'<div class="struct-line"><span class="struct-tag tag-{esc(l.get("type", "phrase"))}">{esc(tag)}</span>'
+                    f'<div class="struct-line"><span class="struct-tag t-{esc(l.get("type", "phrase"))}">{esc(tag)}</span>'
                     f'<span class="struct-text">{esc(l.get("text", ""))}</span></div>'
                 )
-            sent_blocks.append(
-                f'<div class="sent-block"><p class="sent-quote">{esc(get_text(s, "text", "en"))}</p>'
-                f'<div class="struct-lines">{lines}</div>'
-                + (
-                    f'<div class="struct-line"><span class="struct-tag tag-tip">{esc(tags["tip"])}</span>'
-                    f'<span class="struct-text">{esc(tip)}</span></div>'
-                    if tip
-                    else ""
-                )
-                + "</div>"
+            sent_blocks += (
+                f'<p class="sent-quote">{esc(get_text(s, "text", "en"))}</p>{lines}'
             )
-        out.append(f"""
-<article class="para-card" id="{pid}">
-  <div class="para-head">
-    <span class="para-num">PARA {i}</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="{pid}-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="{pid}-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="{pid}-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-{lang_attr}" lang="{lang_attr}">{markup_keywords(get_text(p, "text", "en"))}</p>
-  <div class="panel panel-cn" id="{pid}-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">{esc(get_text(p, "zh", "cn"))}</p></div>
-  <div class="panel panel-words" id="{pid}-words"><h4>Words in This Paragraph</h4><ul class="word-list">{word_items}</ul></div>
-  <div class="panel panel-sent" id="{pid}-sent"><h4>Sentence Analysis</h4>{"".join(sent_blocks)}</div>
-</article>""")
+            if tip:
+                sent_blocks += (
+                    f'<div class="struct-line"><span class="struct-tag t-tip">{esc(tags["tip"])}</span>'
+                    f'<span class="struct-text">{esc(tip)}</span></div>'
+                )
+        if sent_blocks:
+            cards.append(
+                f'<div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div>{sent_blocks}</div>'
+            )
+
+        out.append(
+            f'<div class="note-group" id="ng{i}" data-para="{i}">'
+            f'<div class="ng-head">PARA {i} · 讲解</div>{"".join(cards)}</div>'
+        )
     return "\n".join(out)
 
 
@@ -260,6 +283,7 @@ def load_docs():
 
 def build_article(doc, prev_doc, next_doc):
     source_lang = doc.get("source_lang", "en")
+    paras = doc.get("paragraphs", [])
     ctx = {
         "TITLE_ZH": esc(doc.get("title_zh", "")),
         "TITLE_SRC": esc(doc.get("title_src", "")),
@@ -273,7 +297,8 @@ def build_article(doc, prev_doc, next_doc):
         "WORD_COUNT": esc(doc.get("word_count", "")),
         "LEAD": esc(get_text(doc, "lead_zh", "lead")),
         "THEME_WORDS": render_theme_words(doc.get("theme_words", [])),
-        "PARAGRAPHS": render_paragraphs(doc.get("paragraphs", []), source_lang),
+        "SOURCE_PARAS": render_source_paras(paras, source_lang),
+        "NOTE_GROUPS": render_note_groups(paras, source_lang),
         "BACKGROUND": render_background(doc.get("background", [])),
         "EXPRESSIONS": render_expressions(doc.get("expressions", []), source_lang),
         "QUIZ": render_quiz(doc.get("quiz", [])),

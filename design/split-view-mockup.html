@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>设计稿 · 双栏对照精读版式 | Klein Read</title>
+<style>
+  /* ============================================================
+     Klein Read — Split-View Design Mockup
+     Left: source text (textbook page) / Right: notes (teacher's notebook)
+     ============================================================ */
+  :root {
+    --klein: #002FA7;
+    --klein-bright: #2B5CE6;
+    --klein-mist: #EAF0FF;
+    --klein-paper: #F3F7FF;
+    --lemon: #FFD23F;
+    --coral: #FF6B57;
+    --mint: #19C2A8;
+    --violet: #8B5CF6;
+    --pink: #FF8FAB;
+    --paper: #FFFDF6;
+    --ink: #17233D;
+    --ink-60: #5B6579;
+    --ink-30: #98A1B3;
+    --line: rgba(0, 47, 167, 0.14);
+    --src-size: 19px;
+    --font-en: Georgia, "Times New Roman", serif;
+    --font-cn: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-cn);
+    background: #EEF1F8;
+    background-image: radial-gradient(rgba(0,47,167,.08) 1.2px, transparent 1.2px);
+    background-size: 22px 22px;
+    color: var(--ink);
+    line-height: 1.7;
+    padding: 28px 0 60px;
+  }
+
+  /* ---------- 设计稿外框 ---------- */
+  .mock-wrap { width: min(1440px, 96vw); margin: 0 auto; }
+  .mock-caption {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .mock-caption .tag {
+    background: var(--klein); color: #fff; font-weight: 800; font-size: 13px;
+    padding: 6px 16px; border-radius: 999px; transform: rotate(-1.2deg);
+    box-shadow: 3px 3px 0 var(--lemon);
+  }
+  .mock-caption h1 { font-size: 20px; font-weight: 800; }
+  .mock-caption p { font-size: 13px; color: var(--ink-60); }
+
+  /* ---------- 应用窗口（模拟浏览器中的页面） ---------- */
+  .app-window {
+    background: var(--paper);
+    border-radius: 20px;
+    border: 1.5px solid var(--line);
+    box-shadow: 0 24px 60px rgba(0, 27, 107, 0.18);
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    height: 820px;
+    transition: height .25s ease;
+  }
+  body.demo .app-window { height: calc(100vh - 40px); border-radius: 14px; }
+
+  /* 顶栏 */
+  .app-topbar {
+    height: 58px; flex-shrink: 0;
+    display: flex; align-items: center; gap: 16px;
+    padding: 0 22px;
+    background: rgba(255, 253, 246, 0.96);
+    border-bottom: 1.5px solid var(--line);
+  }
+  .logo { display: flex; align-items: center; gap: 9px; font-weight: 800; font-size: 15px; white-space: nowrap; }
+  .logo-mark {
+    width: 30px; height: 30px; background: var(--klein); border-radius: 8px;
+    display: grid; place-items: center; color: #fff; font-family: var(--font-en);
+    font-size: 15px; transform: rotate(-6deg); box-shadow: 2.5px 2.5px 0 var(--lemon);
+  }
+  .top-meta { display: flex; gap: 7px; flex-wrap: wrap; overflow: hidden; }
+  .chip {
+    font-size: 11.5px; font-weight: 700; padding: 3px 11px; border-radius: 999px;
+    background: #fff; border: 1.5px solid var(--line); color: var(--ink-60); white-space: nowrap;
+  }
+  .chip.blue { background: var(--klein); color: #fff; border-color: var(--klein); }
+  .chip.violet { background: #EFE7FF; color: var(--violet); border-color: #C4A9FF; }
+  .top-tools { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+  .tool {
+    font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 999px;
+    border: 1.5px solid var(--line); background: #fff; color: var(--ink-60); cursor: pointer;
+    transition: all .15s ease; white-space: nowrap;
+  }
+  .tool:hover { border-color: var(--klein); color: var(--klein); }
+  .tool.primary { background: var(--klein); color: #fff; border-color: var(--klein); box-shadow: 2.5px 2.5px 0 var(--lemon); }
+  .tool.primary.on { background: var(--coral); border-color: var(--coral); box-shadow: 2.5px 2.5px 0 var(--lemon); }
+
+  /* 双栏主体 */
+  .app-body { flex: 1; display: flex; min-height: 0; }
+
+  /* ---- 左栏：原文（教科书页） ---- */
+  .pane-left {
+    width: 55%; min-width: 0;
+    overflow-y: auto; position: relative;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,.6), rgba(255,255,255,0) 120px),
+      var(--paper);
+    border-right: 1.5px solid var(--line);
+    scroll-behavior: smooth;
+  }
+  .pane-head {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 40px 10px;
+    background: rgba(255, 253, 246, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1.5px dashed var(--line);
+  }
+  .pane-head .label {
+    font-size: 11.5px; font-weight: 800; letter-spacing: 2px;
+    color: var(--klein); background: var(--klein-mist);
+    padding: 3px 12px; border-radius: 999px;
+  }
+  .pane-head .hint { font-size: 11.5px; color: var(--ink-30); }
+
+  .source-text { padding: 30px 48px 70px; max-width: 780px; }
+  .src-title {
+    font-family: var(--font-en); font-size: 26px; font-weight: 700;
+    line-height: 1.45; margin-bottom: 8px;
+  }
+  .src-sub {
+    font-family: var(--font-en); font-style: italic; font-size: 14px;
+    color: var(--ink-60); margin-bottom: 28px;
+  }
+  .src-para {
+    position: relative;
+    font-family: var(--font-en);
+    font-size: var(--src-size);
+    line-height: 2.05;
+    text-align: justify;
+    margin-bottom: 26px;
+    padding: 14px 18px 14px 42px;
+    border-radius: 12px;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .src-para:hover { background: rgba(0, 47, 167, 0.04); }
+  .src-para.active {
+    background: var(--klein-paper);
+    border-color: rgba(0, 47, 167, 0.25);
+    box-shadow: 0 10px 28px rgba(0, 47, 167, 0.10);
+  }
+  .src-para.active::before {
+    content: ""; position: absolute; left: 0; top: 12px; bottom: 12px;
+    width: 5px; border-radius: 4px; background: var(--klein);
+    box-shadow: 2px 2px 0 var(--lemon);
+  }
+  .para-no {
+    position: absolute; left: 12px; top: 18px;
+    font-family: var(--font-cn); font-size: 11px; font-weight: 800;
+    color: var(--klein); letter-spacing: .5px;
+    opacity: .55;
+  }
+  .src-para.active .para-no { opacity: 1; }
+  .tword {
+    color: var(--klein); font-weight: 700; cursor: pointer;
+    border-bottom: 2px dotted var(--klein-bright); padding-bottom: 1px;
+  }
+  .tword:hover { background: var(--lemon); border-radius: 3px; }
+
+  /* ---- 右栏：讲解（教师笔记） ---- */
+  .pane-right {
+    width: 45%; min-width: 0;
+    overflow-y: auto; position: relative;
+    background:
+      radial-gradient(rgba(0,47,167,.06) 1.1px, transparent 1.1px),
+      var(--klein-paper);
+    background-size: 18px 18px;
+    scroll-behavior: smooth;
+  }
+  .pane-right .pane-head { background: rgba(243, 247, 255, 0.95); }
+  .sync-pill {
+    margin-left: auto;
+    font-size: 11px; font-weight: 800; color: #fff;
+    background: var(--klein); padding: 3px 12px; border-radius: 999px;
+    box-shadow: 2px 2px 0 var(--lemon);
+    font-variant-numeric: tabular-nums;
+  }
+  .notes-stream { padding: 20px 26px 70px; }
+
+  .note-group {
+    margin-bottom: 22px;
+    border-radius: 16px;
+    padding: 4px;
+    border: 1.5px solid transparent;
+    transition: all .2s ease;
+  }
+  .note-group.active {
+    border-color: rgba(0, 47, 167, 0.35);
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 14px 34px rgba(0, 47, 167, 0.12);
+  }
+  .ng-head {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 11.5px; font-weight: 800; letter-spacing: 1.5px;
+    color: var(--ink-30); margin: 6px 4px 10px;
+    cursor: pointer;
+  }
+  .note-group.active .ng-head { color: var(--klein); }
+  .ng-head::before {
+    content: ""; width: 9px; height: 9px; background: currentColor;
+    border-radius: 3px; transform: rotate(45deg);
+  }
+  .note-card {
+    background: #fff;
+    border-radius: 13px;
+    border: 1.5px solid var(--line);
+    padding: 15px 18px;
+    margin-bottom: 11px;
+  }
+  .nc-title {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 11px; font-weight: 800; letter-spacing: 1px;
+    margin-bottom: 9px;
+  }
+  .nc-title::before { content: ""; width: 14px; height: 5px; border-radius: 3px; }
+  .nc-tr { border-left: 4px solid var(--klein); background: #FAFCFF; }
+  .nc-tr .nc-title { color: var(--klein); } .nc-tr .nc-title::before { background: var(--klein); }
+  .nc-words { border-left: 4px solid var(--lemon); background: #FFFEF6; }
+  .nc-words .nc-title { color: #8A6A00; } .nc-words .nc-title::before { background: var(--lemon); }
+  .nc-analysis { border-left: 4px solid var(--violet); background: #FCFAFF; }
+  .nc-analysis .nc-title { color: var(--violet); } .nc-analysis .nc-title::before { background: var(--violet); }
+
+  .tr-text { font-size: 14.5px; line-height: 1.95; }
+  .w-item { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; font-size: 13px; }
+  .w-item:last-child { margin-bottom: 0; }
+  .w-item .w { font-family: var(--font-en); font-weight: 700; color: var(--klein); font-size: 14.5px; }
+  .w-item .pos {
+    font-family: var(--font-en); font-size: 10.5px; color: #fff;
+    background: var(--klein-bright); padding: 1px 8px; border-radius: 999px;
+  }
+  .w-item .m { color: var(--ink); }
+  .sent-quote {
+    font-family: var(--font-en); font-size: 13.5px; line-height: 1.85;
+    border-left: 3px solid var(--violet); padding-left: 11px; margin-bottom: 10px;
+    color: var(--ink);
+  }
+  .struct-line { display: flex; gap: 8px; font-size: 12.5px; line-height: 1.75; margin-bottom: 5px; }
+  .struct-tag {
+    flex-shrink: 0; font-size: 10.5px; font-weight: 800;
+    padding: 1px 9px; border-radius: 999px; height: fit-content; margin-top: 2px;
+    color: #fff;
+  }
+  .t-main { background: var(--klein); } .t-clause { background: var(--violet); }
+  .t-phrase { background: var(--mint); } .t-tip { background: var(--lemon); color: var(--ink); }
+  .struct-text { color: var(--ink-60); }
+
+  /* 键位提示 */
+  .kbd-hint {
+    position: absolute; right: 18px; bottom: 14px; z-index: 6;
+    font-size: 11px; color: var(--ink-30);
+    background: rgba(255,255,255,.9); border: 1.5px solid var(--line);
+    padding: 5px 12px; border-radius: 999px;
+  }
+  kbd {
+    font-family: inherit; font-size: 10.5px; font-weight: 800;
+    background: var(--klein-mist); color: var(--klein);
+    border: 1px solid var(--line); border-bottom-width: 2px;
+    border-radius: 5px; padding: 1px 6px; margin: 0 1px;
+  }
+
+  /* ---------- 设计说明区 ---------- */
+  .spec { margin-top: 34px; }
+  body.demo .mock-caption, body.demo .spec { display: none; }
+  .spec h2 {
+    display: inline-block; font-size: 17px; font-weight: 800;
+    background: var(--klein); color: #fff; padding: 5px 18px;
+    border-radius: 12px; transform: rotate(-1deg);
+    box-shadow: 3px 3px 0 var(--lemon); margin-bottom: 18px;
+  }
+  .spec-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  .spec-card {
+    background: #fff; border: 1.5px solid var(--line); border-radius: 16px;
+    padding: 20px 22px; box-shadow: 0 8px 24px rgba(0,47,167,.07);
+  }
+  .spec-card h3 { font-size: 14.5px; font-weight: 800; margin-bottom: 10px; display: flex; gap: 8px; align-items: center; }
+  .spec-card h3 .dot { width: 10px; height: 10px; border-radius: 4px; transform: rotate(45deg); }
+  .spec-card ul { padding-left: 18px; }
+  .spec-card li { font-size: 13px; color: var(--ink-60); margin-bottom: 7px; line-height: 1.8; }
+  .spec-card li b { color: var(--ink); }
+  .spec-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .spec-table th, .spec-table td {
+    text-align: left; padding: 8px 10px; border-bottom: 1px dashed var(--line);
+  }
+  .spec-table th { color: var(--klein); font-size: 11.5px; letter-spacing: 1px; }
+  .spec-table td:first-child { font-weight: 700; white-space: nowrap; color: var(--ink); }
+
+  /* 版面比例示意 */
+  .ratio-demo { display: flex; height: 46px; border-radius: 10px; overflow: hidden; border: 1.5px solid var(--line); margin: 6px 0 12px; }
+  .ratio-demo .l {
+    width: 55%; background: var(--paper); display: grid; place-items: center;
+    font-size: 11.5px; font-weight: 800; color: var(--ink-60);
+    border-right: 1.5px solid var(--line);
+  }
+  .ratio-demo .r {
+    width: 45%; background: var(--klein-paper); display: grid; place-items: center;
+    font-size: 11.5px; font-weight: 800; color: var(--klein);
+  }
+
+  @media (max-width: 980px) {
+    .app-body { flex-direction: column; }
+    .pane-left, .pane-right { width: 100%; }
+    .app-window { height: auto; }
+    .pane-left, .pane-right { max-height: 60vh; }
+  }
+</style>
+</head>
+<body>
+
+<div class="mock-wrap">
+  <!-- 设计稿标题 -->
+  <div class="mock-caption">
+    <span class="tag">DESIGN MOCKUP · v3</span>
+    <h1>双栏对照精读版式 —— 左：原文 / 右：讲解</h1>
+    <p>为录屏演示优化 · 点击左栏段落（或按 <kbd>J</kbd><kbd>K</kbd>）体验左右同步</p>
+  </div>
+
+  <!-- ================= 应用窗口 ================= -->
+  <div class="app-window">
+
+    <!-- 顶栏 -->
+    <div class="app-topbar">
+      <div class="logo"><span class="logo-mark">K</span> Klein Read</div>
+      <div class="top-meta">
+        <span class="chip blue">The Economist</span>
+        <span class="chip">Workplace</span>
+        <span class="chip violet">English</span>
+        <span class="chip">★★★☆☆</span>
+      </div>
+      <div class="top-tools">
+        <button class="tool" id="fontMinus">A−</button>
+        <button class="tool" id="fontPlus">A+</button>
+        <button class="tool primary" id="demoToggle">🎬 演示模式</button>
+      </div>
+    </div>
+
+    <!-- 双栏 -->
+    <div class="app-body">
+
+      <!-- ===== 左栏：原文 ===== -->
+      <section class="pane-left" id="paneLeft">
+        <div class="pane-head">
+          <span class="label">SOURCE · 原文</span>
+          <span class="hint">点段落切换讲解 · 主题词可点</span>
+        </div>
+        <div class="source-text">
+          <h2 class="src-title">Trading hustle for balance: the quiet rise of the “slow career”</h2>
+          <p class="src-sub">Sample · The Economist Style — 2026-10-15</p>
+
+          <p class="src-para active" id="sp1" data-para="1">
+            <span class="para-no">P1</span>
+            For decades, the surest route to success was thought to run through the city centre: a prestigious employer, a <span class="tword">punishing</span> schedule and a clear ladder to climb. Yet a growing number of young graduates are quietly stepping off that ladder. Rather than chasing promotions, they are choosing shorter hours, smaller cities and jobs that leave room for the rest of life. Sociologists call it the “<span class="tword">slow career</span>” — and it is spreading fast.
+          </p>
+
+          <p class="src-para" id="sp2" data-para="2">
+            <span class="para-no">P2</span>
+            The trend is partly economic. When housing costs swallow half a salary and promotions arrive slowly, the <span class="tword">calculus</span> of overwork changes. A survey by a Beijing consultancy found that nearly 40% of workers born after 1995 would <span class="tword">trade a fifth of their pay for</span> two extra days off each week. Money still matters, but so does the feeling that one’s time is one’s own.
+          </p>
+
+          <p class="src-para" id="sp3" data-para="3">
+            <span class="para-no">P3</span>
+            Technology has helped. Remote work has <span class="tword">loosened</span> the link between where people live and where they earn, allowing graduates to swap Shanghai rents for Chengdu comfort without leaving the payroll. Digital platforms also make side projects <span class="tword">viable</span>: a part-time illustrator or online tutor can stitch together a modest living without a single office day.
+          </p>
+
+          <p class="src-para" id="sp4" data-para="4" style="opacity:.45">
+            <span class="para-no">P4</span>
+            （设计稿示意：后续段落同款结构 —— 左栏可独立滚动，右栏讲解跟随同步。）
+          </p>
+        </div>
+      </section>
+
+      <!-- ===== 右栏：讲解 ===== -->
+      <section class="pane-right" id="paneRight">
+        <div class="pane-head">
+          <span class="label">NOTES · 讲解</span>
+          <span class="hint">译文 / 词汇 / 句析</span>
+          <span class="sync-pill" id="syncPill">SYNC · PARA 1</span>
+        </div>
+        <div class="notes-stream">
+
+          <!-- P1 讲解 -->
+          <div class="note-group active" id="ng1" data-para="1">
+            <div class="ng-head">PARA 1 · 讲解</div>
+            <div class="note-card nc-tr">
+              <div class="nc-title">参考译文 · TRANSLATION</div>
+              <p class="tr-text">几十年来，人们认为通往成功最有把握的路线要穿过市中心：进入名企、接受高强度的排班、沿着清晰的阶梯往上爬。然而，越来越多的年轻毕业生正悄悄走下这架梯子。他们不再追逐晋升，而是选择更短的工时、更小的城市，以及能给生活其余部分留出空间的工作。社会学家称之为“慢职业”——而且它正迅速蔓延。</p>
+            </div>
+            <div class="note-card nc-words">
+              <div class="nc-title">本段词汇 · WORDS</div>
+              <div class="w-item"><span class="w">prestigious</span><span class="pos">adj.</span><span class="m">有声望的，享有盛名的</span></div>
+              <div class="w-item"><span class="w">punishing</span><span class="pos">adj.</span><span class="m">强度极大的，令人吃不消的</span></div>
+              <div class="w-item"><span class="w">ladder</span><span class="pos">n.</span><span class="m">阶梯（喻指晋升体系）</span></div>
+              <div class="w-item"><span class="w">slow career</span><span class="pos">n.phr.</span><span class="m">慢职业：主动放缓职业节奏</span></div>
+            </div>
+            <div class="note-card nc-analysis">
+              <div class="nc-title">长难句解析 · ANALYSIS</div>
+              <p class="sent-quote">Rather than chasing promotions, they are choosing shorter hours, smaller cities and jobs that leave room for the rest of life.</p>
+              <div class="struct-line"><span class="struct-tag t-main">主句</span><span class="struct-text">they are choosing shorter hours, smaller cities and jobs（三个并列宾语）</span></div>
+              <div class="struct-line"><span class="struct-tag t-phrase">状语</span><span class="struct-text">Rather than chasing promotions —— “而不是……”，句首加强对比</span></div>
+              <div class="struct-line"><span class="struct-tag t-clause">定语从句</span><span class="struct-text">that leave room for the rest of life —— 修饰 jobs</span></div>
+            </div>
+          </div>
+
+          <!-- P2 讲解 -->
+          <div class="note-group" id="ng2" data-para="2">
+            <div class="ng-head">PARA 2 · 讲解</div>
+            <div class="note-card nc-tr">
+              <div class="nc-title">参考译文 · TRANSLATION</div>
+              <p class="tr-text">这一趋势部分源于经济因素。当房价吞掉一半工资、晋升又姗姗来迟时，人们对“加班是否值得”的盘算就变了。北京一家咨询公司的调查发现，近 40% 的 95 后员工愿意用五分之一的薪水换取每周多两天休息。钱当然重要，但“时间属于自己”的感觉同样重要。</p>
+            </div>
+            <div class="note-card nc-words">
+              <div class="nc-title">本段词汇 · WORDS</div>
+              <div class="w-item"><span class="w">swallow</span><span class="pos">v.</span><span class="m">吞掉，耗尽（金钱、时间）</span></div>
+              <div class="w-item"><span class="w">calculus</span><span class="pos">n.</span><span class="m">权衡，盘算</span></div>
+              <div class="w-item"><span class="w">overwork</span><span class="pos">n.</span><span class="m">过度工作，加班</span></div>
+              <div class="w-item"><span class="w">trade A for B</span><span class="pos">phr.</span><span class="m">用 A 交换 B</span></div>
+            </div>
+            <div class="note-card nc-analysis">
+              <div class="nc-title">长难句解析 · ANALYSIS</div>
+              <p class="sent-quote">Money still matters, but so does the feeling that one’s time is one’s own.</p>
+              <div class="struct-line"><span class="struct-tag t-main">主句</span><span class="struct-text">Money still matters（钱仍然重要）</span></div>
+              <div class="struct-line"><span class="struct-tag t-clause">倒装</span><span class="struct-text">but so does the feeling —— “so + 助动词 + 主语”表“……也一样”</span></div>
+              <div class="struct-line"><span class="struct-tag t-clause">同位语从句</span><span class="struct-text">that one’s time is one’s own —— 解释 the feeling</span></div>
+            </div>
+          </div>
+
+          <!-- P3 讲解 -->
+          <div class="note-group" id="ng3" data-para="3">
+            <div class="ng-head">PARA 3 · 讲解</div>
+            <div class="note-card nc-tr">
+              <div class="nc-title">参考译文 · TRANSLATION</div>
+              <p class="tr-text">技术起到了助推作用。远程办公弱化了“住在哪里”和“在哪里挣钱”之间的绑定，让毕业生们不必离职，就能用上海的房租换来成都的舒适。数字平台也让副业变得可行：一名兼职插画师或线上家教，一天办公室都不用去，也能拼凑出一份体面的生计。</p>
+            </div>
+            <div class="note-card nc-words">
+              <div class="nc-title">本段词汇 · WORDS</div>
+              <div class="w-item"><span class="w">loosen</span><span class="pos">v.</span><span class="m">放松，弱化（联系）</span></div>
+              <div class="w-item"><span class="w">swap</span><span class="pos">v.</span><span class="m">交换，换掉</span></div>
+              <div class="w-item"><span class="w">payroll</span><span class="pos">n.</span><span class="m">工资表；在职名册</span></div>
+              <div class="w-item"><span class="w">viable</span><span class="pos">adj.</span><span class="m">可行的，行得通的</span></div>
+            </div>
+            <div class="note-card nc-analysis">
+              <div class="nc-title">长难句解析 · ANALYSIS</div>
+              <p class="sent-quote">Remote work has loosened the link between where people live and where they earn, allowing graduates to swap Shanghai rents for Chengdu comfort without leaving the payroll.</p>
+              <div class="struct-line"><span class="struct-tag t-main">主句</span><span class="struct-text">Remote work has loosened the link（远程办公弱化了这种关联）</span></div>
+              <div class="struct-line"><span class="struct-tag t-clause">介词+宾语从句</span><span class="struct-text">between where people live and where people earn —— 平行结构</span></div>
+              <div class="struct-line"><span class="struct-tag t-phrase">分词状语</span><span class="struct-text">allowing graduates to swap A for B without leaving the payroll —— 表结果</span></div>
+            </div>
+          </div>
+
+          <!-- P4 占位 -->
+          <div class="note-group" id="ng4" data-para="4" style="opacity:.45">
+            <div class="ng-head">PARA 4 · 讲解</div>
+            <div class="note-card nc-tr">
+              <div class="nc-title">参考译文 · TRANSLATION</div>
+              <p class="tr-text">（后续段落同款结构：译文 / 词汇 / 句析 三卡一组。）</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="kbd-hint"><kbd>J</kbd><kbd>K</kbd> 或 <kbd>↑</kbd><kbd>↓</kbd> 切换段落 · <kbd>D</kbd> 演示模式</div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ================= 设计说明 ================= -->
+  <section class="spec">
+    <h2>📐 设计说明 · SPEC</h2>
+    <div class="spec-grid">
+
+      <div class="spec-card">
+        <h3><span class="dot" style="background:var(--klein)"></span>版面结构</h3>
+        <div class="ratio-demo">
+          <div class="l">左 · 原文 55%（教科书页）</div>
+          <div class="r">右 · 讲解 45%（教师笔记）</div>
+        </div>
+        <ul>
+          <li><b>左栏 = 教科书页</b>：暖纸白底、衬线大字、行距 2.05，段落带边注序号 P1/P2…，视觉干扰最小</li>
+          <li><b>右栏 = 教师笔记</b>：蓝雾格纹底，按段落分组的「译文 / 词汇 / 句析」三色卡片</li>
+          <li>两栏<b>独立滚动</b>；顶栏常驻标题、来源、字号与演示模式开关</li>
+        </ul>
+      </div>
+
+      <div class="spec-card">
+        <h3><span class="dot" style="background:var(--coral)"></span>同步交互（录屏核心）</h3>
+        <ul>
+          <li>点击左栏段落 → 高亮该段 + 右栏平滑滚动到对应讲解组 + SYNC 徽章更新</li>
+          <li>点击右栏「PARA N」头 → 左栏滚动定位（<b>双向同步</b>）</li>
+          <li>键盘 <b>J / K / ↑ / ↓</b> 逐段推进 —— 讲课时无需找鼠标</li>
+          <li>主题词（克莱因蓝）点击 → 右栏词汇卡闪烁定位</li>
+          <li><b>🎬 演示模式</b>（快捷键 D）：隐藏设计说明与外框，窗口铺满屏幕，直接开录</li>
+        </ul>
+      </div>
+
+      <div class="spec-card">
+        <h3><span class="dot" style="background:var(--mint)"></span>尺寸与排版</h3>
+        <table class="spec-table">
+          <tr><th>元素</th><th>规格</th></tr>
+          <tr><td>窗口高度</td><td>820px（演示模式 = 100vh − 40px）</td></tr>
+          <tr><td>顶栏</td><td>58px，毛玻璃固定</td></tr>
+          <tr><td>左栏宽</td><td>55%，正文 max-width 780px，padding 30px 48px</td></tr>
+          <tr><td>原文字号</td><td>19px / 行高 2.05（A−/A+ 可调 16–23px）</td></tr>
+          <tr><td>选中段落</td><td>蓝雾底 #F3F7FF + 左侧 5px 克莱因蓝竖条 + 柠檬黄硬投影</td></tr>
+          <tr><td>右栏宽</td><td>45%，卡片圆角 13px，组间距 22px</td></tr>
+          <tr><td>三卡配色</td><td>译文=蓝 · 词汇=柠檬黄 · 句析=紫罗兰（与 v2 一致）</td></tr>
+          <tr><td>响应式</td><td>&lt;980px 上下堆叠，各栏独立 60vh 滚动</td></tr>
+        </table>
+      </div>
+
+      <div class="spec-card">
+        <h3><span class="dot" style="background:var(--violet)"></span>落地改造点（确认后执行）</h3>
+        <ul>
+          <li><b>templates/article.tpl.html</b>：正文区改为双栏骨架（左 source-text / 右 notes-stream）</li>
+          <li><b>build.py</b>：段落渲染拆成「原文块」+「讲解组」两份输出，保留现有 JSON schema 不变</li>
+          <li><b>js/app.js</b>：新增段落同步（点击/键盘）、字号调节、演示模式、主题词联动</li>
+          <li><b>css/style.css</b>：新增双栏布局与选中态样式（保留全部设计令牌）</li>
+          <li>旧数据 <code>data/*.json</code> <b>零改动</b>，重新 build 即得新版面；首页不动</li>
+        </ul>
+      </div>
+
+      <div class="spec-card">
+        <h3><span class="dot" style="background:var(--lemon)"></span>录屏建议</h3>
+        <ul>
+          <li>录制分辨率 <b>1600×900</b> 或 1920×1080；浏览器窗口全屏 + 演示模式</li>
+          <li>讲解动线：<b>左栏朗读 → 按 J → 右栏逐卡讲解</b>，一屏一个段落单元</li>
+          <li>字号 A+ 提升到 21–23px，投屏/视频压缩后仍然清晰</li>
+          <li>开场用首页、结尾用练习区时，退出演示模式即可（版面与现站一致）</li>
+        </ul>
+      </div>
+
+      <div class="spec-card">
+        <h3><span class="dot" style="background:var(--pink)"></span>与现版的兼容</h3>
+        <ul>
+          <li>主题词克莱因蓝、三色卡片、贴纸/荧光笔语言<b>全部沿用</b></li>
+          <li>数据 schema、build.py 生成流程、技能包工作流<b>不变</b></li>
+          <li>双栏为文章页默认版式；窄屏自动降级为纵向流式</li>
+          <li>日文文章同样适用（左栏自动切换明朝体，句析标签用「主干/从句/修饰语」）</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</div>
+
+<script>
+  (function () {
+    "use strict";
+    var srcParas = Array.prototype.slice.call(document.querySelectorAll(".src-para"));
+    var noteGroups = Array.prototype.slice.call(document.querySelectorAll(".note-group"));
+    var paneLeft = document.getElementById("paneLeft");
+    var paneRight = document.getElementById("paneRight");
+    var syncPill = document.getElementById("syncPill");
+    var current = 0;
+
+    function scrollPaneTo(pane, el) {
+      var top = el.offsetTop - pane.offsetTop - 24;
+      pane.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+    }
+
+    function activate(i, from) {
+      if (i < 0 || i >= srcParas.length) return;
+      current = i;
+      srcParas.forEach(function (p, j) { p.classList.toggle("active", j === i); });
+      noteGroups.forEach(function (g, j) { g.classList.toggle("active", j === i); });
+      syncPill.textContent = "SYNC · PARA " + (i + 1);
+      if (from !== "right") scrollPaneTo(paneRight, noteGroups[i]);
+      if (from !== "left") scrollPaneTo(paneLeft, srcParas[i]);
+    }
+
+    srcParas.forEach(function (p, i) {
+      p.addEventListener("click", function () { activate(i, "left"); });
+    });
+    noteGroups.forEach(function (g, i) {
+      var head = g.querySelector(".ng-head");
+      if (head) head.addEventListener("click", function () { activate(i, "right"); });
+    });
+
+    /* 主题词点击 → 闪烁右栏对应词汇 */
+    document.querySelectorAll(".tword").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.stopPropagation();
+        var word = el.textContent.trim().toLowerCase();
+        var group = noteGroups[current];
+        if (!group) return;
+        group.querySelectorAll(".w-item").forEach(function (item) {
+          var w = item.querySelector(".w");
+          if (w && w.textContent.trim().toLowerCase() === word) {
+            item.style.outline = "2.5px solid var(--klein)";
+            item.style.background = "var(--lemon-soft, #FFF3C4)";
+            item.scrollIntoView({ behavior: "smooth", block: "nearest" });
+            setTimeout(function () {
+              item.style.outline = "";
+              item.style.background = "";
+            }, 1500);
+          }
+        });
+      });
+    });
+
+    /* 键盘 */
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "j" || e.key === "J" || e.key === "ArrowDown") {
+        e.preventDefault(); activate(current + 1);
+      } else if (e.key === "k" || e.key === "K" || e.key === "ArrowUp") {
+        e.preventDefault(); activate(current - 1);
+      } else if (e.key === "d" || e.key === "D") {
+        toggleDemo();
+      }
+    });
+
+    /* 字号 */
+    var size = 19;
+    document.getElementById("fontPlus").addEventListener("click", function () {
+      size = Math.min(23, size + 1);
+      document.documentElement.style.setProperty("--src-size", size + "px");
+    });
+    document.getElementById("fontMinus").addEventListener("click", function () {
+      size = Math.max(16, size - 1);
+      document.documentElement.style.setProperty("--src-size", size + "px");
+    });
+
+    /* 演示模式 */
+    var demoBtn = document.getElementById("demoToggle");
+    function toggleDemo() {
+      document.body.classList.toggle("demo");
+      var on = document.body.classList.contains("demo");
+      demoBtn.textContent = on ? "✕ 退出演示" : "🎬 演示模式";
+      demoBtn.classList.toggle("on", on);
+    }
+    demoBtn.addEventListener("click", toggleDemo);
+  })();
+</script>
+</body>
+</html>

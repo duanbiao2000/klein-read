@@ -42,19 +42,18 @@ Rule: use at most three accent colors per screen. Klein blue stays dominant. The
 2. Marker: highlights use a half-width gradient fill.
 3. Dots and radii: card radii 16–22 px. Dividers are dashed.
 
-### 1.4 Page structure (fixed seven blocks)
+### 1.4 Page structure (split view)
 
 ```
-1. Header          Chinese and source titles, meta chips, blue guide card
-2. Theme Words     Klein-blue word cards
-3. Close Reading   Translation / Words / Analysis panels per paragraph
-4. Background      Context blocks
-5. Expressions     Reusable phrases for exam writing
-6. Practice        Choice quiz with instant feedback, fill quiz
-7. Discussion and Writing
+1. Top bar          Logo, meta chips, A- / A+, demo mode
+2. Header           Chinese and source titles, blue guide card
+3. Split window     Left (55%): source text. Right (45%): study notes.
+                    Notes group by paragraph: Translation / Words / Analysis.
+4. Post-reading     Background, Expressions, Practice, Discussion, Writing
+5. Footer
 ```
 
-Interactions: reading progress bar, click-to-note theme words, topic and language filters on the home page, previous and next links.
+Interactions for screen recording: click a paragraph to sync the notes pane. Press `J` / `K` to move between paragraphs. Press `D` for demo mode. Demo mode fills the viewport with the split window. Also: reading progress bar, click-to-note theme words, A- / A+ source font size, topic and language filters on the home page.
 
 ## 2. How to Add an Article
 

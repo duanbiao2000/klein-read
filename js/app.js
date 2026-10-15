@@ -12,48 +12,110 @@
     }, { passive: true });
   }
 
-  /* ---------- Paragraph panels: Translation / Words / Analysis ---------- */
-  document.querySelectorAll(".tool-btn[data-toggle]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var panel = document.getElementById(btn.getAttribute("data-toggle"));
-      if (!panel) return;
-      var open = panel.classList.toggle("open");
-      btn.classList.toggle("active", open);
-      btn.setAttribute("aria-expanded", open ? "true" : "false");
+  /* ---------- Split view: source | notes sync ---------- */
+  var srcParas = Array.prototype.slice.call(document.querySelectorAll(".src-para"));
+  var noteGroups = Array.prototype.slice.call(
+    document.querySelectorAll(".note-group[data-para]")
+  );
+  var paneLeft = document.getElementById("paneLeft");
+  var paneRight = document.getElementById("paneRight");
+  var syncPill = document.getElementById("syncPill");
+  var current = 0;
+
+  function scrollPaneTo(pane, el) {
+    if (!pane || !el) return;
+    var top = el.offsetTop - pane.offsetTop - 24;
+    pane.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+  }
+
+  function activate(i, from) {
+    if (i < 0 || i >= srcParas.length || i >= noteGroups.length) return;
+    current = i;
+    srcParas.forEach(function (p, j) { p.classList.toggle("active", j === i); });
+    noteGroups.forEach(function (g, j) { g.classList.toggle("active", j === i); });
+    if (syncPill) syncPill.textContent = "SYNC · PARA " + (i + 1);
+    if (from !== "right") scrollPaneTo(paneRight, noteGroups[i]);
+    if (from !== "left") scrollPaneTo(paneLeft, srcParas[i]);
+  }
+
+  srcParas.forEach(function (p, i) {
+    p.addEventListener("click", function () { activate(i, "left"); });
+  });
+  noteGroups.forEach(function (g, i) {
+    var head = g.querySelector(".ng-head");
+    if (head) head.addEventListener("click", function () { activate(i, "right"); });
+  });
+
+  /* ---------- Theme word click: flash its word note on the right ---------- */
+  document.querySelectorAll(".tword").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var key = (el.getAttribute("data-word") || el.textContent).trim().toLowerCase();
+      var para = el.closest(".src-para");
+      var group = para
+        ? document.getElementById("ng" + para.getAttribute("data-para"))
+        : noteGroups[current];
+      if (!group) return;
+      group.querySelectorAll(".w-item").forEach(function (item) {
+        var w = item.querySelector(".w");
+        if (!w) return;
+        var forms = (w.textContent + " " + (w.getAttribute("data-forms") || "")).trim().toLowerCase();
+        if (forms.indexOf(key) !== -1 || key.indexOf(w.textContent.trim().toLowerCase()) !== -1) {
+          item.classList.add("flash");
+          item.scrollIntoView({ behavior: "smooth", block: "nearest" });
+          setTimeout(function () { item.classList.remove("flash"); }, 1600);
+        }
+      });
     });
   });
 
-  /* ---------- Click a theme word in the text: open its note ---------- */
-  document.querySelectorAll(".tword").forEach(function (el) {
-    el.addEventListener("click", function () {
-      var word = (el.getAttribute("data-word") || el.textContent).toLowerCase();
-      var card = el.closest(".para-card");
-      if (!card) return;
-      var wordsBtn = card.querySelector('.tool-btn[data-toggle$="-words"]');
-      var wordsPanel = wordsBtn
-        ? document.getElementById(wordsBtn.getAttribute("data-toggle"))
-        : null;
-      if (wordsPanel && !wordsPanel.classList.contains("open")) {
-        wordsPanel.classList.add("open");
-        if (wordsBtn) wordsBtn.classList.add("active");
-      }
-      if (!wordsPanel) return;
-      var target = null;
-      wordsPanel.querySelectorAll(".word-list li").forEach(function (li) {
-        var w = li.querySelector(".w");
-        if (w && w.textContent.trim().toLowerCase() === word) target = li;
-      });
-      if (target) {
-        target.style.outline = "3px solid var(--klein)";
-        target.style.background = "var(--lemon-soft)";
-        target.scrollIntoView({ behavior: "smooth", block: "nearest" });
-        setTimeout(function () {
-          target.style.outline = "";
-          target.style.background = "";
-        }, 1600);
-      }
-    });
+  /* ---------- Keyboard: J / K / arrows to move, D for demo mode ---------- */
+  function splitVisible() {
+    var win = document.getElementById("splitWindow");
+    if (!win) return false;
+    var r = win.getBoundingClientRect();
+    return r.bottom > 80 && r.top < window.innerHeight - 80;
+  }
+
+  document.addEventListener("keydown", function (e) {
+    var tag = (e.target.tagName || "").toLowerCase();
+    if (tag === "input" || tag === "textarea") return;
+    if (e.key === "j" || e.key === "J") {
+      activate(current + 1);
+    } else if (e.key === "k" || e.key === "K") {
+      activate(current - 1);
+    } else if (e.key === "d" || e.key === "D") {
+      toggleDemo();
+    } else if (e.key === "ArrowDown" && splitVisible()) {
+      e.preventDefault(); activate(current + 1);
+    } else if (e.key === "ArrowUp" && splitVisible()) {
+      e.preventDefault(); activate(current - 1);
+    }
   });
+
+  /* ---------- Source font size ---------- */
+  var size = 19;
+  function setSize(n) {
+    size = Math.min(23, Math.max(16, n));
+    document.documentElement.style.setProperty("--src-size", size + "px");
+  }
+  var fontPlus = document.getElementById("fontPlus");
+  var fontMinus = document.getElementById("fontMinus");
+  if (fontPlus) fontPlus.addEventListener("click", function () { setSize(size + 1); });
+  if (fontMinus) fontMinus.addEventListener("click", function () { setSize(size - 1); });
+
+  /* ---------- Demo mode (for screen recording) ---------- */
+  var demoBtn = document.getElementById("demoToggle");
+  function toggleDemo() {
+    document.body.classList.toggle("demo");
+    var on = document.body.classList.contains("demo");
+    if (demoBtn) {
+      demoBtn.textContent = on ? "✕ 退出演示" : "🎬 演示模式";
+      demoBtn.classList.toggle("on", on);
+    }
+    if (on) window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+  if (demoBtn) demoBtn.addEventListener("click", toggleDemo);
 
   /* ---------- Multiple-choice quiz ---------- */
   document.querySelectorAll(".quiz-card").forEach(function (card) {
@@ -102,8 +164,8 @@
 
   /* ---------- Home filters: topic and source language ---------- */
   function applyFilters() {
-    var topicBtn = document.querySelector('.filter-chip.active[data-topic]');
-    var langBtn = document.querySelector('.filter-chip.active[data-source-lang]');
+    var topicBtn = document.querySelector(".filter-chip.active[data-topic]");
+    var langBtn = document.querySelector(".filter-chip.active[data-source-lang]");
     var topic = topicBtn ? topicBtn.getAttribute("data-topic") : "all";
     var lang = langBtn ? langBtn.getAttribute("data-source-lang") : "all";
     document.querySelectorAll(".article-card").forEach(function (card) {
@@ -132,4 +194,7 @@
       applyFilters();
     });
   });
+
+  /* Init: first paragraph active */
+  if (srcParas.length) activate(0, "init");
 })();

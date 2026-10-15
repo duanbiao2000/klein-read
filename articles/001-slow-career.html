@@ -16,12 +16,19 @@
       <span class="logo-mark">K</span>
       <span>Klein Read <span class="logo-sub">克莱因精读</span></span>
     </a>
-    <nav class="topnav">
-      <a href="../index.html#library">Library</a>
-      <a href="#text">Close Reading</a>
-      <a href="#quiz">Practice</a>
-      <a href="#discussion">Discussion</a>
-    </nav>
+    <div class="top-meta">
+      <span class="card-source">Sample · The Economist Style</span>
+      <span class="chip chip-theme" style="font-size:11px;padding:3px 11px">职场</span>
+      <span class="chip chip-violet" style="font-size:11px;padding:3px 11px">English</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px"><span class="stars">★★<span class="off">★</span><span class="off">★</span><span class="off">★</span></span> Difficulty 3/5</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px">⏱ 12 min</span>
+      <span class="chip" style="font-size:11px;padding:3px 11px">📝 620 words</span>
+    </div>
+    <div class="top-tools">
+      <button class="tool" id="fontMinus" title="Decrease source font size">A−</button>
+      <button class="tool" id="fontPlus" title="Increase source font size">A+</button>
+      <button class="tool primary" id="demoToggle" title="Demo mode for screen recording (D)">🎬 演示模式</button>
+    </div>
   </div>
 </header>
 
@@ -32,15 +39,6 @@
     <div class="blob blob-2"></div>
     <div class="container-narrow" style="position:relative;z-index:2">
       <p class="breadcrumb"><a href="../index.html">Home</a> / Close Reading / 职场</p>
-      <div class="meta-row">
-        <span class="card-source">Sample · The Economist Style</span>
-        <span class="chip chip-theme">职场</span>
-        <span class="chip chip-violet">English</span>
-        <span class="chip"><span class="stars">★★<span class="off">★</span><span class="off">★</span><span class="off">★</span></span> Difficulty 3/5</span>
-        <span class="chip">⏱ 12 min</span>
-        <span class="chip">📝 620 words</span>
-        <span class="card-date">2026-10-15</span>
-      </div>
       <h1 lang="zh-CN">用“拼命”换“平衡”：慢职业的悄然崛起</h1>
       <p class="title-en" lang="en">Trading hustle for balance: the quiet rise of the “slow career”</p>
       <div class="lead-card">
@@ -50,30 +48,39 @@
     </div>
   </section>
 
-  <!-- ============ Anchor nav ============ -->
-  <nav class="anchor-nav">
-    <div class="container-narrow anchor-nav-inner">
-      <a href="#words">🔥 Theme Words</a>
-      <a href="#text">📄 Close Reading</a>
-      <a href="#background">🌍 Background</a>
-      <a href="#expressions">✨ Expressions</a>
-      <a href="#quiz">✏️ Practice</a>
-      <a href="#discussion">💬 Discussion</a>
-      <a href="#writing">🖊 Writing</a>
-    </div>
-  </nav>
+  <!-- ============ Split view: source | notes ============ -->
+  <div class="container">
+    <section class="split-window" id="splitWindow">
 
-  <div class="container-narrow">
-    <!-- ============ Theme words (Klein blue) ============ -->
-    <section class="block" id="words" style="margin-top:8px">
-      <div class="block-head">
-        <div class="block-icon" style="background:var(--klein);color:#fff">🔥</div>
-        <div>
-          <h2>Theme Words <span class="sticker" style="font-size:12px;margin-left:6px">KLEIN BLUE</span></h2>
-          <p class="sub">Click a blue word in the text to open its note.</p>
+      <!-- Left pane: source text -->
+      <div class="pane-left" id="paneLeft">
+        <div class="pane-head">
+          <span class="label">SOURCE · 原文</span>
+          <span class="hint">点段落切换讲解 · 主题词可点</span>
+        </div>
+        <div class="source-text">
+          <h2 class="src-title" lang="en">Trading hustle for balance: the quiet rise of the “slow career”</h2>
+          <p class="src-sub">Sample · The Economist Style — 2026-10-15</p>
+          <p class="src-para" id="sp1" data-para="1" lang="en"><span class="para-no">P1</span> For decades, the surest route to success was thought to run through the city centre: a prestigious employer, a <span class="tword" data-word="punishing">punishing</span> schedule and a clear ladder to climb. Yet a growing number of young graduates are quietly stepping off that ladder. Rather than chasing promotions, they are choosing shorter hours, smaller cities and jobs that leave room for the rest of life. Sociologists call it the “<span class="tword" data-word="slow career">slow career</span>” — and it is spreading fast.</p>
+<p class="src-para" id="sp2" data-para="2" lang="en"><span class="para-no">P2</span> The trend is partly economic. When housing costs swallow half a salary and promotions arrive slowly, the <span class="tword" data-word="calculus">calculus</span> of overwork changes. A survey by a Beijing consultancy found that nearly 40% of workers born after 1995 would <span class="tword" data-word="trade A for B">trade a fifth of their pay for</span> two extra days off each week. Money still matters, but so does the feeling that one’s time is one’s own.</p>
+<p class="src-para" id="sp3" data-para="3" lang="en"><span class="para-no">P3</span> Technology has helped. Remote work has <span class="tword" data-word="loosen">loosened</span> the link between where people live and where they earn, allowing graduates to swap Shanghai rents for Chengdu comfort without leaving the payroll. Digital platforms also make side projects <span class="tword" data-word="viable">viable</span>: a part-time illustrator or online tutor can stitch together a modest living without a single office day.</p>
+<p class="src-para" id="sp4" data-para="4" lang="en"><span class="para-no">P4</span> Critics warn that slow careers are a luxury the ambitious cannot afford — and a trap for women, who still do most of the care work at home. There is truth in this. Yet the movement is less about laziness than about redefining the good life. Young workers are not rejecting work itself; they are rejecting work that <span class="tword" data-word="crowd out">crowds out</span> everything else.</p>
+<p class="src-para" id="sp5" data-para="5" lang="en"><span class="para-no">P5</span> Employers are <span class="tword" data-word="take note">taking note</span>. Several large tech firms in China now offer “growth tracks” that pause rather than punish career breaks, while smaller cities compete for talent with housing subsidies and lighter commutes. The message is clear: the <span class="tword" data-word="the war for talent">war for talent</span> will be won not only with pay, but with time. The generation that grew up being told to run faster is learning, at last, to choose its own pace.</p>
         </div>
       </div>
-      <div class="theme-words"><div class="theme-word-card"><span class="w">slow career</span><span class="ph">/sləʊ kəˈrɪə/ · n.phr.</span><span class="m">慢职业：主动放缓职业节奏的生活方式</span></div>
+
+      <!-- Right pane: study notes -->
+      <div class="pane-right" id="paneRight">
+        <div class="pane-head">
+          <span class="label">NOTES · 讲解</span>
+          <span class="hint">主题词 / 译文 / 词汇 / 句析</span>
+          <span class="sync-pill" id="syncPill">SYNC · PARA 1</span>
+        </div>
+        <div class="notes-stream">
+          <div class="note-group theme-group">
+            <div class="ng-head">THEME WORDS · 主题词</div>
+            <div class="note-card nc-theme">
+              <div class="theme-words"><div class="theme-word-card"><span class="w">slow career</span><span class="ph">/sləʊ kəˈrɪə/ · n.phr.</span><span class="m">慢职业：主动放缓职业节奏的生活方式</span></div>
 <div class="theme-word-card"><span class="w">hustle</span><span class="ph">/ˈhʌsl/ · n./v.</span><span class="m">拼命打拼；忙碌奔忙（常含过度之意）</span></div>
 <div class="theme-word-card"><span class="w">calculus</span><span class="ph">/ˈkælkjələs/ · n.</span><span class="m">盘算，权衡（本义“微积分”）</span></div>
 <div class="theme-word-card"><span class="w">trade A for B</span><span class="ph">phr.</span><span class="m">用 A 交换 B</span></div>
@@ -81,95 +88,21 @@
 <div class="theme-word-card"><span class="w">crowd out</span><span class="ph">/ˌkraʊd ˈaʊt/ · phr.v.</span><span class="m">挤占；排挤掉</span></div>
 <div class="theme-word-card"><span class="w">take note</span><span class="ph">phr.</span><span class="m">注意到；留意并采取行动</span></div>
 <div class="theme-word-card"><span class="w">the war for talent</span><span class="ph">n.phr.</span><span class="m">人才争夺战</span></div></div>
-    </section>
-
-    <!-- ============ Close reading ============ -->
-    <section class="block" id="text">
-      <div class="block-head">
-        <div class="block-icon" style="background:var(--lemon);color:var(--ink)">📄</div>
-        <div>
-          <h2>Close Reading</h2>
-          <p class="sub">Read the source text first. Then open Translation, Words, and Analysis.</p>
+            </div>
+          </div>
+          <div class="note-group" id="ng1" data-para="1"><div class="ng-head">PARA 1 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">几十年来，人们认为通往成功最有把握的路线要穿过市中心：进入名企、接受高强度的排班、沿着清晰的阶梯往上爬。然而，越来越多的年轻毕业生正悄悄走下这架梯子。他们不再追逐晋升，而是选择更短的工时、更小的城市，以及能给生活其余部分留出空间的工作。社会学家称之为“慢职业”——而且它正迅速蔓延。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">prestigious</span><span class="pos">adj.</span><span class="m">有声望的，享有盛名的</span></div><div class="w-note">💡 常修饰 employer / university / award</div><div class="w-item"><span class="w">punishing</span><span class="pos">adj.</span><span class="m">强度极大的，令人吃不消的</span></div><div class="w-note">💡 本义“惩罚性的”，a punishing schedule 即“高强度排班”</div><div class="w-item"><span class="w">ladder</span><span class="pos">n.</span><span class="m">阶梯（喻指晋升体系）</span></div><div class="w-note">💡 career ladder 职业阶梯；climb the ladder 逐步晋升</div><div class="w-item"><span class="w">promotion</span><span class="pos">n.</span><span class="m">晋升，升职</span></div><div class="w-note">💡 注意重音 /prəˈməʊʃn/；动词 promote</div><div class="w-item"><span class="w">slow career</span><span class="pos">n.phr.</span><span class="m">慢职业：主动放缓职业节奏</span></div><div class="w-note">💡 全文核心概念，也可作定语：the slow-career movement</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">Rather than chasing promotions, they are choosing shorter hours, smaller cities and jobs that leave room for the rest of life.</p><div class="struct-line"><span class="struct-tag t-main">主句</span><span class="struct-text">they are choosing shorter hours, smaller cities and jobs（三个并列宾语）</span></div><div class="struct-line"><span class="struct-tag t-phrase">状语</span><span class="struct-text">Rather than chasing promotions —— rather than + doing 表示“而不是……”，置于句首加强对比</span></div><div class="struct-line"><span class="struct-tag t-clause">定语从句</span><span class="struct-text">that leave room for the rest of life —— 修饰 jobs，其中 leave room for 意为“给……留出空间”</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">写作迁移：先摆出旧观念（rather than…），再给新选择，对比结构清晰，适合议论文开头段。</span></div></div></div>
+<div class="note-group" id="ng2" data-para="2"><div class="ng-head">PARA 2 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">这一趋势部分源于经济因素。当房价吞掉一半工资、晋升又姗姗来迟时，人们对“加班是否值得”的盘算就变了。北京一家咨询公司的调查发现，近 40% 的 95 后员工愿意用五分之一的薪水换取每周多两天休息。钱当然重要，但“时间属于自己”的感觉同样重要。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">swallow</span><span class="pos">v.</span><span class="m">吞掉，耗尽（金钱、时间）</span></div><div class="w-note">💡 生动用法：Rent swallows up most of my income.</div><div class="w-item"><span class="w">calculus</span><span class="pos">n.</span><span class="m">权衡，盘算</span></div><div class="w-note">💡 本义“微积分”；the calculus of… 即“对……的利害权衡”</div><div class="w-item"><span class="w">overwork</span><span class="pos">n./v.</span><span class="m">过度工作，加班</span></div><div class="w-note">💡 不可数名词时常不加冠词</div><div class="w-item"><span class="w">consultancy</span><span class="pos">n.</span><span class="m">咨询公司</span></div><div class="w-note">💡 consultant 咨询顾问</div><div class="w-item"><span class="w">trade A for B</span><span class="pos">phr.</span><span class="m">用 A 交换 B</span></div><div class="w-note">💡 trade a fifth of their pay for two extra days off；同义 swap A for B</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">Money still matters, but so does the feeling that one’s time is one’s own.</p><div class="struct-line"><span class="struct-tag t-main">主句</span><span class="struct-text">Money still matters（钱仍然重要）</span></div><div class="struct-line"><span class="struct-tag t-clause">倒装</span><span class="struct-text">but so does the feeling —— “so + 助动词 + 主语”表示“……也一样”，避免重复 matters</span></div><div class="struct-line"><span class="struct-tag t-clause">同位语从句</span><span class="struct-text">that one’s time is one’s own —— 解释 the feeling 的具体内容</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">“so does / so is + 名词”是考研英语写作高频倒装句式，用来并列强调第二个论点。</span></div></div></div>
+<div class="note-group" id="ng3" data-para="3"><div class="ng-head">PARA 3 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">技术起到了助推作用。远程办公弱化了“住在哪里”和“在哪里挣钱”之间的绑定，让毕业生们不必离职，就能用上海的房租换来成都的舒适。数字平台也让副业变得可行：一名兼职插画师或线上家教，一天办公室都不用去，也能拼凑出一份体面的生计。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">loosen</span><span class="pos">v.</span><span class="m">放松，弱化（联系）</span></div><div class="w-note">💡 反义 tighten；the link between A and B</div><div class="w-item"><span class="w">swap</span><span class="pos">v.</span><span class="m">交换，换掉</span></div><div class="w-note">💡 swap A for B：用 A 换 B，与 trade 用法相近</div><div class="w-item"><span class="w">payroll</span><span class="pos">n.</span><span class="m">工资表；在职名册</span></div><div class="w-note">💡 on the payroll 即“在编、在职”</div><div class="w-item"><span class="w">stitch together</span><span class="pos">phr.v.</span><span class="m">拼凑，凑合而成</span></div><div class="w-note">💡 字面“缝合”；stitch together a living 凑一份生计</div><div class="w-item"><span class="w">viable</span><span class="pos">adj.</span><span class="m">可行的，行得通的</span></div><div class="w-note">💡 make sth viable 使……变得可行；名词 viability</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">Remote work has loosened the link between where people live and where they earn, allowing graduates to swap Shanghai rents for Chengdu comfort without leaving the payroll.</p><div class="struct-line"><span class="struct-tag t-main">主句</span><span class="struct-text">Remote work has loosened the link（远程办公弱化了这种关联）</span></div><div class="struct-line"><span class="struct-tag t-clause">介词+宾语从句</span><span class="struct-text">between where people live and where people earn —— 两个 where 从句作 between 的宾语，平行结构</span></div><div class="struct-line"><span class="struct-tag t-phrase">分词状语</span><span class="struct-text">allowing graduates to swap A for B without leaving the payroll —— 现在分词表结果；without + doing 表示“无需……”</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">swap Shanghai rents for Chengdu comfort 是“借代”修辞：用房租代指大城市压力，用地名+comfort 构成对仗，适合写作模仿。</span></div></div></div>
+<div class="note-group" id="ng4" data-para="4"><div class="ng-head">PARA 4 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">批评者提醒说，慢职业是一种“有野心的人消费不起”的奢侈品——而且对女性是个陷阱，因为家务和照料工作仍大多落在女性身上。这话不无道理。然而，这场运动与其说是懒惰，不如说是对“美好生活”的重新定义。年轻工作者否定的不是工作本身，而是那份会挤占一切其他东西的工作。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">luxury</span><span class="pos">n.</span><span class="m">奢侈品；奢侈（的享受）</span></div><div class="w-note">💡 a luxury (that) … cannot afford 买不起的奢侈品</div><div class="w-item"><span class="w">ambitious</span><span class="pos">adj.</span><span class="m">有野心的，有抱负的</span></div><div class="w-note">💡 the ambitious 作名词：“有野心的人群”</div><div class="w-item"><span class="w">redefine</span><span class="pos">v.</span><span class="m">重新定义</span></div><div class="w-note">💡 re- 前缀：rethink / reshape / rebrand</div><div class="w-item"><span class="w">reject</span><span class="pos">v.</span><span class="m">拒绝，否定</span></div><div class="w-note">💡 注意与 refuse 的语体差别，reject 更书面</div><div class="w-item"><span class="w">crowd out</span><span class="pos">phr.v.</span><span class="m">挤占，排挤掉</span></div><div class="w-note">💡 crowd out everything else 挤掉其他一切；名词形式 crowd-out</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">Yet the movement is less about laziness than about redefining the good life.</p><div class="struct-line"><span class="struct-tag t-main">核心句式</span><span class="struct-text">less about A than about B —— “与其说是 A，不如说是 B”</span></div><div class="struct-line"><span class="struct-tag t-phrase">平行结构</span><span class="struct-text">about laziness / about redefining the good life —— 两个 about 短语保持形式对称</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">“less A than B / not A but B” 是让步反驳段的黄金句式：先承认对方观点，再换角度立论。</span></div></div></div>
+<div class="note-group" id="ng5" data-para="5"><div class="ng-head">PARA 5 · 讲解</div><div class="note-card nc-tr"><div class="nc-title">参考译文 · TRANSLATION</div><p class="tr-text" lang="zh-CN">雇主们已经注意到了。中国的几家大型科技公司如今提供“成长轨道”，允许职业空窗期暂停而非惩罚；小城市则用住房补贴和更轻松的通勤来争夺人才。信号很明确：人才争夺战的胜负，不只取决于薪水，还取决于时间。这一代从小被要求“跑快点”的人，终于在学习选择自己的节奏。</p></div><div class="note-card nc-words"><div class="nc-title">本段词汇 · WORDS</div><div class="w-item"><span class="w">growth track</span><span class="pos">n.</span><span class="m">成长轨道（公司内非线性晋升通道）</span></div><div class="w-note">💡 与 fast track（快车道）相对</div><div class="w-item"><span class="w">career break</span><span class="pos">n.</span><span class="m">职业空窗期，中断期</span></div><div class="w-note">💡 take a career break 主动暂停工作</div><div class="w-item"><span class="w">subsidy</span><span class="pos">n.</span><span class="m">补贴，津贴</span></div><div class="w-note">💡 housing subsidies 住房补贴；动词 subsidise/subsidize</div><div class="w-item"><span class="w">commute</span><span class="pos">n./v.</span><span class="m">通勤</span></div><div class="w-note">💡 lighter commutes 更轻松的通勤；commuter 通勤族</div><div class="w-item"><span class="w">take note</span><span class="pos">phr.</span><span class="m">注意到；留意并采取行动</span></div><div class="w-note">💡 比 pay attention to 更书面，常用于新闻语体</div><div class="w-item"><span class="w">the war for talent</span><span class="pos">n.phr.</span><span class="m">人才争夺战</span></div><div class="w-note">💡 也可写 talent war；war on / war for 搭配不同</div></div><div class="note-card nc-analysis"><div class="nc-title">长难句解析 · ANALYSIS</div><p class="sent-quote">The message is clear: the war for talent will be won not only with pay, but with time.</p><div class="struct-line"><span class="struct-tag t-main">主句</span><span class="struct-text">The message is clear（信号很明确）</span></div><div class="struct-line"><span class="struct-tag t-phrase">冒号解释</span><span class="struct-text">冒号后整句是对 message 的展开，英文常用冒号引出具体论断</span></div><div class="struct-line"><span class="struct-tag t-clause">关联结构</span><span class="struct-text">not only with pay, but with time —— not only … but (also) … 并列两个介词短语，with 表“凭借”</span></div><div class="struct-line"><span class="struct-tag t-tip">考点</span><span class="struct-text">结尾金句式：not only with A, but with B 将抽象竞争落到两个具体维度，适合文章收束段模仿。</span></div></div></div>
         </div>
+        <div class="kbd-hint"><kbd>J</kbd><kbd>K</kbd> 或 <kbd>↑</kbd><kbd>↓</kbd> 切换段落 · <kbd>D</kbd> 演示模式</div>
       </div>
-      
-<article class="para-card" id="p1">
-  <div class="para-head">
-    <span class="para-num">PARA 1</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p1-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p1-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p1-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-en" lang="en">For decades, the surest route to success was thought to run through the city centre: a prestigious employer, a <span class="tword" data-word="punishing">punishing</span> schedule and a clear ladder to climb. Yet a growing number of young graduates are quietly stepping off that ladder. Rather than chasing promotions, they are choosing shorter hours, smaller cities and jobs that leave room for the rest of life. Sociologists call it the “<span class="tword" data-word="slow career">slow career</span>” — and it is spreading fast.</p>
-  <div class="panel panel-cn" id="p1-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">几十年来，人们认为通往成功最有把握的路线要穿过市中心：进入名企、接受高强度的排班、沿着清晰的阶梯往上爬。然而，越来越多的年轻毕业生正悄悄走下这架梯子。他们不再追逐晋升，而是选择更短的工时、更小的城市，以及能给生活其余部分留出空间的工作。社会学家称之为“慢职业”——而且它正迅速蔓延。</p></div>
-  <div class="panel panel-words" id="p1-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">prestigious</span><span class="pos">adj.</span><span class="mean">有声望的，享有盛名的</span><span class="note">💡 常修饰 employer / university / award</span></li><li><span class="w">punishing</span><span class="pos">adj.</span><span class="mean">强度极大的，令人吃不消的</span><span class="note">💡 本义“惩罚性的”，a punishing schedule 即“高强度排班”</span></li><li><span class="w">ladder</span><span class="pos">n.</span><span class="mean">阶梯（喻指晋升体系）</span><span class="note">💡 career ladder 职业阶梯；climb the ladder 逐步晋升</span></li><li><span class="w">promotion</span><span class="pos">n.</span><span class="mean">晋升，升职</span><span class="note">💡 注意重音 /prəˈməʊʃn/；动词 promote</span></li><li><span class="w">slow career</span><span class="pos">n.phr.</span><span class="mean">慢职业：主动放缓职业节奏</span><span class="note">💡 全文核心概念，也可作定语：the slow-career movement</span></li></ul></div>
-  <div class="panel panel-sent" id="p1-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">Rather than chasing promotions, they are choosing shorter hours, smaller cities and jobs that leave room for the rest of life.</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">主句</span><span class="struct-text">they are choosing shorter hours, smaller cities and jobs（三个并列宾语）</span></div><div class="struct-line"><span class="struct-tag tag-phrase">状语</span><span class="struct-text">Rather than chasing promotions —— rather than + doing 表示“而不是……”，置于句首加强对比</span></div><div class="struct-line"><span class="struct-tag tag-clause">定语从句</span><span class="struct-text">that leave room for the rest of life —— 修饰 jobs，其中 leave room for 意为“给……留出空间”</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">写作迁移：先摆出旧观念（rather than…），再给新选择，对比结构清晰，适合议论文开头段。</span></div></div></div>
-</article>
-
-<article class="para-card" id="p2">
-  <div class="para-head">
-    <span class="para-num">PARA 2</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p2-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p2-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p2-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-en" lang="en">The trend is partly economic. When housing costs swallow half a salary and promotions arrive slowly, the <span class="tword" data-word="calculus">calculus</span> of overwork changes. A survey by a Beijing consultancy found that nearly 40% of workers born after 1995 would <span class="tword" data-word="trade A for B">trade a fifth of their pay for</span> two extra days off each week. Money still matters, but so does the feeling that one’s time is one’s own.</p>
-  <div class="panel panel-cn" id="p2-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">这一趋势部分源于经济因素。当房价吞掉一半工资、晋升又姗姗来迟时，人们对“加班是否值得”的盘算就变了。北京一家咨询公司的调查发现，近 40% 的 95 后员工愿意用五分之一的薪水换取每周多两天休息。钱当然重要，但“时间属于自己”的感觉同样重要。</p></div>
-  <div class="panel panel-words" id="p2-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">swallow</span><span class="pos">v.</span><span class="mean">吞掉，耗尽（金钱、时间）</span><span class="note">💡 生动用法：Rent swallows up most of my income.</span></li><li><span class="w">calculus</span><span class="pos">n.</span><span class="mean">权衡，盘算</span><span class="note">💡 本义“微积分”；the calculus of… 即“对……的利害权衡”</span></li><li><span class="w">overwork</span><span class="pos">n./v.</span><span class="mean">过度工作，加班</span><span class="note">💡 不可数名词时常不加冠词</span></li><li><span class="w">consultancy</span><span class="pos">n.</span><span class="mean">咨询公司</span><span class="note">💡 consultant 咨询顾问</span></li><li><span class="w">trade A for B</span><span class="pos">phr.</span><span class="mean">用 A 交换 B</span><span class="note">💡 trade a fifth of their pay for two extra days off；同义 swap A for B</span></li></ul></div>
-  <div class="panel panel-sent" id="p2-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">Money still matters, but so does the feeling that one’s time is one’s own.</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">主句</span><span class="struct-text">Money still matters（钱仍然重要）</span></div><div class="struct-line"><span class="struct-tag tag-clause">倒装</span><span class="struct-text">but so does the feeling —— “so + 助动词 + 主语”表示“……也一样”，避免重复 matters</span></div><div class="struct-line"><span class="struct-tag tag-clause">同位语从句</span><span class="struct-text">that one’s time is one’s own —— 解释 the feeling 的具体内容</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">“so does / so is + 名词”是考研英语写作高频倒装句式，用来并列强调第二个论点。</span></div></div></div>
-</article>
-
-<article class="para-card" id="p3">
-  <div class="para-head">
-    <span class="para-num">PARA 3</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p3-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p3-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p3-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-en" lang="en">Technology has helped. Remote work has <span class="tword" data-word="loosen">loosened</span> the link between where people live and where they earn, allowing graduates to swap Shanghai rents for Chengdu comfort without leaving the payroll. Digital platforms also make side projects <span class="tword" data-word="viable">viable</span>: a part-time illustrator or online tutor can stitch together a modest living without a single office day.</p>
-  <div class="panel panel-cn" id="p3-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">技术起到了助推作用。远程办公弱化了“住在哪里”和“在哪里挣钱”之间的绑定，让毕业生们不必离职，就能用上海的房租换来成都的舒适。数字平台也让副业变得可行：一名兼职插画师或线上家教，一天办公室都不用去，也能拼凑出一份体面的生计。</p></div>
-  <div class="panel panel-words" id="p3-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">loosen</span><span class="pos">v.</span><span class="mean">放松，弱化（联系）</span><span class="note">💡 反义 tighten；the link between A and B</span></li><li><span class="w">swap</span><span class="pos">v.</span><span class="mean">交换，换掉</span><span class="note">💡 swap A for B：用 A 换 B，与 trade 用法相近</span></li><li><span class="w">payroll</span><span class="pos">n.</span><span class="mean">工资表；在职名册</span><span class="note">💡 on the payroll 即“在编、在职”</span></li><li><span class="w">stitch together</span><span class="pos">phr.v.</span><span class="mean">拼凑，凑合而成</span><span class="note">💡 字面“缝合”；stitch together a living 凑一份生计</span></li><li><span class="w">viable</span><span class="pos">adj.</span><span class="mean">可行的，行得通的</span><span class="note">💡 make sth viable 使……变得可行；名词 viability</span></li></ul></div>
-  <div class="panel panel-sent" id="p3-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">Remote work has loosened the link between where people live and where they earn, allowing graduates to swap Shanghai rents for Chengdu comfort without leaving the payroll.</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">主句</span><span class="struct-text">Remote work has loosened the link（远程办公弱化了这种关联）</span></div><div class="struct-line"><span class="struct-tag tag-clause">介词+宾语从句</span><span class="struct-text">between where people live and where people earn —— 两个 where 从句作 between 的宾语，平行结构</span></div><div class="struct-line"><span class="struct-tag tag-phrase">分词状语</span><span class="struct-text">allowing graduates to swap A for B without leaving the payroll —— 现在分词表结果；without + doing 表示“无需……”</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">swap Shanghai rents for Chengdu comfort 是“借代”修辞：用房租代指大城市压力，用地名+comfort 构成对仗，适合写作模仿。</span></div></div></div>
-</article>
-
-<article class="para-card" id="p4">
-  <div class="para-head">
-    <span class="para-num">PARA 4</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p4-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p4-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p4-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-en" lang="en">Critics warn that slow careers are a luxury the ambitious cannot afford — and a trap for women, who still do most of the care work at home. There is truth in this. Yet the movement is less about laziness than about redefining the good life. Young workers are not rejecting work itself; they are rejecting work that <span class="tword" data-word="crowd out">crowds out</span> everything else.</p>
-  <div class="panel panel-cn" id="p4-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">批评者提醒说，慢职业是一种“有野心的人消费不起”的奢侈品——而且对女性是个陷阱，因为家务和照料工作仍大多落在女性身上。这话不无道理。然而，这场运动与其说是懒惰，不如说是对“美好生活”的重新定义。年轻工作者否定的不是工作本身，而是那份会挤占一切其他东西的工作。</p></div>
-  <div class="panel panel-words" id="p4-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">luxury</span><span class="pos">n.</span><span class="mean">奢侈品；奢侈（的享受）</span><span class="note">💡 a luxury (that) … cannot afford 买不起的奢侈品</span></li><li><span class="w">ambitious</span><span class="pos">adj.</span><span class="mean">有野心的，有抱负的</span><span class="note">💡 the ambitious 作名词：“有野心的人群”</span></li><li><span class="w">redefine</span><span class="pos">v.</span><span class="mean">重新定义</span><span class="note">💡 re- 前缀：rethink / reshape / rebrand</span></li><li><span class="w">reject</span><span class="pos">v.</span><span class="mean">拒绝，否定</span><span class="note">💡 注意与 refuse 的语体差别，reject 更书面</span></li><li><span class="w">crowd out</span><span class="pos">phr.v.</span><span class="mean">挤占，排挤掉</span><span class="note">💡 crowd out everything else 挤掉其他一切；名词形式 crowd-out</span></li></ul></div>
-  <div class="panel panel-sent" id="p4-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">Yet the movement is less about laziness than about redefining the good life.</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">核心句式</span><span class="struct-text">less about A than about B —— “与其说是 A，不如说是 B”</span></div><div class="struct-line"><span class="struct-tag tag-phrase">平行结构</span><span class="struct-text">about laziness / about redefining the good life —— 两个 about 短语保持形式对称</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">“less A than B / not A but B” 是让步反驳段的黄金句式：先承认对方观点，再换角度立论。</span></div></div></div>
-</article>
-
-<article class="para-card" id="p5">
-  <div class="para-head">
-    <span class="para-num">PARA 5</span>
-    <div class="para-tools">
-      <button class="tool-btn" data-toggle="p5-zh" aria-expanded="false">Translation</button>
-      <button class="tool-btn" data-toggle="p5-words" aria-expanded="false">Words</button>
-      <button class="tool-btn" data-toggle="p5-sent" aria-expanded="false">Analysis</button>
-    </div>
-  </div>
-  <p class="para-en lang-en" lang="en">Employers are <span class="tword" data-word="take note">taking note</span>. Several large tech firms in China now offer “growth tracks” that pause rather than punish career breaks, while smaller cities compete for talent with housing subsidies and lighter commutes. The message is clear: the <span class="tword" data-word="the war for talent">war for talent</span> will be won not only with pay, but with time. The generation that grew up being told to run faster is learning, at last, to choose its own pace.</p>
-  <div class="panel panel-cn" id="p5-zh"><h4>Reference Translation</h4><p class="para-cn" lang="zh-CN">雇主们已经注意到了。中国的几家大型科技公司如今提供“成长轨道”，允许职业空窗期暂停而非惩罚；小城市则用住房补贴和更轻松的通勤来争夺人才。信号很明确：人才争夺战的胜负，不只取决于薪水，还取决于时间。这一代从小被要求“跑快点”的人，终于在学习选择自己的节奏。</p></div>
-  <div class="panel panel-words" id="p5-words"><h4>Words in This Paragraph</h4><ul class="word-list"><li><span class="w">growth track</span><span class="pos">n.</span><span class="mean">成长轨道（公司内非线性晋升通道）</span><span class="note">💡 与 fast track（快车道）相对</span></li><li><span class="w">career break</span><span class="pos">n.</span><span class="mean">职业空窗期，中断期</span><span class="note">💡 take a career break 主动暂停工作</span></li><li><span class="w">subsidy</span><span class="pos">n.</span><span class="mean">补贴，津贴</span><span class="note">💡 housing subsidies 住房补贴；动词 subsidise/subsidize</span></li><li><span class="w">commute</span><span class="pos">n./v.</span><span class="mean">通勤</span><span class="note">💡 lighter commutes 更轻松的通勤；commuter 通勤族</span></li><li><span class="w">take note</span><span class="pos">phr.</span><span class="mean">注意到；留意并采取行动</span><span class="note">💡 比 pay attention to 更书面，常用于新闻语体</span></li><li><span class="w">the war for talent</span><span class="pos">n.phr.</span><span class="mean">人才争夺战</span><span class="note">💡 也可写 talent war；war on / war for 搭配不同</span></li></ul></div>
-  <div class="panel panel-sent" id="p5-sent"><h4>Sentence Analysis</h4><div class="sent-block"><p class="sent-quote">The message is clear: the war for talent will be won not only with pay, but with time.</p><div class="struct-lines"><div class="struct-line"><span class="struct-tag tag-main">主句</span><span class="struct-text">The message is clear（信号很明确）</span></div><div class="struct-line"><span class="struct-tag tag-phrase">冒号解释</span><span class="struct-text">冒号后整句是对 message 的展开，英文常用冒号引出具体论断</span></div><div class="struct-line"><span class="struct-tag tag-clause">关联结构</span><span class="struct-text">not only with pay, but with time —— not only … but (also) … 并列两个介词短语，with 表“凭借”</span></div></div><div class="struct-line"><span class="struct-tag tag-tip">考点</span><span class="struct-text">结尾金句式：not only with A, but with B 将抽象竞争落到两个具体维度，适合文章收束段模仿。</span></div></div></div>
-</article>
     </section>
+  </div>
 
-    <!-- ============ Background ============ -->
+  <!-- ============ Post-reading sections ============ -->
+  <div class="container-narrow post-sections">
     <section class="block" id="background">
       <div class="block-head">
         <div class="block-icon" style="background:var(--mint);color:#fff">🌍</div>
@@ -182,7 +115,6 @@
 <div class="card bg-card"><h3>延伸阅读：四天工作制试验</h3><p lang="zh-CN">2022 年以来，英国、日本、西班牙等国的多项“四天工作制”试验报告显示：多数参与企业营收与员工满意度双升、离职率下降。本文中“用五分之一薪水换两天休息”的调查数据，正呼应了全球范围内“时间比金钱更稀缺”的价值观迁移。</p></div>
     </section>
 
-    <!-- ============ Expressions ============ -->
     <section class="block" id="expressions">
       <div class="block-head">
         <div class="block-icon" style="background:var(--pink);color:#fff">✨</div>
@@ -199,7 +131,6 @@
 <div class="expr-card"><p class="en" lang="en">not only with A, but with B</p><p class="cn" lang="zh-CN">不只靠 A，更靠 B</p><p class="use">📌 收束段强调句式，with 表“凭借、用”</p></div></div>
     </section>
 
-    <!-- ============ Practice ============ -->
     <section class="block" id="quiz">
       <div class="block-head">
         <div class="block-icon" style="background:var(--violet);color:#fff">✏️</div>
@@ -241,7 +172,6 @@
 </div>
     </section>
 
-    <!-- ============ Discussion ============ -->
     <section class="block" id="discussion">
       <div class="block-head">
         <div class="block-icon" style="background:var(--lemon);color:var(--ink)">💬</div>
@@ -255,7 +185,6 @@
 <div class="discuss-item"><span class="q-mark">Q3</span><p lang="zh-CN">What can universities and employers do to make work more sustainable for young people?</p></div></div>
     </section>
 
-    <!-- ============ Writing ============ -->
     <section class="block" id="writing">
       <div class="block-head">
         <div class="block-icon" style="background:var(--klein);color:#fff">🖊</div>
@@ -267,7 +196,6 @@
       <div class="card quiz-card write-card"><h3>写作练习：A letter on work-life balance</h3><p lang="zh-CN">假定你是李华，校英文报正在讨论“毕业后该追求高薪还是慢节奏”。请写一篇 150 词左右的短评：1）概述两种观点；2）表明你的立场；3）至少使用 2 个本文学到的表达（如 trade A for B / crowd out / not only with A, but with B）。</p></div>
     </section>
 
-    <!-- ============ Previous / Next ============ -->
     <nav class="pager"><div><p class="dir">← Previous</p><p class="t" style="color:var(--ink-30)">No more articles</p></div><a class="next" href="002-oshi-katsu.html"><p class="dir">Next →</p><p class="t">“推活”正在改变日本消费的形态</p></a></nav>
   </div>
 </main>
@@ -278,7 +206,7 @@
       <p class="brand">Klein Read <span>克莱因精读</span></p>
       <p>Intensive-reading workshop for Chinese college students.<br>Source: English and Japanese weeklies · Theme words in Klein blue #002FA7</p>
     </div>
-    <div class="tip">💡 Tip: Read the source text first. Then open Translation and Analysis. Write one sentence with a theme word to complete your daily task.</div>
+    <div class="tip">💡 Tip: Read the source on the left. Follow the notes on the right. Press J / K to move between paragraphs.</div>
   </div>
 </footer>
 

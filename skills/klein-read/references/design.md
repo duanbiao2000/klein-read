@@ -32,28 +32,33 @@ Rule: use at most three accent colors per screen. Klein blue stays dominant.
 2. Marker: highlights use `linear-gradient(transparent 58%, color 58%)`.
 3. Dots and radii: cards use 16–22 px radii. Dividers are dashed. Shadow: `0 8px 24px rgba(0,47,167,.08)`.
 
-## Page Structure (fixed seven blocks)
+## Page Structure (split view)
 
 ```
-1. Header      Chinese and source titles, meta chips, blue guide card
-2. Theme Words Klein-blue word cards
-3. Close Reading  One card per paragraph with three panels:
-   - Translation  blue mist
-   - Words        lemon (word, POS pill, meaning, note)
-   - Analysis     violet (main / clause / phrase / tip tags)
-4. Background  mint icon
-5. Expressions grid cards
-6. Practice    choice quiz with instant feedback, fill quiz with answer key
-7. Discussion and Writing
+1. Top bar       Logo, meta chips, A- / A+, demo mode button
+2. Header        Chinese and source titles, blue guide card
+3. Split window  The core layout. Two panes, each with its own scroll:
+   - Left  (55%)  Source text. Serif type, paragraph numbers, Klein-blue theme words.
+   - Right (45%)  Study notes. Theme words group, then one group per paragraph:
+                  Translation (blue) / Words (lemon) / Analysis (violet) cards.
+4. Post-reading  Background, Expressions, Practice, Discussion, Writing
+5. Footer
 ```
+
+Sync behavior: click a source paragraph to move the notes pane to its group. Click a group head to move the source pane. Keys `J`, `K`, or arrows move between paragraphs. Key `D` toggles demo mode. Demo mode hides all chrome and fills the viewport with the split window. This is the layout for screen recording.
 
 ## Component Names (css/style.css)
 
 - Chips: `.chip`, `.chip-theme`, `.chip-lemon`, `.chip-mint`, `.chip-coral`, `.chip-violet`
 - Sticker: `.sticker`. Highlights: `.mark-lemon`, `.mark-mint`, `.mark-coral`
-- Buttons: `.btn`, `.btn-primary`, `.btn-secondary`
+- Buttons: `.btn`, `.btn-primary`, `.btn-secondary`. Top tools: `.tool`, `.tool.primary`
 - Home cards: `.article-card` with `data-topic` and `data-source-lang` filters
-- Article page: `.lead-card`, `.theme-word-card`, `.para-card`, `.panel-cn`, `.panel-words`, `.panel-sent`, `.word-list`, `.sent-block`, `.struct-tag tag-main|tag-clause|tag-phrase|tag-tip`, `.quiz-card`, `.discuss-item`, `.expr-card`
+- Split view: `.split-window`, `.pane-left`, `.pane-right`, `.pane-head`, `.sync-pill`
+- Source text: `.source-text`, `.src-title`, `.src-sub`, `.src-para` (+ `.active`), `.para-no`, `.tword`
+- Note groups: `.note-group` (+ `.active`), `.ng-head`, `.note-card`, `.nc-theme`
+- Note cards: `.nc-tr` (translation), `.nc-words` (words), `.nc-analysis` (analysis), `.tr-text`, `.w-item`, `.w-note`
+- Structure tags: `.struct-tag` with `.t-main`, `.t-clause`, `.t-phrase`, `.t-tip`
+- Post-reading: `.bg-card`, `.expr-card`, `.quiz-card`, `.discuss-item`, `.write-card`, `.pager`
 
 ## When You Change the Design
 
