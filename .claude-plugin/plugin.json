@@ -1,6 +1,6 @@
 {
   "name": "klein-read",
-  "version": "3.0.0",
+  "version": "3.1.1",
   "description": "Klein Read turns English or Japanese weekly articles into intensive-reading pages for Chinese college students. Paste an article and get translation, Klein-blue theme words, sentence analysis, and practice in one page.",
   "author": {
     "name": "Klein Read"

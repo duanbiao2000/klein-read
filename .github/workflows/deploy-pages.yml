@@ -32,7 +32,7 @@ jobs:
       - name: Assemble the site
         run: |
           mkdir -p _site
-          cp index.html _site/
+          cp index.html favicon.svg _site/
           cp -r css js articles _site/
           cp .nojekyll _site/
 

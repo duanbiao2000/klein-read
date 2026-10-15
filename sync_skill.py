@@ -17,6 +17,7 @@ FILES = [
     "build.py",
     "sync_skill.py",
     "QUICKSTART.md",
+    "favicon.svg",
     "css/style.css",
     "js/app.js",
     "templates/article.tpl.html",

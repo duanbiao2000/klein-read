@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Klein Read favicon: Klein-blue tile, white K, lemon hard shadow -->
+  <g transform="rotate(-6 32 32)">
+    <rect x="10" y="10" width="48" height="48" rx="11" fill="#FFD23F"/>
+    <rect x="5" y="5" width="48" height="48" rx="11" fill="#002FA7"/>
+    <path d="M20 15 V47 M20 31 L41 15 M20 31 L41 47"
+          stroke="#FFFFFF" stroke-width="7"
+          stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
