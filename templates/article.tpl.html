@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{TITLE_ZH}} · Klein Read</title>
+<meta name="description" content="Klein Read intensive-reading page: {{TITLE_ZH}}">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="progress-bar"></div>
+
+<header class="topbar">
+  <div class="container topbar-inner">
+    <a class="logo" href="../index.html">
+      <span class="logo-mark">K</span>
+      <span>Klein Read <span class="logo-sub">克莱因精读</span></span>
+    </a>
+    <nav class="topnav">
+      <a href="../index.html#library">Library</a>
+      <a href="#text">Close Reading</a>
+      <a href="#quiz">Practice</a>
+      <a href="#discussion">Discussion</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ============ Article header ============ -->
+  <section class="article-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="container-narrow" style="position:relative;z-index:2">
+      <p class="breadcrumb"><a href="../index.html">Home</a> / Close Reading / {{TOPIC}}</p>
+      <div class="meta-row">
+        <span class="card-source">{{SOURCE}}</span>
+        <span class="chip chip-theme">{{TOPIC}}</span>
+        <span class="chip chip-violet">{{SOURCE_LANG_LABEL}}</span>
+        <span class="chip">{{DIFFICULTY_HTML}}</span>
+        <span class="chip">⏱ {{READ_MIN}} min</span>
+        <span class="chip">📝 {{WORD_COUNT}} words</span>
+        <span class="card-date">{{DATE}}</span>
+      </div>
+      <h1 lang="zh-CN">{{TITLE_ZH}}</h1>
+      <p class="title-en" lang="{{SOURCE_LANG}}">{{TITLE_SRC}}</p>
+      <div class="lead-card">
+        <span class="lead-label">📖 GUIDE</span>
+        <p lang="zh-CN">{{LEAD}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Anchor nav ============ -->
+  <nav class="anchor-nav">
+    <div class="container-narrow anchor-nav-inner">
+      <a href="#words">🔥 Theme Words</a>
+      <a href="#text">📄 Close Reading</a>
+      <a href="#background">🌍 Background</a>
+      <a href="#expressions">✨ Expressions</a>
+      <a href="#quiz">✏️ Practice</a>
+      <a href="#discussion">💬 Discussion</a>
+      <a href="#writing">🖊 Writing</a>
+    </div>
+  </nav>
+
+  <div class="container-narrow">
+    <!-- ============ Theme words (Klein blue) ============ -->
+    <section class="block" id="words" style="margin-top:8px">
+      <div class="block-head">
+        <div class="block-icon" style="background:var(--klein);color:#fff">🔥</div>
+        <div>
+          <h2>Theme Words <span class="sticker" style="font-size:12px;margin-left:6px">KLEIN BLUE</span></h2>
+          <p class="sub">Click a blue word in the text to open its note.</p>
+        </div>
+      </div>
+      <div class="theme-words">{{THEME_WORDS}}</div>
+    </section>
+
+    <!-- ============ Close reading ============ -->
+    <section class="block" id="text">
+      <div class="block-head">
+        <div class="block-icon" style="background:var(--lemon);color:var(--ink)">📄</div>
+        <div>
+          <h2>Close Reading</h2>
+          <p class="sub">Read the source text first. Then open Translation, Words, and Analysis.</p>
+        </div>
+      </div>
+      {{PARAGRAPHS}}
+    </section>
+
+    <!-- ============ Background ============ -->
+    <section class="block" id="background">
+      <div class="block-head">
+        <div class="block-icon" style="background:var(--mint);color:#fff">🌍</div>
+        <div>
+          <h2>Background</h2>
+          <p class="sub">Context that helps you understand the article.</p>
+        </div>
+      </div>
+      {{BACKGROUND}}
+    </section>
+
+    <!-- ============ Expressions ============ -->
+    <section class="block" id="expressions">
+      <div class="block-head">
+        <div class="block-icon" style="background:var(--pink);color:#fff">✨</div>
+        <div>
+          <h2>Useful Expressions</h2>
+          <p class="sub">You can reuse these in exam writing.</p>
+        </div>
+      </div>
+      <div class="expr-grid">{{EXPRESSIONS}}</div>
+    </section>
+
+    <!-- ============ Practice ============ -->
+    <section class="block" id="quiz">
+      <div class="block-head">
+        <div class="block-icon" style="background:var(--violet);color:#fff">✏️</div>
+        <div>
+          <h2>Practice</h2>
+          <p class="sub">Click an option for instant feedback. Read the explanation after.</p>
+        </div>
+      </div>
+      {{QUIZ}}
+    </section>
+
+    <!-- ============ Discussion ============ -->
+    <section class="block" id="discussion">
+      <div class="block-head">
+        <div class="block-icon" style="background:var(--lemon);color:var(--ink)">💬</div>
+        <div>
+          <h2>Discussion</h2>
+          <p class="sub">Topics for class or speaking practice.</p>
+        </div>
+      </div>
+      <div class="discuss-list">{{DISCUSSION}}</div>
+    </section>
+
+    <!-- ============ Writing ============ -->
+    <section class="block" id="writing">
+      <div class="block-head">
+        <div class="block-icon" style="background:var(--klein);color:#fff">🖊</div>
+        <div>
+          <h2>Writing Task</h2>
+          <p class="sub">Turn input into output. Use expressions from this article.</p>
+        </div>
+      </div>
+      {{WRITING}}
+    </section>
+
+    <!-- ============ Previous / Next ============ -->
+    <nav class="pager">{{PAGER}}</nav>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="brand">Klein Read <span>克莱因精读</span></p>
+      <p>Intensive-reading workshop for Chinese college students.<br>Source: English and Japanese weeklies · Theme words in Klein blue #002FA7</p>
+    </div>
+    <div class="tip">💡 Tip: Read the source text first. Then open Translation and Analysis. Write one sentence with a theme word to complete your daily task.</div>
+  </div>
+</footer>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

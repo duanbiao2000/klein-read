@@ -1,0 +1,12 @@
+---
+description: Klein Read project rules — workflow and quality rules for turning weekly articles into intensive-reading pages
+alwaysApply: true
+---
+
+Klein Read turns English or Japanese weekly articles into intensive-reading pages for Chinese college students. Theme words use Klein blue.
+
+- Read `skills/klein-read/SKILL.md` first. It is the single source of truth. Data schema: `skills/klein-read/references/schema.md`.
+- One article = one `data/NNN-english-slug.json`. Mark theme words with `[[word|display]]` in `paragraphs[].text`.
+- Run `python3 build.py` after every data change (standard library only). Do not edit `articles/` or `index.html`.
+- Language policy: documentation and page UI in English (ASD-STE100 style). Study notes in Chinese. Source text: English or Japanese (`source_lang`).
+- Do not change style files unless the user asks. After style or build changes, run `python3 sync_skill.py`.

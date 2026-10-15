@@ -1,0 +1,73 @@
+{
+  "_comment": "Article template. Copy to data/NNN-slug.json and fill it. Then run: python3 build.py. Mark theme words in the source text with [[word]] or [[word|display]]. Delete optional blocks you do not need. Study notes are in Chinese. Source text can be English (source_lang=en) or Japanese (source_lang=ja).",
+
+  "id": "003-your-article-slug",
+  "source": "The Economist",
+  "date": "2026-10-20",
+  "topic": "Tech",
+  "source_lang": "en",
+  "difficulty": 3,
+  "read_minutes": 10,
+  "word_count": 550,
+
+  "title_src": "Source-language title here",
+  "title_zh": "中文标题在此",
+  "lead_zh": "中文导读：这篇文章讲什么、为什么值得读、能学到什么。（此键也可写作 lead）",
+
+  "theme_words": [
+    { "word": "keyword", "phonetic": "/ˈkɜːwɜːd/", "pos": "n.", "meaning_zh": "主题词中文释义" }
+  ],
+
+  "paragraphs": [
+    {
+      "text": "Source-language paragraph with a [[keyword]] marked inside.",
+      "zh": "对应中文译文。",
+      "words": [
+        { "word": "keyword", "pos": "n.", "meaning_zh": "中文释义", "note_zh": "用法补充/搭配/易错点" }
+      ],
+      "sentences": [
+        {
+          "text": "One long sentence to analyze.",
+          "structure": [
+            { "type": "main", "text": "主句成分说明（标签可省略，按原文语言自动给出）" },
+            { "type": "clause", "text": "从句成分说明" },
+            { "type": "phrase", "text": "修饰成分说明" },
+            { "type": "tip", "text": "翻译/写作/考点提示" }
+          ],
+          "tip_zh": "整句学习要点（可省略）。"
+        }
+      ]
+    }
+  ],
+
+  "background": [
+    { "title_zh": "背景小标题", "body_zh": "背景知识正文（中文）。" }
+  ],
+
+  "expressions": [
+    { "expr": "useful expression", "zh": "地道中文意思", "usage_zh": "用法说明，可用 <b>重点</b> 标记" }
+  ],
+
+  "quiz": [
+    {
+      "type": "choice",
+      "q": "Question text in the source language?",
+      "options": ["Option A", "Option B", "Option C", "Option D"],
+      "answer": 0,
+      "explanation_zh": "中文解析。"
+    },
+    {
+      "type": "fill",
+      "q": "Sentence with a blank ______ (hint).",
+      "answer": "correct answer",
+      "explanation_zh": "中文解析。"
+    }
+  ],
+
+  "discussion_zh": ["中文讨论题 1？", "中文讨论题 2？"],
+
+  "writing": {
+    "title_zh": "写作练习标题",
+    "prompt_zh": "中文写作任务说明。"
+  }
+}

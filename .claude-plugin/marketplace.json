@@ -1,0 +1,13 @@
+{
+  "name": "klein-read-marketplace",
+  "owner": {
+    "name": "Klein Read"
+  },
+  "plugins": [
+    {
+      "name": "klein-read",
+      "source": "./",
+      "description": "Paste a weekly article (English or Japanese) and get an intensive-reading page for Chinese college students. Klein-blue theme words included."
+    }
+  ]
+}
