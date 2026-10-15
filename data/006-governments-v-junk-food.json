@@ -1,0 +1,482 @@
+{
+  "id": "006-governments-v-junk-food",
+  "source": "The Economist",
+  "date": "2026-10-08",
+  "updated": "2026-10-15",
+  "topic": "Health",
+  "source_lang": "en",
+  "difficulty": 4,
+  "read_minutes": 14,
+  "word_count": 1150,
+  "title_src": "Governments v sugar, salt and fat",
+  "title_zh": "政府大战糖、盐与脂肪：唠叨无用，重在环境",
+  "lead_zh": "哥伦比亚对垃圾食品征税加警示标签、加州立法管超市货架、英国禁广告限促销——各国正从“劝你吃得健康”转向改造“食物环境”。文章盘点标签、广告禁令、规划限制与糖税四类政策工具的成效与漏洞（现烤糕点钻禁令空子），并给出“菠菜与糖果最低配比”等新思路。学习重点：cajole、exempt、disincentive 等高频词与 with great effect 等写作表达。",
+  "theme_words": [
+    { "word": "obesity", "phonetic": "/əʊˈbiːsəti/", "pos": "n.", "meaning_zh": "肥胖（症）" },
+    { "word": "curb", "phonetic": "/kɜːb/", "pos": "v./n.", "meaning_zh": "抑制，遏制" },
+    { "word": "chronic", "phonetic": "/ˈkrɒnɪk/", "pos": "adj.", "meaning_zh": "（疾病）慢性的；长期的" },
+    { "word": "meddle", "phonetic": "/ˈmedl/", "pos": "v.", "meaning_zh": "干预，干涉（含贬义）" },
+    { "word": "cajole", "phonetic": "/kəˈdʒəʊl/", "pos": "v.", "meaning_zh": "哄劝，诱导（连哄带骗）" },
+    { "word": "disincentive", "phonetic": "/ˌdɪsɪnˈsentɪv/", "pos": "n.", "meaning_zh": "抑制因素，负面激励" },
+    { "word": "bewildering", "phonetic": "/bɪˈwɪldərɪŋ/", "pos": "adj.", "meaning_zh": "令人眼花缭乱的，纷繁的" },
+    { "word": "exempt", "phonetic": "/ɪɡˈzempt/", "pos": "adj.", "meaning_zh": "被免除的，豁免的" }
+  ],
+  "paragraphs": [
+    {
+      "text": "Sunday afternoons in Sim\u00f3n Bol\u00edvar park are an orgy of calories. Many stalls in this green corner of Colombia\u2019s capital, Bogot\u00e1, sell obleas: sandwiches of wafers stuffed with layers of fattening fillings, including syrups, jams, caramel and cheese. An acid green \u201cbubble-gum\u201d sauce is among the enticing options. \u201cLife\u2019s too short not to eat the food that you love\u201d, reads a sign above one of the stalls.",
+      "zh": "西蒙·玻利瓦尔公园的周日下午，是一场卡路里的狂欢。在哥伦比亚首都波哥大这片绿地上，许多摊位售卖 obleas：威化饼夹着层层叠叠的增肥馅料——糖浆、果酱、焦糖和奶酪。一种酸绿色的“泡泡糖”酱是诱人的选项之一。一个摊位上方的招牌写着：“人生苦短，怎能不吃自己爱吃的东西。”",
+      "words": [
+        { "word": "orgy (of)", "pos": "n.", "meaning_zh": "（夸张）泛滥，放纵的大量", "note_zh": "an orgy of calories 卡路里的狂欢；an orgy of spending 挥霍无度" },
+        { "word": "wafer", "pos": "n.", "meaning_zh": "威化饼，薄脆饼", "note_zh": "sandwiches of wafers 威化饼夹层" },
+        { "word": "fattening", "pos": "adj.", "meaning_zh": "使人发胖的", "note_zh": "fatten 催肥 + -ing；fattening fillings 增肥馅料" },
+        { "word": "enticing", "pos": "adj.", "meaning_zh": "诱人的", "note_zh": "entice（引诱）+ -ing；enticing options/offer 诱人的选项" }
+      ],
+      "sentences": [
+        {
+          "text": "\u201cLife\u2019s too short not to eat the food that you love\u201d, reads a sign above one of the stalls.",
+          "structure": [
+            { "type": "main", "text": "reads a sign above one of the stalls —— 倒装引语结构：招牌上写道……" },
+            { "type": "phrase", "text": "Life\u2019s too short not to eat ... —— too ... not to do：太……而不能不……（双重否定表肯定）" }
+          ],
+          "tip_zh": "Life\u2019s too short not to do sth 是地道口语句式；引语前置 + reads a sign 是新闻特写的经典开法。"
+        }
+      ]
+    },
+    {
+      "text": "So Colombians evidently believe. A quarter of them are obese, according to the UN\u2019s World Health Organisation, a share that has risen fivefold since 1980. Diabetes, high blood pressure and kidney disease\u2014all [[chronic]] conditions associated with [[obesity]]\u2014are rife. The health-care system, already severely underfunded and then stretched almost to breaking point by covid-19, has struggled to cope.",
+      "zh": "哥伦比亚人显然深信不疑。据联合国世界卫生组织数据，四分之一的哥伦比亚人肥胖，这一比例自 1980 年以来增长了五倍。糖尿病、高血压和肾病——这些与肥胖相关的慢性病——极为普遍。本就严重资金不足、又被新冠疫情拉到崩溃边缘的医疗系统，勉力支撑。",
+      "words": [
+        { "word": "obese", "pos": "adj.", "meaning_zh": "肥胖的（医学口径）", "note_zh": "名词 obesity；BMI≥30 为 obese" },
+        { "word": "obesity", "pos": "n.", "meaning_zh": "肥胖（症）", "note_zh": "obesity rate 肥胖率；obesity epidemic 肥胖流行" },
+        { "word": "chronic", "pos": "adj.", "meaning_zh": "（疾病）慢性的；长期的", "note_zh": "chronic disease 慢性病；反义 acute 急性的" },
+        { "word": "rife", "pos": "adj.", "meaning_zh": "普遍的，猖獗的（贬）", "note_zh": "be rife in/with ……中很普遍；corruption is rife 腐败猖獗" }
+      ],
+      "sentences": [
+        {
+          "text": "The health-care system, already severely underfunded and then stretched almost to breaking point by covid-19, has struggled to cope.",
+          "structure": [
+            { "type": "main", "text": "The health-care system has struggled to cope —— 主干：医疗系统勉力支撑" },
+            { "type": "phrase", "text": "already severely underfunded and then stretched almost to breaking point —— 两个过去分词短语作插入补充，描述系统的两重困境" }
+          ],
+          "tip_zh": "主谓之间塞入长分词插入语是《经济学人》常态；抓主干时先跳过逗号之间的内容。stretch to breaking point（拉到崩溃边缘）可积累。"
+        }
+      ]
+    },
+    {
+      "text": "In 2022 the previous government decided radical action was needed. It required all processed food with high levels of sugar, salt or the unhealthiest forms of fat to be labelled as such, with big black warning signs. More important, it imposed a 10% tax on such products, which rose to 15% in 2024 and 20% last year.",
+      "zh": "2022 年，前政府认定必须采取激进措施。它要求所有高糖、高盐或含最不健康脂肪的加工食品标注黑色大警示标志。更重要的是，政府对此类产品征收 10% 的税，2024 年升至 15%，去年升至 20%。",
+      "words": [
+        { "word": "radical", "pos": "adj.", "meaning_zh": "激进的，彻底的", "note_zh": "radical action/measures 激进措施；radical reform 彻底改革" },
+        { "word": "impose", "pos": "v.", "meaning_zh": "征收（税）；强加", "note_zh": "impose a tax on 对……征税；impose restrictions on 施加限制" },
+        { "word": "processed food", "pos": "n.phr.", "meaning_zh": "加工食品", "note_zh": "unprocessed/fresh food 对应；食品政策高频词" },
+        { "word": "as such", "pos": "phr.", "meaning_zh": "照此，作为 such 所指的东西", "note_zh": "labelled as such 被“照此标注”；as such 也表“本身”" }
+      ],
+      "sentences": [
+        {
+          "text": "It required all processed food with high levels of sugar, salt or the unhealthiest forms of fat to be labelled as such, with big black warning signs.",
+          "structure": [
+            { "type": "main", "text": "It required all processed food ... to be labelled as such —— require sth to be done（要求某物被……）" },
+            { "type": "phrase", "text": "with high levels of sugar, salt or ... fat —— 介词短语后置定语修饰 food" },
+            { "type": "phrase", "text": "with big black warning signs —— 第二个 with 短语表方式/附带" }
+          ],
+          "tip_zh": "require + 宾语 + to be done 是政策报道核心句型；两个 with 短语分工不同（定语 vs 方式），写作可模仿。"
+        }
+      ]
+    },
+    {
+      "text": "Colombia is not the only place that is [[meddle|meddling]] in the food business to counter obesity. On September 29th Gavin Newsom, the governor of California, who is likely to run for president in 2028, signed a bill requiring grocery chains to place healthy foods in \u201chigh-traffic areas\u201d within stores. A law came into effect in Scotland on October 1st barring big businesses from displaying unhealthy foods prominently in shops and from offering promotions that encourage bulk purchases of them, such as buy-one-get-one-free deals. In India on October 6th a public consultation ended on a proposal to prohibit sales of junk food to children within 50 metres of a school. The state of Maharashtra already has such a law, barring sales of junk food to anyone near a school.",
+      "zh": "哥伦比亚并非唯一干预食品行业以对抗肥胖的地方。9 月 29 日，可能竞选 2028 年总统的加州州长加文·纽瑟姆签署法案，要求连锁超市把健康食品摆进店内“高客流区域”。苏格兰 10 月 1 日生效的一部法律，禁止大企业在店内显著位置陈列不健康食品，也禁止“买一送一”等鼓励囤购的促销。印度 10 月 6 日结束了一项公众征询：拟禁止在学校 50 米内向儿童售卖垃圾食品。马哈拉施特拉邦早已有此类法律——禁止在学校附近向任何人售卖垃圾食品。",
+      "words": [
+        { "word": "meddle", "pos": "v.", "meaning_zh": "干预，干涉（含贬义）", "note_zh": "meddle in sth 干预某事；比 intervene 更带“多管闲事”色彩" },
+        { "word": "counter", "pos": "v.", "meaning_zh": "对抗，抵制", "note_zh": "counter obesity/inflation 对抗肥胖/通胀；counter- 前缀常见" },
+        { "word": "come into effect", "pos": "phr.", "meaning_zh": "（法律）生效", "note_zh": "= take effect/enter into force；法律英语高频" },
+        { "word": "bar", "pos": "v.", "meaning_zh": "禁止", "note_zh": "bar sb from doing 禁止某人做；= ban/prohibit" }
+      ],
+      "sentences": [
+        {
+          "text": "A law came into effect in Scotland on October 1st barring big businesses from displaying unhealthy foods prominently in shops and from offering promotions that encourage bulk purchases of them, such as buy-one-get-one-free deals.",
+          "structure": [
+            { "type": "main", "text": "A law came into effect in Scotland on October 1st —— 主句：一部法律在苏格兰生效" },
+            { "type": "phrase", "text": "barring big businesses from ... and from ... —— 现在分词后置定语修饰 law；bar sb from doing sth 平行结构" },
+            { "type": "clause", "text": "that encourage bulk purchases of them —— 定语从句修饰 promotions" }
+          ],
+          "tip_zh": "bar sb from doing A and from doing B 的平行结构是立法文本标配；bulk purchase（囤购）、buy-one-get-one-free（买一送一）可直接进写作。"
+        }
+      ]
+    },
+    {
+      "text": "Heavy-handed policies like these used to be a rarity. Between 1992 and 2020 Britain adopted no fewer than 14 official government plans to [[curb]] rising [[obesity]] (not counting the initiatives of devolved governments in Northern Ireland, Scotland and Wales). Those plans involved 689 individual policies. The majority aimed to make consumers more aware of the health risks of junk food and to provide better access to healthy alternatives, especially in schools. None banned any forms of junk food, only 3% restricted access to it and only two policies (or 0.3% of the total) created any financial [[disincentive]] to consume it, such as higher taxes.",
+      "zh": "这类强硬政策过去十分罕见。1992 至 2020 年间，英国通过了不下 14 份遏制肥胖上升的官方政府计划（还不算北爱尔兰、苏格兰和威尔士等下放政府的举措）。这些计划包含 689 项具体政策。大多数旨在让消费者更了解垃圾食品的健康风险、并更好地获得健康替代品，尤其是在学校。没有一项禁止任何形式的垃圾食品；仅 3% 限制其获取；只有两项政策（占总数 0.3%）设置了任何消费上的财务抑制，比如提高税收。",
+      "words": [
+        { "word": "heavy-handed", "pos": "adj.", "meaning_zh": "强硬粗暴的", "note_zh": "heavy-handed policies/measures 强硬政策；反义 light-touch 温和的" },
+        { "word": "curb", "pos": "v./n.", "meaning_zh": "抑制，遏制", "note_zh": "curb rising obesity/immigration/inflation 遏制上升趋势；名词 take action to curb" },
+        { "word": "disincentive", "pos": "n.", "meaning_zh": "抑制因素，负面激励", "note_zh": "反义 incentive 激励；a financial disincentive 财务抑制手段（如征税）" },
+        { "word": "no fewer than", "pos": "phr.", "meaning_zh": "不下……之多（强调多）", "note_zh": "字面“不少于”，实则强调数量惊人；not counting = not including" }
+      ],
+      "sentences": [
+        {
+          "text": "Between 1992 and 2020 Britain adopted no fewer than 14 official government plans to curb rising obesity (not counting the initiatives of devolved governments in Northern Ireland, Scotland and Wales).",
+          "structure": [
+            { "type": "main", "text": "Britain adopted no fewer than 14 official government plans —— 主句：英国通过了不下 14 份官方计划" },
+            { "type": "phrase", "text": "to curb rising obesity —— 不定式表目的" },
+            { "type": "phrase", "text": "(not counting ...) —— 括号补充：还不算下放政府的举措，突出“14 份还只是保守统计”" }
+          ],
+          "tip_zh": "no fewer than（不下……之多）是强调数字的委婉修辞；括号补充统计口径也是数据论证的好习惯。"
+        }
+      ]
+    },
+    {
+      "text": "This [[cajole|cajoling]] approach has failed. England\u2019s obesity rate has doubled since the early 1990s. About a fifth of 11-year-olds are now obese. In both rich countries and poorer ones, obesity rates have been rising steadily (see chart). In America 72% of adults are obese or overweight. In Mexico 74% are. All this costs the countries in the OECD, a club mostly of rich countries, an average of 3% of GDP a year in health-care spending and lost productivity.",
+      "zh": "这种哄劝式路径已经失败。英格兰的肥胖率自 1990 年代初翻了一番，约五分之一的 11 岁儿童如今肥胖。无论富国还是穷国，肥胖率都在稳步上升（见图表）。美国 72% 的成年人肥胖或超重，墨西哥为 74%。这一切让 OECD（一个以富国为主的俱乐部）成员国平均每年在医疗支出和生产力损失上耗费 GDP 的 3%。",
+      "words": [
+        { "word": "cajole", "pos": "v.", "meaning_zh": "哄劝，诱导（连哄带骗）", "note_zh": "cajole sb into doing sth 连哄带骗让某人做；cajoling approach 哄劝式路径" },
+        { "word": "steadily", "pos": "adv.", "meaning_zh": "稳步地，持续地", "note_zh": "rise steadily 稳步上升；比 constantly 更强调“无波动的持续”" },
+        { "word": "overweight", "pos": "adj.", "meaning_zh": "超重的", "note_zh": "obese 肥胖（更重）/ overweight 超重；政策文本常并列" },
+        { "word": "productivity", "pos": "n.", "meaning_zh": "生产力，生产率", "note_zh": "lost productivity 生产力损失；health-care spending and lost productivity 双成本" }
+      ],
+      "sentences": [
+        {
+          "text": "All this costs the countries in the OECD, a club mostly of rich countries, an average of 3% of GDP a year in health-care spending and lost productivity.",
+          "structure": [
+            { "type": "main", "text": "All this costs the countries ... an average of 3% of GDP a year —— cost sb sth（使某人损失某物）双宾语结构" },
+            { "type": "phrase", "text": "a club mostly of rich countries —— 同位语插入，解释 OECD" },
+            { "type": "phrase", "text": "in health-care spending and lost productivity —— in 短语说明成本的两方面" }
+          ],
+          "tip_zh": "cost sb sth + in ... 两方面说明成本，是数据论证句式；同位语插入解释机构名称值得模仿。"
+        }
+      ]
+    },
+    {
+      "text": "Although GLP-1 drugs, the weight-loss treatments that have become commonplace in the rich world in recent years, hold out the hope of dramatically reducing obesity, they are pricey, especially considering patients must remain on them indefinitely.",
+      "zh": "尽管 GLP-1 药物——近年来在富国已司空见惯的减肥疗法——带来了大幅降低肥胖率的希望，但它们价格昂贵，尤其考虑到患者必须终身服药。",
+      "words": [
+        { "word": "commonplace", "pos": "adj.", "meaning_zh": "司空见惯的", "note_zh": "have become commonplace 已变得司空见惯；反义 rare/novel" },
+        { "word": "hold out the hope of", "pos": "phr.", "meaning_zh": "带来……的希望", "note_zh": "hold out hope (that) ……有希望；hold out little hope 希望渺茫" },
+        { "word": "pricey", "pos": "adj.", "meaning_zh": "昂贵的（口语）", "note_zh": "= expensive/costly；新闻中夹口语词调节节奏" },
+        { "word": "indefinitely", "pos": "adv.", "meaning_zh": "无限期地，长期地", "note_zh": "remain on them indefinitely 无限期服用；indefinite 不确定期限的" }
+      ],
+      "sentences": [
+        {
+          "text": "Although GLP-1 drugs, the weight-loss treatments that have become commonplace in the rich world in recent years, hold out the hope of dramatically reducing obesity, they are pricey, especially considering patients must remain on them indefinitely.",
+          "structure": [
+            { "type": "clause", "text": "Although GLP-1 drugs ... hold out the hope of ... —— 让步状语从句，主语后插入同位语 + that 定语从句" },
+            { "type": "main", "text": "they are pricey —— 主句：它们很贵" },
+            { "type": "phrase", "text": "especially considering (that) patients must remain on them indefinitely —— considering 表“考虑到”，补充理由" }
+          ],
+          "tip_zh": "一句话四层（让步+同位语+定语从句+considering 补充）。写作时可拆两句：Although ... hold out hope, they are pricey. Considering ..., the cost adds up."
+        }
+      ]
+    },
+    {
+      "text": "Politicians are instead turning to a [[bewildering]] array of policies intended not to persuade people to change their habits, but rather to alter the \u201cfood environment\u201d around them. Many of the new rules concern labels. About ten years ago health officials in Britain, France and elsewhere created simple symbols in traffic-light colours to rank foods from best to worst, either for ingredients of concern (such as fat, sugar and salt) or overall, based on a formula that takes into account healthy ingredients, too. Many countries have since adopted such easily digestible scoring systems\u2014but most remain voluntary.",
+      "zh": "政客们转而采用令人眼花缭乱的一批政策：目的不再是劝人们改变习惯，而是改变他们周围的“食物环境”。许多新规关乎标签。约十年前，英法等国的卫生官员创造了红绿灯颜色的简单符号，为食品从最好到最差评级——要么针对令人担忧的成分（如脂肪、糖和盐），要么基于一个同样计入健康成分的公式做总体评级。许多国家此后采用了这类一目了然的评分体系——但大多仍是自愿性的。",
+      "words": [
+        { "word": "bewildering", "pos": "adj.", "meaning_zh": "令人眼花缭乱的，纷繁的", "note_zh": "a bewildering array of 令人眼花缭乱的一批；bewilder 使困惑" },
+        { "word": "array", "pos": "n.", "meaning_zh": "一大批，一系列", "note_zh": "an array of policies/tools 一批政策/工具；常与 bewildering/impressive 连用" },
+        { "word": "food environment", "pos": "n.phr.", "meaning_zh": "食物环境（政策术语）", "note_zh": "指食品的可得性、陈列、价格、广告等外部条件" },
+        { "word": "voluntary", "pos": "adj.", "meaning_zh": "自愿的，非强制的", "note_zh": "反义 mandatory/compulsory；voluntary labels 自愿性标签" }
+      ],
+      "sentences": [
+        {
+          "text": "Politicians are instead turning to a bewildering array of policies intended not to persuade people to change their habits, but rather to alter the \u201cfood environment\u201d around them.",
+          "structure": [
+            { "type": "main", "text": "Politicians are instead turning to a bewildering array of policies —— 主句：政客转而采用一大批政策（turn to 转向）" },
+            { "type": "phrase", "text": "intended not to persuade ... but rather to alter ... —— 过去分词定语内嵌 not ... but rather ... 平行结构" }
+          ],
+          "tip_zh": "not to do A, but rather to do B（不是为了 A，而是为了 B）是议论文立论的高频对照结构；intended to 作后置定语。"
+        }
+      ]
+    },
+    {
+      "text": "That is changing fast. A bill to make France\u2019s labels mandatory has been introduced in parliament. Singapore will soon oblige manufacturers to label foods that score poorly under its system. The most sweeping rules, however, involve warning labels like Colombia\u2019s, akin to the frightening messages many countries require on cigarette packets. Since 2016, for instance, Chile has obliged manufacturers to place as many as four black, stop-sign-shaped alerts on the front of unhealthy products, depending on how many ingredients exceed the regulatory threshold. Canada adopted similar rules earlier this year.",
+      "zh": "这种状况正在迅速改变。法国已向议会提交强制推行标签的法案。新加坡不久将强制制造商对在其体系下得分低的食品加贴标签。然而最彻底的当属哥伦比亚式警示标签——类似许多国家要求香烟包装上印的吓人警示语。例如自 2016 年起，智利强制制造商在不健康产品正面张贴多达四个黑色停车标志形状的警示，具体数量取决于有多少成分超过监管阈值。加拿大今年早些时候也通过了类似规定。",
+      "words": [
+        { "word": "mandatory", "pos": "adj.", "meaning_zh": "强制的，义务的", "note_zh": "make labels mandatory 强制推行标签；反义 voluntary" },
+        { "word": "sweeping", "pos": "adj.", "meaning_zh": "大刀阔斧的，范围广泛的", "note_zh": "sweeping rules/changes/reforms 大刀阔斧的规则/变革" },
+        { "word": "akin to", "pos": "phr.", "meaning_zh": "类似于，与……同类", "note_zh": "书面语 = similar to；be akin to the messages 类似于那些警示语" },
+        { "word": "threshold", "pos": "n.", "meaning_zh": "阈值，门槛", "note_zh": "regulatory threshold 监管阈值；exceed the threshold 超过阈值" }
+      ],
+      "sentences": [
+        {
+          "text": "The most sweeping rules, however, involve warning labels like Colombia\u2019s, akin to the frightening messages many countries require on cigarette packets.",
+          "structure": [
+            { "type": "main", "text": "The most sweeping rules involve warning labels like Colombia\u2019s —— 主句：最彻底的规则是哥伦比亚式警示标签" },
+            { "type": "phrase", "text": "akin to the frightening messages (that) many countries require on cigarette packets —— akin to 补充说明；定语从句省略了 that" }
+          ],
+          "tip_zh": "be akin to（类似于）是 like 的书面升级；定语从句省略宾语 that 在新闻英语极常见，读时默补即可。"
+        }
+      ]
+    },
+    {
+      "text": "Such rules have an impact, both by deterring buyers and by prompting chastened manufacturers to alter recipes to avoid being branded unhealthy. A recent analysis of Mexico\u2019s labelling law, which came into effect in 2020, concluded that it had led to a 15% drop in calories sold, a 25% drop in added sugar and 12% drop in saturated fats, even as overall sales volumes remained stable. About 90% of the reduction in calories was the result of products being reformulated, rather than of people changing which products they bought.",
+      "zh": "这类规则确有成效：既震慑了买家，也促使吃过苦头的制造商改配方，以免被贴上“不健康”标签。最近一项对墨西哥 2020 年生效的标签法的分析得出结论：该法使售出卡路里下降 15%、添加糖下降 25%、饱和脂肪下降 12%，而总销量保持稳定。卡路里减少量中约 90% 源于产品重新配方，而非消费者更换所购产品。",
+      "words": [
+        { "word": "deter", "pos": "v.", "meaning_zh": "震慑，阻止", "note_zh": "deter sb from doing 阻止某人做；deter buyers 震慑买家" },
+        { "word": "chastened", "pos": "adj.", "meaning_zh": "被教训后老实的", "note_zh": "chasten 敲打、使谨慎；chastened manufacturers 吃过苦头的厂商" },
+        { "word": "reformulate", "pos": "v.", "meaning_zh": "重新配方，改配方", "note_zh": "re- + formulate；reformulated products 改配方后的产品" },
+        { "word": "brand", "pos": "v.", "meaning_zh": "给贴上标签/冠以（名声）", "note_zh": "be branded unhealthy 被“打上不健康烙印”；brand sb as sth" }
+      ],
+      "sentences": [
+        {
+          "text": "A recent analysis of Mexico\u2019s labelling law, which came into effect in 2020, concluded that it had led to a 15% drop in calories sold, a 25% drop in added sugar and 12% drop in saturated fats, even as overall sales volumes remained stable.",
+          "structure": [
+            { "type": "main", "text": "A recent analysis ... concluded that ... —— 主句：一项分析得出结论……" },
+            { "type": "clause", "text": "which came into effect in 2020 —— 非限制性定语从句插入说明法律生效时间" },
+            { "type": "clause", "text": "that it had led to a 15% drop ..., a 25% drop ..., and 12% drop ... —— 宾语从句三项数据排比；even as 引导让步对比“而……却保持稳定”" }
+          ],
+          "tip_zh": "三项数据排比 + even as（与此同时却……）是数据论证黄金句式；分析报告类写作可直接套用。"
+        }
+      ]
+    },
+    {
+      "text": "Restrictions on marketing unhealthy foods are also proliferating. About a dozen countries ban television ads for junk food when children are likely to be watching or bar ads and packaging from appealing to children using cartoon characters and the like. In January Britain went a step further, banning ads for unhealthy foods online and on social media, following a similar move by Portugal in 2019. Local governments can be especially zealous. In 2022 New York banned junk-food ads on all city property, as have several places in Australia and Britain. Amsterdam and London ban them on public transport.",
+      "zh": "对不健康食品营销的限制也在激增。约十二个国家禁止在儿童可能观看的时段播放垃圾食品电视广告，或禁止广告和包装使用卡通形象等吸引儿童。今年 1 月，英国更进一步，禁止在网上和社交媒体投放不健康食品广告——葡萄牙 2019 年已有类似举措。地方政府尤甚：2022 年纽约禁止在一切市政场所投放垃圾食品广告，澳大利亚和英国多地也照此办理；阿姆斯特丹和伦敦禁止在公共交通上投放。",
+      "words": [
+        { "word": "proliferate", "pos": "v.", "meaning_zh": "激增，迅速扩散", "note_zh": "restrictions are proliferating 限制在激增；名词 proliferation" },
+        { "word": "appeal to", "pos": "phr.v.", "meaning_zh": "吸引，对……有吸引力", "note_zh": "appeal to children 吸引儿童；appealing 诱人的" },
+        { "word": "zealous", "pos": "adj.", "meaning_zh": "热心过头的，狂热的", "note_zh": "尤其指积极得过了头；zeal 热情；zealous enforcement 积极执法" },
+        { "word": "the like", "pos": "phr.", "meaning_zh": "诸如此类，等等", "note_zh": "and the like = and similar things；口语书面通用" }
+      ],
+      "sentences": [
+        {
+          "text": "About a dozen countries ban television ads for junk food when children are likely to be watching or bar ads and packaging from appealing to children using cartoon characters and the like.",
+          "structure": [
+            { "type": "main", "text": "About a dozen countries ban ... or bar ... —— 两个并列谓语（ban / bar），主句共用主语" },
+            { "type": "clause", "text": "when children are likely to be watching —— when 引导时间状语从句" },
+            { "type": "phrase", "text": "using cartoon characters and the like —— 分词短语表方式" }
+          ],
+          "tip_zh": "ban A / bar A from doing 的同义并列避免重复；be likely to be doing（很可能正在……）表推测进行，值得模仿。"
+        }
+      ]
+    },
+    {
+      "text": "Then there are restrictions on where unhealthy foods can be sold. Britain\u2019s planning law was amended in 2024 to allow local authorities to ban new fast-food joints within walking distance of a secondary school\u2014although so many such outlets already exist that the new rules may have little effect. Maharashtra\u2019s law is much more restrictive, but enforcement is patchy.",
+      "zh": "再就是限制不健康食品的销售地点。英国 2024 年修订规划法，允许地方当局禁止在中学步行范围内新开快餐店——尽管此类门店早已多如牛毛，新规可能收效甚微。马哈拉施特拉邦的法律限制更严，但执法时紧时松。",
+      "words": [
+        { "word": "fast-food joint", "pos": "n.phr.", "meaning_zh": "快餐店（口语）", "note_zh": "joint 本义“小馆子”；比 fast-food restaurant 口语化" },
+        { "word": "outlet", "pos": "n.", "meaning_zh": "门店，销售点", "note_zh": "retail outlets 零售门店；chain outlets 连锁门店" },
+        { "word": "enforcement", "pos": "n.", "meaning_zh": "执法，执行", "note_zh": "enforce 执法；enforcement is patchy 执法时紧时松" },
+        { "word": "patchy", "pos": "adj.", "meaning_zh": "时好时坏的，不均衡的", "note_zh": "patch 补丁 → 东一块西一块；patchy success/improvement 不均衡的成效" }
+      ],
+      "sentences": [
+        {
+          "text": "Britain\u2019s planning law was amended in 2024 to allow local authorities to ban new fast-food joints within walking distance of a secondary school\u2014although so many such outlets already exist that the new rules may have little effect.",
+          "structure": [
+            { "type": "main", "text": "Britain\u2019s planning law was amended in 2024 to allow local authorities to ban ... —— 主句（被动）+ allow sb to do + ban sth" },
+            { "type": "clause", "text": "although so many such outlets already exist that the new rules may have little effect —— although 让步 + so ... that 结果结构嵌套" }
+          ],
+          "tip_zh": "so many ... that ...（多到……程度）嵌在 although 从句里；破折号后补让步转折，是杂志体的“自我拆台”式幽默。"
+        }
+      ]
+    },
+    {
+      "text": "The difficulty of enforcement is one of the many drawbacks of complex rules around junk food. They can place heavy burdens on businesses, which also often find creative ways around them. Since 2022, for example, Britain has banned supermarkets from displaying unhealthy packaged foods near checkouts, shop entrances and the ends of aisles, to curb impulse purchases. The share of the affected foods in overall sales fell by 7% the year after the ban. But sugary, greasy pastries swiftly took their place near the entrances of shops, since freshly baked items are [[exempt]] from the ban.",
+      "zh": "执法困难只是垃圾食品复杂规则的诸多弊端之一。这些规则给企业造成沉重负担，而企业也常想出有创意的规避办法。例如自 2022 年起，英国禁止超市在收银台、店门入口和货架末端陈列不健康包装食品，以遏制冲动消费。禁令实施次年，受影响食品在总销量中的占比下降了 7%。但含糖油腻的糕点迅速顶替了它们在店门口的位置——因为现烤食品豁免于禁令。",
+      "words": [
+        { "word": "drawback", "pos": "n.", "meaning_zh": "弊端，缺点", "note_zh": "= disadvantage/shortcoming；drawbacks of complex rules 复杂规则的弊端" },
+        { "word": "impulse purchase", "pos": "n.phr.", "meaning_zh": "冲动购买", "note_zh": "impulse buying；curb impulse purchases 遏制冲动消费" },
+        { "word": "exempt", "pos": "adj.", "meaning_zh": "被免除的，豁免的", "note_zh": "be exempt from 免于……；名词 exemption；exempt from the ban 豁免于禁令" },
+        { "word": "take one\u2019s place", "pos": "phr.", "meaning_zh": "顶替其位置", "note_zh": "pastries took their place 糕点顶替了它们的位置" }
+      ],
+      "sentences": [
+        {
+          "text": "But sugary, greasy pastries swiftly took their place near the entrances of shops, since freshly baked items are exempt from the ban.",
+          "structure": [
+            { "type": "main", "text": "sugary, greasy pastries swiftly took their place —— 主句：糕点迅速顶替其位（take one\u2019s place）" },
+            { "type": "clause", "text": "since freshly baked items are exempt from the ban —— since 引导原因：“因为现烤食品豁免”" }
+          ],
+          "tip_zh": "“上有政策下有对策”的经典案例句。be exempt from（豁免于）是法规类阅读高频词；写作举例“钻空子”现象可用这套搭配。"
+        }
+      ]
+    },
+    {
+      "text": "Such experiences have prompted authorities in Britain to consider an alternative approach. Instead of umpteen rules about what can be sold where and to whom, they are pondering targets for the healthiness of supermarket chains\u2019 total sales, based on the nutrition scores already in use for Britain\u2019s restrictions on junk-food advertising. It would be, in effect, a minimum spinach-to-sweets ratio. But the chains would be free to decide whether to promote spinach more, or sweets less, or to persuade junk-food manufacturers to put more spinach in their sweets.",
+      "zh": "这些经验促使英国当局考虑另辟蹊径。与其制定无数条“什么能卖给谁、在哪里卖”的规则，他们正在酝酿为连锁超市的总销售健康度设定目标——依据英国垃圾食品广告限制中已在使用的营养评分。实际上，这相当于一个“菠菜与糖果的最低配比”。但各连锁超市可以自行决定：是多推菠菜、少推糖果，还是说服垃圾食品厂商往糖果里多加点菠菜。",
+      "words": [
+        { "word": "umpteen", "pos": "adj.", "meaning_zh": "无数的，好些（口语）", "note_zh": "umpteen rules 无数条规则；带“多到烦”的感情色彩" },
+        { "word": "ponder", "pos": "v.", "meaning_zh": "思索，斟酌", "note_zh": "ponder targets/options 斟酌目标/选项；比 think about 书面" },
+        { "word": "in effect", "pos": "phr.", "meaning_zh": "实际上，事实上", "note_zh": "= in practice/essentially；区别于 take effect（生效）" },
+        { "word": "ratio", "pos": "n.", "meaning_zh": "比率，配比", "note_zh": "spinach-to-sweets ratio 菠菜与糖果配比；A-to-B ratio" }
+      ],
+      "sentences": [
+        {
+          "text": "Instead of umpteen rules about what can be sold where and to whom, they are pondering targets for the healthiness of supermarket chains\u2019 total sales, based on the nutrition scores already in use for Britain\u2019s restrictions on junk-food advertising.",
+          "structure": [
+            { "type": "phrase", "text": "Instead of umpteen rules about what can be sold where and to whom —— Instead of 介词短语表替代方案；内嵌三个疑问词（what/where/to whom）" },
+            { "type": "main", "text": "they are pondering targets for ... total sales —— 主句：他们在酝酿总销售健康度目标" },
+            { "type": "phrase", "text": "based on the nutrition scores already in use —— 过去分词短语表依据" }
+          ],
+          "tip_zh": "疑问词连用（what/where/to whom）一句罗列监管难题，信息密度极高；Instead of A, 主语 + B 是政策对比的标准开头。"
+        }
+      ]
+    },
+    {
+      "text": "Supermarkets wield lots of influence over shoppers. Sainsbury\u2019s, a big British chain, saw sales of fruit quadruple when it offered collectible Disney-themed cards with each sale. Supermarkets would probably press suppliers to make their products healthier, says Hugo Harper of Nesta, a think-tank in London. A frozen pizza, for instance, might end up with a few more vegetables on top and a bit less salt in the sauce. Nesta estimates that marginal changes to a quarter of items in the typical British shopping basket could lead to a sustained 8.5% reduction in calories in an average consumer\u2019s diet. Such a reduction, in turn, could halve obesity.",
+      "zh": "超市对消费者影响巨大。英国大型连锁 Sainsbury's 曾随货赠送迪士尼收藏卡，水果销量随即翻两番。伦敦智库 Nesta 的雨果·哈珀说，超市很可能会向供应商施压，要求产品更健康。比如一份冷冻披萨，最终可能多几片蔬菜、酱里少一点盐。Nesta 估计，对英国家庭购物篮中四分之一的商品做边际调整，就能让普通消费者饮食中的卡路里持续下降 8.5%。而这种下降反过来又可能让肥胖率减半。",
+      "words": [
+        { "word": "wield", "pos": "v.", "meaning_zh": "行使，运用（权力、影响）", "note_zh": "wield influence/power 行使影响/权力；a powerful tool to wield" },
+        { "word": "quadruple", "pos": "v.", "meaning_zh": "翻两番，增至四倍", "note_zh": "double 翻倍 / triple 三倍 / quadruple 四倍" },
+        { "word": "marginal", "pos": "adj.", "meaning_zh": "边际的，微小的", "note_zh": "marginal changes 边际调整（经济学语境）；marginal improvement 微小改进" },
+        { "word": "in turn", "pos": "phr.", "meaning_zh": "反过来，继而", "note_zh": "表链条传导：A → B in turn → C；依次/反过来" }
+      ],
+      "sentences": [
+        {
+          "text": "Nesta estimates that marginal changes to a quarter of items in the typical British shopping basket could lead to a sustained 8.5% reduction in calories in an average consumer\u2019s diet.",
+          "structure": [
+            { "type": "main", "text": "Nesta estimates that ... —— 主句：Nesta 估计……" },
+            { "type": "clause", "text": "that marginal changes ... could lead to a sustained 8.5% reduction ... —— 宾语从句：边际调整可带来持续的卡路里下降" },
+            { "type": "phrase", "text": "lead to + a reduction in calories in a diet —— 多层介词链：to/in/in，逐层收窄范围" }
+          ],
+          "tip_zh": "estimate that + could lead to（估计可带来）是智库/研究类写作核心句式；介词链 to/in/in 层层限定，写作注意保持逻辑清晰。"
+        }
+      ]
+    },
+    {
+      "text": "Retailers, naturally, do not want to be responsible for getting people to eat more healthily, even if governments give them some leeway about how they do it. A simpler alternative is to curb consumption of junk food by taxing it. More than 100 countries impose special taxes on sugary drinks\u2014with great effect. The year after Mexico imposed such a tax in 2014, sales of the products affected fell by around 6%. Many manufacturers also changed their recipes to make drinks less sugary. Mexico\u2019s government is so fond of the tax it raised it from 1.64 pesos ($0.09) a litre to 3.08 earlier this year.",
+      "zh": "零售商自然不愿为“让人们吃得更健康”负责，即便政府给他们留了些许回旋余地。更简单的替代方案是征税来遏制垃圾食品消费。已有 100 多个国家对含糖饮料征收专项税——效果显著。墨西哥 2014 年开征此税后次年，受影响产品销量下降约 6%。许多制造商也改了配方，降低饮料含糖量。墨西哥政府对此税青睐有加，今年早些时候把每升税额从 1.64 比索（0.09 美元）提高到 3.08 比索。",
+      "words": [
+        { "word": "leeway", "pos": "n.", "meaning_zh": "回旋余地，自由度", "note_zh": "give sb some leeway 给某人留余地；have leeway to do 有空间做" },
+        { "word": "impose", "pos": "v.", "meaning_zh": "征收（税）", "note_zh": "impose special taxes on 对……征收专项税（本文第二次出现）" },
+        { "word": "with great effect", "pos": "phr.", "meaning_zh": "效果显著地", "note_zh": "插入破折号后强调成效；= very effectively" },
+        { "word": "raise (a tax)", "pos": "phr.", "meaning_zh": "提高（税率/税额）", "note_zh": "raise it from ... to ... 从……提高到……；反义 cut/reduce" }
+      ],
+      "sentences": [
+        {
+          "text": "The year after Mexico imposed such a tax in 2014, sales of the products affected fell by around 6%.",
+          "structure": [
+            { "type": "main", "text": "sales of the products affected fell by around 6% —— 主句：受影响产品销量下降约 6%" },
+            { "type": "phrase", "text": "The year after Mexico imposed such a tax in 2014 —— 名词短语作时间状语：“墨西哥开征此税的次年”" }
+          ],
+          "tip_zh": "The year/month/week after + 从句 作时间状语，比 After ... 更具体生动；affected 后置定语（= the affected products）。"
+        }
+      ]
+    },
+    {
+      "text": "Any talk of raising taxes is awkward at a time of high inflation and widespread resentment at the rising cost of living. Public opinion does appear to be warming to more forceful regulation, however. In a poll last year 51% of Americans said they were in favour of restrictions on the sale of junk food in grocery stores and 44% approved of higher taxes on it. Nearly 70% of Britons say they would support an extension of Britain\u2019s tax on sugary drinks to other unhealthy foods if the proceeds were used to promote better diets.",
+      "zh": "在高通胀、民众对生活成本上涨普遍不满的当下，任何加税的提议都很尴尬。不过，民意似乎正转向支持更强硬的监管。去年一项民调中，51% 的美国人表示支持限制在杂货店售卖垃圾食品，44% 支持对其加税。近 70% 的英国人表示，如果税款用于推广更健康的饮食，他们会支持把英国的含糖饮料税扩展到其他不健康食品。",
+      "words": [
+        { "word": "resentment", "pos": "n.", "meaning_zh": "怨恨，不满", "note_zh": "resentment at/against 对……的不满；widespread resentment 普遍不满" },
+        { "word": "warm to", "pos": "phr.v.", "meaning_zh": "逐渐接受，开始喜欢", "note_zh": "public opinion is warming to 民意正转向支持；warm to an idea 逐渐接受想法" },
+        { "word": "proceeds", "pos": "n.", "meaning_zh": "（活动、税收的）收益", "note_zh": "the proceeds were used to 若税款被用于……；常用复数" },
+        { "word": "be in favour of", "pos": "phr.", "meaning_zh": "支持", "note_zh": "= support/approve of；口语书面通用" }
+      ],
+      "sentences": [
+        {
+          "text": "Nearly 70% of Britons say they would support an extension of Britain\u2019s tax on sugary drinks to other unhealthy foods if the proceeds were used to promote better diets.",
+          "structure": [
+            { "type": "main", "text": "Nearly 70% of Britons say ... —— 主句：近七成英国人说……" },
+            { "type": "clause", "text": "they would support an extension of A to B if the proceeds were used to ... —— 转述语境中的虚拟条件句（would + if ... were）" }
+          ],
+          "tip_zh": "an extension of A to B（把 A 扩展到 B）搭配精准；if ... were used 虚拟语气表假设条件，民调转述常用。"
+        }
+      ]
+    },
+    {
+      "text": "Moreover, many governments already tax food both heavily and inconsistently. In some countries it should be possible to penalise junk food by adjusting rates for different products without raising taxes overall. A study published last year in Nature found that ten European countries charge higher rates of value-added tax on fruits and vegetables than on meat and dairy. Reversing this, the researchers argued, would bring about big health benefits at almost no cost to consumers. VAT reforms along these lines are being discussed in Denmark, Germany and the Netherlands.",
+      "zh": "况且，许多政府对食品的征税本就又重又乱。在一些国家，完全可以只通过调整不同产品的税率来抑制垃圾食品，而不必整体加税。去年发表于《自然》的一项研究发现，十个欧洲国家对水果蔬菜征收的增值税税率高于肉类和乳制品。研究者认为，把这种税率倒过来，就能以几乎零消费者成本带来巨大健康收益。丹麦、德国和荷兰正在讨论此类增值税改革。",
+      "words": [
+        { "word": "inconsistently", "pos": "adv.", "meaning_zh": "不一致地，混乱地", "note_zh": "tax food heavily and inconsistently 征税又重又乱；consistency 一致性" },
+        { "word": "penalise", "pos": "v.", "meaning_zh": "惩罚，使处于不利地位", "note_zh": "penalise junk food 通过税收等惩罚垃圾食品；penalty 处罚" },
+        { "word": "value-added tax (VAT)", "pos": "n.phr.", "meaning_zh": "增值税", "note_zh": "欧盟主要税种；charge VAT on 对……征收增值税" },
+        { "word": "reverse", "pos": "v.", "meaning_zh": "扭转，颠倒", "note_zh": "reversing this 把这种税率结构倒过来；reverse a trend 扭转趋势" }
+      ],
+      "sentences": [
+        {
+          "text": "Reversing this, the researchers argued, would bring about big health benefits at almost no cost to consumers.",
+          "structure": [
+            { "type": "main", "text": "Reversing this would bring about big health benefits —— 动名词作主语：扭转这一结构将带来巨大健康收益" },
+            { "type": "phrase", "text": "the researchers argued —— 插入语标注观点来源" },
+            { "type": "phrase", "text": "at almost no cost to consumers —— 成本状语：几乎不增加消费者负担" }
+          ],
+          "tip_zh": "动名词主语 + 插入观点来源 + at no cost to ……（以几乎零成本）是研究结论类写作的模板句。"
+        }
+      ]
+    },
+    {
+      "text": "Junk food is popular for many reasons. It is convenient. It is often cheaper, calorie for calorie, than healthier food. Sugar, salt and fat are hard to resist. Food companies and supermarkets make more money from it than from healthy stuff, because they both sell more of it and earn higher margins on it. Against these daunting advantages, however, governments have found a formidable array of counter-measures.",
+      "zh": "垃圾食品受欢迎有许多原因：方便；按卡路里算往往比健康食品便宜；糖、盐和脂肪难以抗拒。食品公司和超市从它身上赚得更多——既因为销量更大，也因为利润率更高。然而，面对这些令人生畏的优势，政府也已找到了一批同样令人生畏的反制手段。",
+      "words": [
+        { "word": "calorie for calorie", "pos": "phr.", "meaning_zh": "按卡路里算（同等热量下）", "note_zh": "X for X 结构：dollar for dollar 按美元算、value for value 按价值算" },
+        { "word": "margin", "pos": "n.", "meaning_zh": "利润率；余地", "note_zh": "earn higher margins 获得更高利润率；profit margin 利润率" },
+        { "word": "daunting", "pos": "adj.", "meaning_zh": "令人生畏的", "note_zh": "daunting advantages 令人生畏的优势（多指困难，此处反用）" },
+        { "word": "counter-measure", "pos": "n.", "meaning_zh": "反制措施，对策", "note_zh": "counter- + measure；a formidable array of counter-measures 一批有力反制" }
+      ],
+      "sentences": [
+        {
+          "text": "Against these daunting advantages, however, governments have found a formidable array of counter-measures.",
+          "structure": [
+            { "type": "phrase", "text": "Against these daunting advantages —— against 表“面对/抗衡”；advantages 用 daunting 修饰，反差修辞" },
+            { "type": "main", "text": "governments have found a formidable array of counter-measures —— 主句：政府找到了一批有力反制手段" }
+          ],
+          "tip_zh": "收束句模板：Against these daunting X, however, Y have found a formidable array of Z.（面对……，……找到了一批……）与 004 篇“formidable”呼应复现。"
+        }
+      ]
+    }
+  ],
+  "background": [
+    {
+      "title_zh": "全球肥胖流行与 GLP-1 药物",
+      "body_zh": "世卫组织数据显示全球成人肥胖率数十年持续攀升，拉美（墨西哥 74%）、美国（72%）尤为严重。GLP-1 类药物（如司美格鲁肽/Ozempic）通过抑制食欲显著减重，近年在富国普及，但价格高、需终身用药，穷国难以大规模推广——这正是文章主张“改造食物环境”而非依赖药物的背景。"
+    },
+    {
+      "title_zh": "政策工具箱：标签、广告、规划与税",
+      "body_zh": "四类主流工具：①标签——红绿灯/营养评分（Nutri-Score）多为自愿，智利式黑色八角警示为强制；②广告限制——英国 2025 年起禁线上垃圾食品广告，纽约禁市政场所广告；③规划限制——英国禁学校周边新开快餐店；④税收——100 多国征含糖饮料税（墨西哥 2014 年征税次年销量降 6%）。中国近年也有含糖饮料分级试点、校园周边禁售等讨论。"
+    }
+  ],
+  "expressions": [
+    { "expr": "an orgy of", "zh": "……的泛滥/狂欢（夸张修辞）", "usage_zh": "开篇画面感：<b>an orgy of calories</b>；an orgy of spending 挥霍无度" },
+    { "expr": "hold out the hope of", "zh": "带来……的希望", "usage_zh": "科技/政策语境：<b>hold out the hope of dramatically reducing obesity</b>" },
+    { "expr": "take one\u2019s place", "zh": "顶替其位置", "usage_zh": "描述“钻空子”替代效应：<b>sugary pastries took their place</b>" },
+    { "expr": "with great effect", "zh": "效果显著地", "usage_zh": "破折号后强调成效：<b>impose special taxes on sugary drinks\u2014with great effect</b>" },
+    { "expr": "at almost no cost to", "zh": "以几乎零成本", "usage_zh": "政策收益论证：<b>big health benefits at almost no cost to consumers</b>" },
+    { "expr": "Against these daunting X, however, Y have found a formidable array of Z", "zh": "面对令人生畏的 X，Y 找到了一批有力的 Z", "usage_zh": "收束句模板，首尾呼应式转折" }
+  ],
+  "quiz": [
+    {
+      "type": "choice",
+      "q": "What did most of Britain\u2019s 689 obesity policies (1992-2020) aim to do?",
+      "options": [
+        "Ban forms of junk food.",
+        "Restrict access to junk food.",
+        "Raise consumer awareness and improve access to healthy alternatives.",
+        "Create financial disincentives such as higher taxes."
+      ],
+      "answer": 2,
+      "explanation_zh": "第五段：大多数政策旨在让消费者更了解风险、并更好获得健康替代品。原文明确：无一禁止垃圾食品，仅 3% 限制获取，仅 0.3%（两项）设财务抑制——所以 A、B、D 都与数据相反。"
+    },
+    {
+      "type": "choice",
+      "q": "What does the analysis of Mexico\u2019s labelling law suggest?",
+      "options": [
+        "Consumers switched to healthier products.",
+        "Overall sales volumes fell sharply.",
+        "Most of the calorie reduction came from manufacturers reformulating products.",
+        "Obesity rates dropped immediately."
+      ],
+      "answer": 2,
+      "explanation_zh": "第十段：约 90% 的卡路里减少源于产品重新配方（reformulated），而非消费者换购；总销量保持稳定。A 与原文相反；B 与 stable 矛盾；D 文中未提。"
+    },
+    {
+      "type": "choice",
+      "q": "The word \u201cexempt\u201d (Paragraph 13) is closest in meaning to ______.",
+      "options": ["freed from a rule", "taxed heavily", "promoted widely", "banned completely"],
+      "answer": 0,
+      "explanation_zh": "exempt from = 免除于、豁免于。现烤糕点豁免于禁令（freshly baked items are exempt from the ban），因此迅速占据了店门口的黄金位置——政策漏洞的经典案例。"
+    },
+    {
+      "type": "fill",
+      "q": "Such rules have an impact, both by deterring buyers and by ______ (prompt) chastened manufacturers to alter recipes.",
+      "answer": "prompting",
+      "explanation_zh": "by 是介词，后接动名词；both by A and by B 平行结构（by deterring ... and by prompting ...）。prompt sb to do sth 促使某人做（与 004 篇用法呼应）。"
+    }
+  ],
+  "discussion_zh": [
+    "“Nagging people to eat healthily does not work.”你认为宣传教育与强制监管，哪个更有效？为什么？",
+    "“菠菜与糖果最低配比”（minimum spinach-to-sweets ratio）的思路妙在哪里？如何迁移到其他领域（如短视频平台内容治理）？",
+    "中国有哪些控糖/控脂政策（如含糖饮料标识、校园周边禁售、“三减三健”）？你观察到效果了吗？"
+  ],
+  "writing": {
+    "title_zh": "写作练习：Should governments tax junk food?",
+    "prompt_zh": "假定你是李华，校英文报就“是否应向垃圾食品征税”征文。请写一篇 150 词左右的短评：1）描述肥胖流行现象；2）分析征税与监管的利弊；3）表明你的观点。至少使用 2 个本文学到的表达（如 with great effect / at almost no cost to / hold out the hope of / Against these daunting advantages）。"
+  }
+}
