@@ -1287,6 +1287,10 @@ body.demo .top-meta { display: none; }
 
 /* Optional article audio links */
 .audio-chip {
+  /* Match the compact metadata chips in the top bar. */
+  font-size: 11px;
+  padding: 3px 11px;
+  flex: 0 0 auto;
   background: var(--mint-soft);
   border-color: #7FD9C8;
   color: #0B6B5B;

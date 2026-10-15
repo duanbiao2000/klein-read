@@ -296,7 +296,7 @@ def render_audio_links():
     top_link = (
         f'<a class="chip audio-chip" href="{href}" target="_blank" '
         'rel="noopener noreferrer" title="Opens the shared audio list in a new tab" '
-        'aria-label="Open the shared audio list in a new tab">🎧 Audio list ↗</a>'
+        'aria-label="Open the shared audio list in a new tab">🎧 Audio ↗</a>'
     )
     hero_link = (
         '<div class="article-audio">'
