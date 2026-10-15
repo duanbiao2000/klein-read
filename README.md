@@ -74,6 +74,7 @@ python3 build.py                                   # Rebuild all pages.
 
 - One article = one JSON file in `data/`. This is the only source you edit.
 - The build script generates `articles/*.html` and `index.html`. Do not edit them by hand.
+- The home page lists the most recent articles first: `updated` (last edit) or `date` (publication), newest on top.
 - Field reference: `skills/klein-read/references/schema.md`.
 - Mark theme words with `[[word]]` or `[[word|display]]` in `paragraphs[].text`.
 

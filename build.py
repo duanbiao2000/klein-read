@@ -277,7 +277,13 @@ def load_docs():
         if "title_zh" not in doc and "title_cn" in doc:
             doc["title_zh"] = doc["title_cn"]
         docs.append(doc)
-    docs.sort(key=lambda d: d["id"])
+    # Home page order: most recent content first. Sort key = updated (last
+    # content edit) or date (publication), then id. Do not use file mtime:
+    # CI checkouts reset mtimes and would make the order unstable.
+    docs.sort(
+        key=lambda d: (d.get("updated") or d.get("date") or "", d["id"]),
+        reverse=True,
+    )
     return docs
 
 

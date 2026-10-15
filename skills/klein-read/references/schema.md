@@ -14,7 +14,8 @@ Language policy: `source_lang` marks the language of the source text. All study 
 | `paragraphs` | yes | list | Paragraph blocks. See below. |
 | `source_lang` | no | str | `en` or `ja`. Default: `en`. |
 | `source` | no | str | Publication name. Example: `The Economist`. Default: `Weekly`. |
-| `date` | no | str | Format: `YYYY-MM-DD`. |
+| `date` | no | str | Publication date. Format: `YYYY-MM-DD`. |
+| `updated` | no | str | Last content edit date. Format: `YYYY-MM-DD`. The home page sorts by `updated` (falls back to `date`), newest first. Set it to today when you edit an existing article. |
 | `topic` | no | str | Topic for filtering and card color. Values: Workplace, Tech, Economy, Society, Environment, Education, Culture, Health, World, Business. |
 | `difficulty` | no | int 1–5 | Difficulty stars. |
 | `read_minutes` | no | int | Estimated reading time in minutes. |
