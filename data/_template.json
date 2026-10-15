@@ -1,11 +1,10 @@
 {
-  "_comment": "Article template. Copy to data/NNN-slug.json and fill it. Then run: python3 build.py. Mark theme words in the source text with [[word]] or [[word|display]]. Delete optional blocks you do not need. Study notes are in Chinese. Source text can be English (source_lang=en) or Japanese (source_lang=ja).",
+  "_comment": "Article template. Copy to data/NNN-slug.json and fill it. Then run: python3 build.py. Mark theme words in the source text with [[word]] or [[word|display]]. Delete optional blocks you do not need. Study notes are in Chinese. Source text can be English (source_lang=en) or Japanese (source_lang=ja). Every article page shows the shared audio list configured by AUDIO_LIST_URL in build.py.",
 
   "id": "003-your-article-slug",
   "source": "The Economist",
   "date": "2026-10-20",
   "updated": "2026-10-20",
-  "audio_url": "",
   "topic": "Tech",
   "source_lang": "en",
   "difficulty": 3,

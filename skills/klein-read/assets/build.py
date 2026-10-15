@@ -37,6 +37,9 @@ TOPIC_COLORS = {
 }
 DEFAULT_COLOR = "#002FA7"
 
+# Shared audio-list page shown on every article page.
+AUDIO_LIST_URL = "https://monkfishare.gitlab.io/econaudio/"
+
 # Sentence-structure tag labels. Notes are in Chinese. The labels follow
 # the source language so that the grammar terms stay correct.
 STRUCT_TAGS = {
@@ -287,23 +290,21 @@ def load_docs():
     return docs
 
 
-def render_audio_links(url):
-    """Render optional audio links. Both links open in a new browser tab."""
-    if not url:
-        return "", ""
-    href = esc(url)
+def render_audio_links():
+    """Render the shared audio-list links on every article page."""
+    href = esc(AUDIO_LIST_URL)
     top_link = (
         f'<a class="chip audio-chip" href="{href}" target="_blank" '
-        'rel="noopener noreferrer" title="Opens in a new tab" '
-        'aria-label="Open article audio in a new tab">🎧 Audio ↗</a>'
+        'rel="noopener noreferrer" title="Opens the shared audio list in a new tab" '
+        'aria-label="Open the shared audio list in a new tab">🎧 Audio list ↗</a>'
     )
     hero_link = (
         '<div class="article-audio">'
         f'<a class="audio-cta-link" href="{href}" target="_blank" '
-        'rel="noopener noreferrer" aria-label="Open article audio in a new tab">'
-        '<span aria-hidden="true">🎧</span><span>Open article audio</span>'
+        'rel="noopener noreferrer" aria-label="Open the shared audio list in a new tab">'
+        '<span aria-hidden="true">🎧</span><span>Open audio playlist</span>'
         '<span class="audio-arrow" aria-hidden="true">↗</span></a>'
-        '<span class="audio-open-note">Opens in a new tab</span>'
+        '<span class="audio-open-note">Opens the shared audio list in a new tab</span>'
         '</div>'
     )
     return top_link, hero_link
@@ -312,7 +313,7 @@ def render_audio_links(url):
 def build_article(doc, prev_doc, next_doc):
     source_lang = doc.get("source_lang", "en")
     paras = doc.get("paragraphs", [])
-    audio_top_link, audio_cta = render_audio_links(doc.get("audio_url"))
+    audio_top_link, audio_cta = render_audio_links()
     ctx = {
         "TITLE_ZH": esc(doc.get("title_zh", "")),
         "TITLE_SRC": esc(doc.get("title_src", "")),
