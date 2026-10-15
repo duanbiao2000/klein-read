@@ -1,0 +1,763 @@
+{
+  "id": "008-social-reckoning",
+  "source": "The Economist",
+  "date": "2026-10-08",
+  "updated": "2026-10-15",
+  "topic": "Culture",
+  "source_lang": "en",
+  "difficulty": 4,
+  "read_minutes": 11,
+  "word_count": 874,
+  "title_src": "“The Social Reckoning” is a fatally earnest sequel to a classic",
+  "title_zh": "《社交网络》的续集为何失手：认真有余，讽刺不足",
+  "lead_zh": "Facebook 的体量更大、声誉更差，反而让《社交清算》少了前作的锋芒：它把扎克伯格和高管写成漫画反派，却把复杂的内容治理难题讲成正邪对决。本文比较新旧两部电影，拆解讽刺如何依赖距离、暧昧与克制。精读重点：softer target、exposé、arbiter of truth，以及让步对比和插入语。",
+  "theme_words": [
+    {
+      "word": "sequel",
+      "phonetic": "/ˈsiːkwəl/",
+      "pos": "n.",
+      "meaning_zh": "续集；后续作品"
+    },
+    {
+      "word": "devastating",
+      "phonetic": "/ˈdevəsteɪtɪŋ/",
+      "pos": "adj.",
+      "meaning_zh": "极具冲击力的；造成毁灭性打击的"
+    },
+    {
+      "word": "softer target",
+      "phonetic": "/ˌsɒftə ˈtɑːɡɪt/",
+      "pos": "n.phr.",
+      "meaning_zh": "更容易攻击或批评的对象"
+    },
+    {
+      "word": "exposé",
+      "phonetic": "/ˌekspəʊˈzeɪ/",
+      "pos": "n.",
+      "meaning_zh": "揭露丑闻的报道或作品"
+    },
+    {
+      "word": "nuanced",
+      "phonetic": "/ˈnjuːɑːnst/",
+      "pos": "adj.",
+      "meaning_zh": "微妙复杂的；有细微差别的"
+    },
+    {
+      "word": "arbiter of truth",
+      "phonetic": "/ˈɑːbɪtə(r) əv truːθ/",
+      "pos": "n.phr.",
+      "meaning_zh": "真理裁决者；判断真伪的权威"
+    },
+    {
+      "word": "cynicism",
+      "phonetic": "/ˈsɪnɪsɪzəm/",
+      "pos": "n.",
+      "meaning_zh": "犬儒态度；对人性或动机的冷嘲怀疑"
+    },
+    {
+      "word": "caricature",
+      "phonetic": "/ˈkærɪkətʃə(r)/",
+      "pos": "n.",
+      "meaning_zh": "漫画式夸张的形象；讽刺性漫画"
+    }
+  ],
+  "paragraphs": [
+    {
+      "text": "“I’m not two years out of a dorm room anymore,” snaps Mark Zuckerberg at an adviser in “The Social Reckoning”. The last time Facebook’s boss was portrayed on the big screen, a dorm is precisely where he was. “The Social Network” (2010) dramatised the company’s birth at Harvard and established Mr Zuckerberg’s reputation as a chilly, ruthless weirdo. Its epilogue noted that Facebook had 500m members and that Mr Zuckerberg was the world’s youngest billionaire. Today Facebook has 3bn users and its 42-year-old boss is worth a quarter of a trillion dollars.",
+      "zh": "《社交清算》中，马克·扎克伯格冲一位顾问厉声说道：“我早就不是那个刚离开大学宿舍两年的毛头小子了。”上一次 Facebook 老板登上大银幕时，他确实还在宿舍里。《社交网络》（2010）戏剧化地讲述了公司在哈佛的诞生，也奠定了扎克伯格冷漠、无情、古怪的公众形象。影片尾声提到，Facebook 有 5 亿用户，扎克伯格则是世界上最年轻的亿万富翁。如今，Facebook 用户已达 30 亿；这位 42 岁老板的身家则高达 2500 亿美元。",
+      "words": [
+        {
+          "word": "snap at",
+          "pos": "phr.v.",
+          "meaning_zh": "冲某人厉声说；不耐烦地斥责",
+          "note_zh": "snap at an adviser 冲顾问发火；snap 也可表示“突然折断、啪地合上”"
+        },
+        {
+          "word": "portray",
+          "pos": "v.",
+          "meaning_zh": "刻画；在影视作品中扮演或呈现",
+          "note_zh": "be portrayed on the big screen 被搬上大银幕；portray sb as... 把某人塑造成……"
+        },
+        {
+          "word": "epilogue",
+          "pos": "n.",
+          "meaning_zh": "尾声；后记",
+          "note_zh": "影片结尾的补充说明；对应开篇的 prologue（序幕）"
+        },
+        {
+          "word": "a quarter of a trillion",
+          "pos": "n.phr.",
+          "meaning_zh": "一万亿美元的四分之一，即 2500 亿",
+          "note_zh": "trillion 是万亿；a quarter of a trillion dollars = 250 billion dollars"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The last time Facebook’s boss was portrayed on the big screen, a dorm is precisely where he was.",
+          "structure": [
+            {
+              "type": "clause",
+              "text": "The last time Facebook’s boss was portrayed on the big screen —— The last time 引出时间状语从句；was portrayed 是被动语态"
+            },
+            {
+              "type": "main",
+              "text": "a dorm is precisely where he was —— 主句以 a dorm 作表语中心；where he was 是表语从句，说明他当时所在之处"
+            },
+            {
+              "type": "phrase",
+              "text": "precisely —— “恰恰、正是”，突出宿舍这一细节与新片台词形成的反差"
+            }
+          ],
+          "tip_zh": "The last time... 引出“上一次……时”；后半句把 a dorm 放在焦点位置，与开头“我早就不是……”形成时间和身份上的反差。"
+        }
+      ]
+    },
+    {
+      "text": "“The Social Reckoning”, a much-anticipated [[sequel]] to “The Social Network”, takes place around 15 years later. It follows Jeff Horwitz, a journalist at the Wall Street Journal (played by Jeremy Allen White), as he coaxes information from Frances Haugen (Mikey Madison), a disillusioned member of Facebook’s toothless “Civic Integrity Team”. The film adopts its predecessor’s time-hopping structure, flipping between hunts for the material and publication, when all hell breaks loose.",
+      "zh": "《社交清算》是备受期待的《社交网络》续集，故事发生在约 15 年后。影片跟随《华尔街日报》记者杰夫·霍维茨（杰里米·艾伦·怀特饰）展开：他从对 Facebook 心灰意冷的弗朗西丝·豪根（麦凯·麦迪逊饰）那里套取信息；豪根曾是公司名不副实的“公民诚信团队”成员。电影沿用前作的时间跳切结构，在追索材料与材料公开之间来回切换——报道一经发表，局面便彻底失控。",
+      "words": [
+        {
+          "word": "sequel",
+          "pos": "n.",
+          "meaning_zh": "续集；后续作品",
+          "note_zh": "a sequel to... ……的续集；注意与 sequence（顺序、序列）区分"
+        },
+        {
+          "word": "much-anticipated",
+          "pos": "adj.",
+          "meaning_zh": "备受期待的",
+          "note_zh": "anticipate 表示“预期、期待”；much 在这里加强程度"
+        },
+        {
+          "word": "coax information from sb",
+          "pos": "phr.",
+          "meaning_zh": "软磨硬泡地从某人那里套取信息",
+          "note_zh": "coax sb into doing sth 劝哄某人做某事；比 ask 语气更有“费力劝出”的意味"
+        },
+        {
+          "word": "disillusioned",
+          "pos": "adj.",
+          "meaning_zh": "不再抱有幻想的；大失所望的",
+          "note_zh": "be disillusioned with... 对……感到幻灭；名词 disillusionment"
+        },
+        {
+          "word": "toothless",
+          "pos": "adj.",
+          "meaning_zh": "无力的；缺乏实际约束力的",
+          "note_zh": "字面是“没有牙齿的”；a toothless committee 指有名无实、缺乏权力的委员会"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The film adopts its predecessor’s time-hopping structure, flipping between hunts for the material and publication, when all hell breaks loose.",
+          "structure": [
+            {
+              "type": "main",
+              "text": "The film adopts its predecessor’s time-hopping structure —— 主干：影片沿用前作的时间跳切结构"
+            },
+            {
+              "type": "phrase",
+              "text": "flipping between hunts for the material and publication —— 现在分词短语补充说明结构如何运作：在搜集材料与发表报道之间切换"
+            },
+            {
+              "type": "clause",
+              "text": "when all hell breaks loose —— when 引导补充说明 publication 的从句：报道发表时局面大乱"
+            }
+          ],
+          "tip_zh": "分词短语可把叙事方式压缩进主句；all hell breaks loose 是夸张口语，表示“局面彻底失控”，不是字面上的“地狱”。"
+        }
+      ]
+    },
+    {
+      "text": "The movies share a writer in the form of Aaron Sorkin, who won an Oscar for his “Social Network” script (which was based on a book). But there the similarities end. Mr Sorkin stood in for the original director, David Fincher. Jesse Eisenberg declined to play Mr Zuckerberg for a second time, so the role has gone to Jeremy Strong, best known for “Succession”.",
+      "zh": "两部电影的编剧都是艾伦·索金；他凭《社交网络》的剧本赢得奥斯卡（剧本改编自一本书）。但两者的相似之处也就到此为止。索金接替原导演大卫·芬奇。杰西·艾森伯格拒绝第二次出演扎克伯格，于是这个角色交给了杰里米·斯特朗——他最为人熟知的作品是《继承之战》。",
+      "words": [
+        {
+          "word": "in the form of",
+          "pos": "phr.",
+          "meaning_zh": "以……的形式；此处指“具体来说就是”",
+          "note_zh": "share a writer in the form of Aaron Sorkin = 两部片共享的编剧是艾伦·索金"
+        },
+        {
+          "word": "stand in for",
+          "pos": "phr.v.",
+          "meaning_zh": "代替；顶替某人的职位或角色",
+          "note_zh": "stand in for the director 顶替导演；stand-in 作名词时可指替身"
+        },
+        {
+          "word": "decline to do sth",
+          "pos": "phr.",
+          "meaning_zh": "婉拒做某事",
+          "note_zh": "比 refuse 语气更委婉、正式；decline an invitation 婉拒邀请"
+        },
+        {
+          "word": "best known for",
+          "pos": "phr.",
+          "meaning_zh": "最为人熟知的是……；以……最出名",
+          "note_zh": "best known for “Succession” 是省略结构，完整理解为 Jeremy Strong, who is best known for..."
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Jesse Eisenberg declined to play Mr Zuckerberg for a second time, so the role has gone to Jeremy Strong, best known for “Succession”.",
+          "structure": [
+            {
+              "type": "main",
+              "text": "Jesse Eisenberg declined to play Mr Zuckerberg for a second time —— 主句：艾森伯格拒绝再次出演"
+            },
+            {
+              "type": "clause",
+              "text": "so the role has gone to Jeremy Strong —— so 引出结果；现在完成时强调选角结果已确定"
+            },
+            {
+              "type": "phrase",
+              "text": "best known for “Succession” —— 过去分词短语作后置补充说明，修饰 Jeremy Strong"
+            }
+          ],
+          "tip_zh": "decline to do sth 是正式、委婉的“拒绝”；句末省略了 who is，杂志写作常用这种压缩后的身份说明。"
+        }
+      ]
+    },
+    {
+      "text": "The main problem with “The Social Reckoning” is not that its director or actors have changed. It is that Facebook itself has. Back in 2010 Facebook was cool. It had been available to the general public for only four years: young people were glued to it; their grandparents had not yet taken it over. Mr Zuckerberg, then 26, was Time’s person of the year. “The Social Network” was [[devastating]] because it methodically gutted the world’s hottest company and its founder (or rather, co-founder, as the film made clear).",
+      "zh": "《社交清算》的主要问题不在于导演或演员换了人，而在于 Facebook 本身变了。2010 年时，Facebook 还很酷。它向公众开放才四年：年轻人沉迷其中，祖父母辈还没接管这个平台。时年 26 岁的扎克伯格当选《时代》年度人物。《社交网络》之所以极具冲击力，在于它有条不紊地拆解了当时最炙手可热的公司及其创始人（说得更准确些，是联合创始人——影片把这一点说得很清楚）。",
+      "words": [
+        {
+          "word": "be available to the general public",
+          "pos": "phr.",
+          "meaning_zh": "向公众开放；公众可以使用",
+          "note_zh": "available 不只表示“有空”，也常表示“可获得、可使用”"
+        },
+        {
+          "word": "be glued to",
+          "pos": "phr.",
+          "meaning_zh": "全神贯注于；离不开（某物）",
+          "note_zh": "young people were glued to it 年轻人沉迷于 Facebook；可用于 glued to a phone/screen"
+        },
+        {
+          "word": "devastating",
+          "pos": "adj.",
+          "meaning_zh": "极具冲击力的；造成毁灭性打击的",
+          "note_zh": "这里不是说电影“破坏”公司，而是说它的讽刺极具杀伤力"
+        },
+        {
+          "word": "gut",
+          "pos": "v.",
+          "meaning_zh": "彻底剖析；摧毁核心",
+          "note_zh": "methodically gut a company 把一家公司层层剖开；原义是“取出内脏”"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "“The Social Network” was devastating because it methodically gutted the world’s hottest company and its founder (or rather, co-founder, as the film made clear).",
+          "structure": [
+            {
+              "type": "main",
+              "text": "“The Social Network” was devastating —— 主句先给出评价：前作极具冲击力"
+            },
+            {
+              "type": "clause",
+              "text": "because it methodically gutted the world’s hottest company and its founder —— because 引导原因状语从句；gutted 用作比喻，表示彻底剖析"
+            },
+            {
+              "type": "phrase",
+              "text": "(or rather, co-founder, as the film made clear) —— or rather 是作者自我修正；as 从句补充说明影片已揭示这一点"
+            }
+          ],
+          "tip_zh": "or rather（更准确地说）常用于当场修正前面的说法；括号里的 co-founder 也呼应前作对扎克伯格创业故事的重新审视。"
+        }
+      ]
+    },
+    {
+      "text": "Today’s Facebook is a mightier company but a [[softer target]]. Social networks are reviled by legislators, litigators and parents. Facebook and its rivals have paid out in multiple court cases involving harm to children. Its efforts to silence criticism—gagging a former executive who wrote a book, “Careless People”, for instance—have backfired spectacularly. Almost no one in the world is less cool than Mr Zuckerberg, whose approval rating in America is -43%, just ahead of Vladimir Putin.",
+      "zh": "如今的 Facebook 虽然实力更强，却成了更容易被攻击的靶子。社交网络遭到立法者、诉讼律师和家长的强烈抨击。Facebook 及其竞争对手已在多起涉及伤害儿童的诉讼案中付出代价。该公司试图压制批评——比如封住一位写了《漫不经心的人》的前高管的嘴——结果却造成了惊人的反效果。几乎没有谁比扎克伯格更不受欢迎；他在美国的支持度为 -43%，只比弗拉基米尔·普京略高。",
+      "words": [
+        {
+          "word": "softer target",
+          "pos": "n.phr.",
+          "meaning_zh": "更容易攻击或批评的对象",
+          "note_zh": "target 此处是“攻击目标”；softer 不是“柔软”，而是指更脆弱、更不难下手"
+        },
+        {
+          "word": "reviled",
+          "pos": "v./adj.",
+          "meaning_zh": "遭到痛斥的；被强烈厌恶的",
+          "note_zh": "be reviled by... 遭到……痛斥；原形 revile，语气比 criticize 强烈"
+        },
+        {
+          "word": "pay out",
+          "pos": "phr.v.",
+          "meaning_zh": "支付款项；（诉讼中）赔付",
+          "note_zh": "have paid out in court cases 指在诉讼中支付和解金或赔偿款；pay out 也可指保险公司赔付"
+        },
+        {
+          "word": "backfire spectacularly",
+          "pos": "phr.v.",
+          "meaning_zh": "造成惊人的反效果；彻底适得其反",
+          "note_zh": "backfire 原指枪支回火；政策、计划或公关动作都可以 backfire"
+        },
+        {
+          "word": "approval rating",
+          "pos": "n.phr.",
+          "meaning_zh": "支持度；认可率",
+          "note_zh": "原文为 -43%，是负值的净支持度指标；just ahead of 表示“略高于”"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Its efforts to silence criticism—gagging a former executive who wrote a book, “Careless People”, for instance—have backfired spectacularly.",
+          "structure": [
+            {
+              "type": "main",
+              "text": "Its efforts ... have backfired spectacularly —— 主干是“压制批评的努力造成了惊人反效果”；现在完成时说明后果仍与当下相关"
+            },
+            {
+              "type": "phrase",
+              "text": "to silence criticism —— 不定式作后置修饰，说明 efforts 的目的"
+            },
+            {
+              "type": "phrase",
+              "text": "gagging a former executive ... for instance —— 破折号内的动名词短语举例说明压制手段"
+            },
+            {
+              "type": "clause",
+              "text": "who wrote a book, “Careless People” —— 定语从句修饰 a former executive"
+            }
+          ],
+          "tip_zh": "主干在破折号两侧：Its efforts ... have backfired；中间的插入例子可先略读。silence criticism 是“压制批评”，gag sb 字面为“堵住某人的嘴”。"
+        }
+      ]
+    },
+    {
+      "text": "The result is that “The Social Reckoning”, which styles itself as an [[exposé]], often feels more like a sermon for the converted. Mr Strong, who is known for his extreme method-acting approach, has nailed Mr Zuckerberg’s monotone voice and stiff manner. But whereas the young Zuck of “The Social Network” was a complex character—arrogant and treacherous but tragically insecure—in the “Reckoning” he is a cartoon villain. Surrounded by computer monitors and a bulletproof sofa in his imperial headquarters, he barks at quivering underlings as they labour through their slide decks. “Fuckin’ Civic Integrity”, he scoffs, after the team meekly suggests dialling down harmful content at the expense of 1% of engagement.",
+      "zh": "结果是，《社交清算》自诩为一部揭露丑闻的作品，却常像是在向早已认同观点的人布道。以极端方法派表演著称的斯特朗，把扎克伯格单调的嗓音和僵硬的举止拿捏得很到位。但《社交网络》里的年轻扎克是个复杂角色——傲慢、背信弃义，却又悲剧性地缺乏安全感；到了《社交清算》里，他则成了漫画式恶棍。他被电脑显示器和帝国总部里的防弹沙发包围，对着战战兢兢的下属厉声发号施令，看他们费力地过一遍幻灯片。“见鬼的公民诚信”，他嗤之以鼻——此时团队只是温顺地建议，为减少有害内容，哪怕牺牲 1% 的互动率也值得。",
+      "words": [
+        {
+          "word": "exposé",
+          "pos": "n.",
+          "meaning_zh": "揭露丑闻的报道或作品",
+          "note_zh": "an exposé of... 对……的揭露；重音落在最后一音节，注意 é 上的重音符号"
+        },
+        {
+          "word": "a sermon for the converted",
+          "pos": "n.phr.",
+          "meaning_zh": "向早已认同者说教；对信服的人布道",
+          "note_zh": "the converted 原指“已经皈依的人”；此处讽刺作品只取悦本来就赞同它的观众"
+        },
+        {
+          "word": "nail",
+          "pos": "v.",
+          "meaning_zh": "把……做得恰到好处；准确拿捏",
+          "note_zh": "has nailed his voice and manner = 把他的声音和举止模仿得很到位；口语中也可说 nail an exam"
+        },
+        {
+          "word": "treacherous",
+          "pos": "adj.",
+          "meaning_zh": "背信弃义的；不可信的",
+          "note_zh": "与 traitor（叛徒）同源；此处用来形容前作中复杂、令人不安的扎克伯格"
+        },
+        {
+          "word": "at the expense of",
+          "pos": "phr.",
+          "meaning_zh": "以……为代价",
+          "note_zh": "dial down harmful content at the expense of 1% of engagement = 以 1% 的互动率为代价减少有害内容"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Surrounded by computer monitors and a bulletproof sofa in his imperial headquarters, he barks at quivering underlings as they labour through their slide decks.",
+          "structure": [
+            {
+              "type": "phrase",
+              "text": "Surrounded by computer monitors and a bulletproof sofa in his imperial headquarters —— 过去分词短语置于句首，交代 he 所处的环境"
+            },
+            {
+              "type": "main",
+              "text": "he barks at quivering underlings —— 主干：他冲战战兢兢的下属吼叫；bark 把人写得像发号施令的狗主人"
+            },
+            {
+              "type": "clause",
+              "text": "as they labour through their slide decks —— as 引导时间/伴随状语从句：下属正费力讲解幻灯片时"
+            }
+          ],
+          "tip_zh": "电脑、‘帝国总部’和防弹沙发把权力写得近乎漫画化；bark、quivering、underlings 共同强化了影片把人物扁平化的批评。"
+        }
+      ]
+    },
+    {
+      "text": "His henchmen are no subtler. Facebook’s comically horrid PR man says that the social network is better than any nation. “We’re post-government around here,” he sneers, when threatened with regulation. The now-familiar notion that the company puts profit before the greater good is conveyed with a megaphone. “If engagement keeps falling…it’ll be a bad earnings report!” squeals one executive, as the company debates whether to tone down its wickedness.",
+      "zh": "他的亲信也一样毫不含蓄。Facebook 那位滑稽又讨人厌的公关负责人宣称，这个社交网络比任何国家都好。“我们这里早已进入‘后政府时代’，”他在受到监管威胁时嗤笑道。公司把利润置于公共利益之上的老生常谈，如今被用扩音器大声喊了出来。一名高管尖声说道：“如果互动率继续下滑……财报可就难看了！”此时，公司正在讨论要不要收敛一点自己的恶行。",
+      "words": [
+        {
+          "word": "henchman",
+          "pos": "n.",
+          "meaning_zh": "亲信；帮凶",
+          "note_zh": "常带贬义，指替权势人物办事的亲信；复数 henchmen"
+        },
+        {
+          "word": "sneer",
+          "pos": "v./n.",
+          "meaning_zh": "讥笑；轻蔑地说",
+          "note_zh": "sneer at sb/sth 对……嗤之以鼻；比 smile 更带轻蔑"
+        },
+        {
+          "word": "regulation",
+          "pos": "n.",
+          "meaning_zh": "监管；规章制度",
+          "note_zh": "government regulation 政府监管；regulate 是动词"
+        },
+        {
+          "word": "be conveyed with a megaphone",
+          "pos": "phr.",
+          "meaning_zh": "被用扩音器般的方式直白表达出来",
+          "note_zh": "比喻表达毫不含蓄、过于用力；与 satire 通常依赖的暗示和克制形成反差"
+        },
+        {
+          "word": "tone down",
+          "pos": "phr.v.",
+          "meaning_zh": "收敛；降低强度或语气",
+          "note_zh": "tone down criticism/violence 降低批评的强度/暴力程度；这里指减少有害内容"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "“If engagement keeps falling…it’ll be a bad earnings report!” squeals one executive, as the company debates whether to tone down its wickedness.",
+          "structure": [
+            {
+              "type": "clause",
+              "text": "“If engagement keeps falling…it’ll be a bad earnings report!” —— 引语内部是 if 条件句：如果互动率持续下降，财报就会难看"
+            },
+            {
+              "type": "main",
+              "text": "squeals one executive —— 引语后的倒装式引述结构；主语 one executive 放在动词之后"
+            },
+            {
+              "type": "clause",
+              "text": "as the company debates whether to tone down its wickedness —— as 引导伴随状语；whether 从句作 debates 的宾语"
+            }
+          ],
+          "tip_zh": "squeals（尖声叫）把高管的焦虑写得滑稽；引语中的“互动率”与后半句的“有害内容”并置，直接暴露影片批评的利润优先逻辑。"
+        }
+      ]
+    },
+    {
+      "text": "The second difficulty for the movie is that its subject matter is more [[nuanced]] than Mr Sorkin would like. The film’s central question—should Facebook suppress bad content?—is not so simple. The script implies that Facebook should take down lies. But should the flawed Mr Zuckerberg therefore be elevated to a global [[arbiter of truth]]? Some dialogue is unintentionally persuasive to the contrary. “The voters aren’t children,” argues Mr Zuckerberg in one scene. “Facebook isn’t the ref…We’re the public square.” Quite.",
+      "zh": "影片的第二个问题，在于它的题材比索金愿意承认的更为微妙复杂。影片的核心问题——Facebook 是否应该压制有害内容？——并没有简单答案。剧本暗示 Facebook 应该撤下谎言。但这是否意味着应该把有缺陷的扎克伯格推举为全球“真理裁判”？有些台词反倒无意中颇具说服力。“选民不是小孩子，”扎克伯格在一场戏里说，“Facebook 不是裁判……我们是公共广场。”确实如此。",
+      "words": [
+        {
+          "word": "nuanced",
+          "pos": "adj.",
+          "meaning_zh": "微妙复杂的；有细微差别的",
+          "note_zh": "a nuanced issue 复杂微妙的问题；名词 nuance 指细微差别"
+        },
+        {
+          "word": "suppress",
+          "pos": "v.",
+          "meaning_zh": "压制；阻止传播",
+          "note_zh": "suppress harmful content 压制有害内容；也可指 suppress evidence（隐瞒证据）"
+        },
+        {
+          "word": "flawed",
+          "pos": "adj.",
+          "meaning_zh": "有缺陷的；不完美的",
+          "note_zh": "a flawed person/argument 有缺点的人/有漏洞的论点；名词 flaw"
+        },
+        {
+          "word": "arbiter of truth",
+          "pos": "n.phr.",
+          "meaning_zh": "真理裁决者；判断真伪的权威",
+          "note_zh": "arbiter 原指仲裁者；全球平台若决定哪些内容为真，就可能成为事实上的“真理裁判”"
+        },
+        {
+          "word": "to the contrary",
+          "pos": "phr.",
+          "meaning_zh": "与此相反；反而",
+          "note_zh": "persuasive to the contrary 意外地让人信服相反的观点；on the contrary 常用于句首反驳"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "But should the flawed Mr Zuckerberg therefore be elevated to a global arbiter of truth?",
+          "structure": [
+            {
+              "type": "main",
+              "text": "should the flawed Mr Zuckerberg ... be elevated —— should 提前构成一般疑问句；主句使用被动语态"
+            },
+            {
+              "type": "phrase",
+              "text": "therefore —— 承接前文：如果 Facebook 应该删谎言，是否因此就该赋予扎克伯格这一权力？"
+            },
+            {
+              "type": "phrase",
+              "text": "to a global arbiter of truth —— be elevated to... 表示被提升为/被赋予……身份"
+            }
+          ],
+          "tip_zh": "这是反问式的伦理追问：讨论内容治理时，不能只问“该删什么”，还要问“谁有权判断真伪”。should 提前也让质疑更直接。"
+        }
+      ]
+    },
+    {
+      "text": "Mr Sorkin’s earnestness was perfectly tempered by Mr Fincher’s [[cynicism]] in “The Social Network”. It was a movie with no real heroes, between the perfidious Mr Zuckerberg and those he trampled, including a flash Sean Parker (an early supporter) and the absurd Winklevoss twins (who say Mr Zuckerberg stole their idea). The “Reckoning”, by contrast, is divided neatly into goodies (diligent journalist, brave whistleblower) and baddies (scheming Zuckerberg, robotic cronies). The outcome is an unsatisfying [[caricature]].",
+      "zh": "在《社交网络》中，索金的认真恰好被芬奇的犬儒式冷眼调和。前作里没有真正的英雄：一边是背信弃义的扎克伯格，另一边是被他践踏的人们，其中包括风度翩翩的早期支持者肖恩·帕克，以及荒诞的温克莱沃斯双胞胎（他们声称扎克伯格偷了自己的点子）。相比之下，《社交清算》把人物整齐地分成好人（勤勉的记者、勇敢的吹哨人）和坏人（阴谋多端的扎克伯格、机器人般的亲信）。结果就是一幅令人失望的漫画式画像。",
+      "words": [
+        {
+          "word": "earnestness",
+          "pos": "n.",
+          "meaning_zh": "认真；诚恳；严肃的态度",
+          "note_zh": "earnestness 在这里指索金直率、郑重的表达风格；形容词 earnest"
+        },
+        {
+          "word": "temper",
+          "pos": "v.",
+          "meaning_zh": "调和；缓和；使不那么极端",
+          "note_zh": "temper A with B 用 B 调和 A；earnestness tempered by cynicism 认真被冷嘲式怀疑调和"
+        },
+        {
+          "word": "cynicism",
+          "pos": "n.",
+          "meaning_zh": "犬儒态度；对动机的冷嘲与怀疑",
+          "note_zh": "此处不是简单的“消极”，而是芬奇对人物动机保持冷峻、不轻易给出道德英雄"
+        },
+        {
+          "word": "perfidious",
+          "pos": "adj.",
+          "meaning_zh": "背信弃义的；不忠诚的",
+          "note_zh": "比 dishonest 更有“背叛信任”的意味；文中明显带有评论者的讽刺口吻"
+        },
+        {
+          "word": "caricature",
+          "pos": "n.",
+          "meaning_zh": "漫画式夸张的形象；讽刺性漫画",
+          "note_zh": "人物被简化成少数夸张特征时，可称为 a caricature，而非 nuanced character"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The “Reckoning”, by contrast, is divided neatly into goodies (diligent journalist, brave whistleblower) and baddies (scheming Zuckerberg, robotic cronies).",
+          "structure": [
+            {
+              "type": "main",
+              "text": "The “Reckoning” is divided neatly into goodies and baddies —— 主句用被动语态概括人物被分成两类"
+            },
+            {
+              "type": "phrase",
+              "text": "by contrast —— 插入的对比标记，提示与前作“没有真正英雄”相反"
+            },
+            {
+              "type": "phrase",
+              "text": "(diligent journalist, brave whistleblower) / (scheming Zuckerberg, robotic cronies) —— 括号内平行列举两边人物，突出善恶二分"
+            }
+          ],
+          "tip_zh": "goodies / baddies 是口语化的“好人/坏人”；neatly 既有“整齐地”之意，也暗示这种分类过于省事、失之简单。"
+        }
+      ]
+    },
+    {
+      "text": "Film and TV schedules have lately been clogged with dramatisations of Silicon Valley. The most successful ones have tended to be those based on true stories, including what happened at Uber (“Super Pumped”), WeWork (“WeCrashed”) and Theranos (“The Dropout”). But now those corporate dramas are well-known—and helped make up people’s minds about the Valley’s recklessness.",
+      "zh": "近来，影视节目排期里塞满了有关硅谷的戏剧化改编。最成功的作品往往取材于真实故事，包括优步（《超级泵动》）、WeWork（《WeCrashed》）和 Theranos（《The Dropout》）的经历。但这些企业剧如今已广为人知，也帮助人们形成了对硅谷鲁莽行事的看法。",
+      "words": [
+        {
+          "word": "clog",
+          "pos": "v.",
+          "meaning_zh": "堵塞；挤满",
+          "note_zh": "be clogged with... 被……塞满；常用于 roads, drains, schedules 等"
+        },
+        {
+          "word": "dramatisation",
+          "pos": "n.",
+          "meaning_zh": "戏剧化改编；影视剧呈现",
+          "note_zh": "英式拼法 dramatisation；美式为 dramatization"
+        },
+        {
+          "word": "tend to",
+          "pos": "phr.",
+          "meaning_zh": "往往会；倾向于",
+          "note_zh": "have tended to 表示一段时间以来呈现出的规律，不等于每一部都如此"
+        },
+        {
+          "word": "make up people’s minds",
+          "pos": "phr.",
+          "meaning_zh": "影响人们形成判断；让人们拿定主意",
+          "note_zh": "make up one’s mind 本义是“下定决心”；此处指这些作品已影响公众对硅谷的看法"
+        },
+        {
+          "word": "recklessness",
+          "pos": "n.",
+          "meaning_zh": "鲁莽；不计后果",
+          "note_zh": "reckless 是形容词；reckless behaviour 鲁莽行事"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The most successful ones have tended to be those based on true stories, including what happened at Uber (“Super Pumped”), WeWork (“WeCrashed”) and Theranos (“The Dropout”).",
+          "structure": [
+            {
+              "type": "main",
+              "text": "The most successful ones have tended to be those —— 主干：最成功的作品往往属于某一类；现在完成时概括近期趋势"
+            },
+            {
+              "type": "phrase",
+              "text": "based on true stories —— 过去分词短语作后置修饰，完整理解为 those that are based on..."
+            },
+            {
+              "type": "phrase",
+              "text": "including what happened at Uber, WeWork and Theranos —— including 引出例子；what happened 是名词性从句，作介词宾语"
+            }
+          ],
+          "tip_zh": "those based on... 是压缩的定语结构；including 后面用 what happened，把真实事件打包成“这些公司发生过的事”。"
+        }
+      ]
+    },
+    {
+      "text": "Yet more takes are on the way. On October 8th Paramount+ will launch “Cupertino”, a series about a fictional law firm fighting big tech. A new documentary about Theranos’s Elizabeth Holmes will come out this month, too. In December “Artificial”, starring Andrew Garfield as Sam Altman, will be the first movie to tell the story of OpenAI. “The Social Network” remains the model for how to do it well. Alas, its follow-up offers a reminder of what a hard act it is to follow.",
+      "zh": "不过，更多作品还在路上。10 月 8 日，Paramount+ 将推出《库比蒂诺》，讲述一家虚构律所与大型科技公司抗争。本月还将推出一部关于 Theranos 创始人伊丽莎白·霍姆斯的新纪录片。12 月，《Artificial》将上映，安德鲁·加菲尔德饰演萨姆·奥特曼；这将是第一部讲述 OpenAI 故事的电影。《社交网络》仍是拍好这类作品的范本。可惜，这部续作提醒我们，要超越这样一部经典有多难。",
+      "words": [
+        {
+          "word": "take",
+          "pos": "n.",
+          "meaning_zh": "观点；一种解读或呈现方式",
+          "note_zh": "another take on Silicon Valley 对硅谷的另一种呈现；不是“拿、取”"
+        },
+        {
+          "word": "launch",
+          "pos": "v.",
+          "meaning_zh": "推出；上线；发行",
+          "note_zh": "launch a series 推出一部剧集；也可表示发射火箭或启动项目"
+        },
+        {
+          "word": "star as",
+          "pos": "phr.v.",
+          "meaning_zh": "饰演；担任主演",
+          "note_zh": "Andrew Garfield stars as Sam Altman = 加菲尔德饰演萨姆·奥特曼；star 作动词"
+        },
+        {
+          "word": "follow-up",
+          "pos": "n.",
+          "meaning_zh": "后续作品；后续行动",
+          "note_zh": "a follow-up to a film 某部电影的续作/后续作品；也可指后续跟进"
+        },
+        {
+          "word": "a hard act to follow",
+          "pos": "idiom",
+          "meaning_zh": "难以超越的先例；很难接替的成功者",
+          "note_zh": "常用于一场精彩演出或一项成功之后；此处指《社交网络》树立了很高的标杆"
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Alas, its follow-up offers a reminder of what a hard act it is to follow.",
+          "structure": [
+            {
+              "type": "phrase",
+              "text": "Alas —— 句首感叹词，表达惋惜；此处带有评论文章的轻微叹息"
+            },
+            {
+              "type": "main",
+              "text": "its follow-up offers a reminder —— 主干：续作提醒了我们某件事"
+            },
+            {
+              "type": "clause",
+              "text": "of what a hard act it is to follow —— what 引导嵌入式感叹从句，作 of 的宾语；a hard act to follow 是固定表达"
+            }
+          ],
+          "tip_zh": "结尾重复 follow-up / to follow，形成回环；a hard act to follow 把评价落在“前作太成功，续作难以企及”上。"
+        }
+      ]
+    }
+  ],
+  "expressions": [
+    {
+      "expr": "all hell breaks loose",
+      "zh": "局面彻底失控；顿时大乱",
+      "usage_zh": "口语化的夸张表达，常用于坏消息公开、争吵爆发或危机升级之后。"
+    },
+    {
+      "expr": "stand in for",
+      "zh": "代替；顶替",
+      "usage_zh": "可用于顶替某人的工作、职位或角色：She stood in for the director.（她代替导演履职。）"
+    },
+    {
+      "expr": "backfire spectacularly",
+      "zh": "造成惊人的反效果；彻底适得其反",
+      "usage_zh": "适用于批评某项决策或公关策略：The attempt to silence critics backfired spectacularly."
+    },
+    {
+      "expr": "a sermon for the converted",
+      "zh": "向早已认同者说教；对信服的人布道",
+      "usage_zh": "可用来批评作品只巩固既有立场，没能说服持不同意见的人。"
+    },
+    {
+      "expr": "at the expense of",
+      "zh": "以……为代价",
+      "usage_zh": "后接名词或动名词：growth at the expense of safety（以安全为代价换取增长）。"
+    },
+    {
+      "expr": "a hard act to follow",
+      "zh": "难以超越的先例；很难接替的成功者",
+      "usage_zh": "The Social Network set such a high standard that its sequel had a hard act to follow."
+    }
+  ],
+  "background": [
+    {
+      "title_zh": "两部电影，两种创作组合",
+      "body_zh": "《社交网络》（2010）由艾伦·索金编剧、大卫·芬奇执导，以 Facebook 的创立和创始人之间的冲突为叙事核心。本文讨论的续作约设在 15 年后，以记者杰夫·霍维茨和前员工弗朗西丝·豪根为线索。编剧仍是索金，但导演、扎克伯格的扮演者和故事重点都发生变化。"
+    },
+    {
+      "title_zh": "内容治理：谁来判断真伪？",
+      "body_zh": "平台是否应删除谎言或有害内容，牵涉到伤害防护、言论自由和平台权力。把社交媒体称作“公共广场”，意味着它不只是私人公司，也承担公共讨论的基础设施角色；但若平台主动裁定真假，它又可能成为缺少民主问责的“真理裁判”。文章借扎克伯格的台词呈现这一两难。"
+    }
+  ],
+  "quiz": [
+    {
+      "type": "choice",
+      "q": "According to the review, what most weakens the sequel as satire?",
+      "options": [
+        "Facebook has become a widely criticised, less surprising target.",
+        "The sequel has no connection to the original film.",
+        "Aaron Sorkin did not write the original screenplay.",
+        "The story is about a company that few people know."
+      ],
+      "answer": 0,
+      "explanation_zh": "文章认为 Facebook 如今规模更大，却已遭立法者、诉讼方和家长广泛批评；它变成了更容易攻击、也更难带来新鲜讽刺效果的对象。"
+    },
+    {
+      "type": "choice",
+      "q": "What central issue does the review say the film treats too simply?",
+      "options": [
+        "Whether a sequel should use the same actors.",
+        "Whether Facebook should remove harmful or false content, and who should decide.",
+        "Whether journalists should cover technology companies.",
+        "Whether films should use a time-hopping structure."
+      ],
+      "answer": 1,
+      "explanation_zh": "文章不只问平台是否应撤下谎言，也追问：如果平台有权删内容，谁来判断真伪？扎克伯格是否应成为全球“真理裁判”？"
+    },
+    {
+      "type": "fill",
+      "q": "The film feels like a sermon for the ______: it mainly speaks to people who already agree.",
+      "answer": "converted",
+      "explanation_zh": "sermon for the converted 指向已经信服、早已认同的人说教；converted 在此是名词化用法，意为“已皈依者”。"
+    },
+    {
+      "type": "choice",
+      "q": "Why does the review find the original film more compelling?",
+      "options": [
+        "It gives every character a clear heroic ending.",
+        "It combines Sorkin’s earnestness with Fincher’s cynicism and avoids simple heroes.",
+        "It avoids portraying Facebook’s founders.",
+        "It is based on a story that had never been reported."
+      ],
+      "answer": 1,
+      "explanation_zh": "评论认为前作让索金的认真与芬奇的犬儒式冷眼彼此调和，人物没有被整齐划分为好人和坏人，因此更复杂、更有张力。"
+    }
+  ],
+  "discussion_zh": [
+    "如果社交平台是公共讨论的“广场”，它应由谁决定哪些内容需要删除？请结合你熟悉的平台或校园社群举例。",
+    "讽刺作品是否必须给人物保留复杂性？相比“好人对坏人”的清晰故事，你更喜欢哪种叙事，为什么？",
+    "你觉得一部续作怎样才能超越经典前作？是重复成功配方，还是改变视角和表达方式？"
+  ],
+  "writing": {
+    "title_zh": "写作练习｜续作如何超越经典？",
+    "prompt_zh": "用英文写 120–150 词，评价一部电影续集或改编作品。比较它与前作的目标、语气和对复杂议题的处理，并至少使用下列两种表达：a softer target、at the expense of、by contrast、a hard act to follow。"
+  }
+}
