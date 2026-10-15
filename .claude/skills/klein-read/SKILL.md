@@ -60,7 +60,7 @@ For Japanese source text, use Japanese grammar labels in `structure` (主干, �
 Path: `data/NNN-english-slug.json`. `NNN` is the next number after the highest number in `data/`. Use three digits. Use 2–4 English words for the slug.
 Read `references/schema.md` before you write the file. Use UTF-8 with real Chinese characters. Delete blocks you do not use.
 
-When you edit an existing article's content, set `updated` to today's date. The home page lists the most recent `updated` first.
+When you create or edit an article, set `updated` to today's date. The home page lists the most recent `updated` first. The `date` field stays as the publication date.
 
 ### 5. Build and report
 Run this command in the project folder:
